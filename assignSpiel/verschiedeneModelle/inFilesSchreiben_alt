@@ -1,0 +1,31 @@
+#!/bin/bash
+
+# Hinweise:
+# Erzeugung der ausgabe.lp durch: clingo examples/... assignSpiel/assignHorizon.lp 30 > assignSpiel/verschiedeneModelle/ausgabe.lp
+# Achtung! wenn alle Modelle ausgegeben und in Datei geschrieben werden sollen, gibt's Probleme mit dem Speicherplatz
+# Nach Ausführung müssen derzeit per Hand die letzten 2-3 Modelle in ./Modelle und ./ModellePunkt gelöscht werden.
+# Namen der Modelle könnten angepasst werden auf Nummer des Modells (aktuell Nummer der Zählvariable).
+
+echo "-------------------------------------------"
+rm -r /home/luiwerner/Asprilo/asprilo-encodings/assignSpiel/verschiedeneModelle/Modelle
+rm -r /home/luiwerner/Asprilo/asprilo-encodings/assignSpiel/verschiedeneModelle/ModellePunkt
+
+mkdir /home/luiwerner/Asprilo/asprilo-encodings/assignSpiel/verschiedeneModelle/Modelle
+mkdir /home/luiwerner/Asprilo/asprilo-encodings/assignSpiel/verschiedeneModelle/ModellePunkt
+
+let "i = 0"
+let "k = 5"
+
+while read line
+do
+   let "i=i+1"
+	if (( $i == $k ))
+	then
+      echo "$i. Zeile wird in Datei geschrieben: $line"
+		echo "${line}." > /home/luiwerner/Asprilo/asprilo-encodings/assignSpiel/verschiedeneModelle/Modelle/$i.lp
+		sed 's/ /. /g' Modelle/$i.lp > ModellePunkt/$i.lp
+		let "k = k+2"
+	else echo "$i. Zeile wird gelöscht:	$line"
+	fi		
+done < /home/luiwerner/Asprilo/asprilo-encodings/assignSpiel/verschiedeneModelle/ausgabe.lp
+
