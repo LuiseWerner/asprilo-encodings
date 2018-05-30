@@ -1,0 +1,33 @@
+%anderer Horizont trifft auf bei 
+./clingo1facts assignSpiel/assignHorizon.lp examples/x10_y10_n100_r5_s20_ps6_pr5_u10_o5_N8.lp | clingo2facts - mppd/action-MPP.lp mppd/goal-D-r.lp control/control.lp -c horizon=23
+./clingo1facts assignSpiel/assignHorizon2.lp examples/x10_y10_n100_r5_s20_ps6_pr5_u10_o5_N8.lp | clingo2facts - mppd/action-MPP.lp mppd/goal-D-r.lp control/control.lp -c horizon=23
+
+%Ausgabe als Block speichern
+./clingo1facts examples/x10_y10_n100_r5_s20_ps6_pr5_u10_o5_N8.lp assignSpiel/assignHorizon.lp > assignSpiel/alsBlock.lp
+./clingo1facts examples/x10_y10_n100_r5_s20_ps6_pr5_u10_o5_N8.lp assignSpiel/assignHorizon2.lp > assignSpiel/alsBlock2.lp
+
+%ersetze Leerzeichen durch Zeilenumbrüche
+cat assignSpiel/alsBlock.lp | tr " " "\n" > assignSpiel/zeilenweise.lp
+cat assignSpiel/alsBlock2.lp | tr " " "\n" > assignSpiel/zeilenweise2.lp
+
+%sortieren
+sort zeilenweise.lp > sortiert.lp
+sort zeilenweise2.lp > sortiert2.lp
+
+%Unterschiede anzeigen
+diff zeilenweise{,2}.lp
+
+diff bringt folgende Ausgabe:
+1,2c1,2
+< assign(robot(1),shelf(8),station(4)).
+< assign(robot(2),shelf(12),station(3)).
+---
+> assign(robot(1),shelf(12),station(3)).
+> assign(robot(2),shelf(11),station(5)).
+5c5
+< assign(robot(4),shelf(11),station(5)).
+---
+> assign(robot(4),shelf(8),station(4)).
+
+
+

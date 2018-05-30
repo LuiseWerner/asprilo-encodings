@@ -1,0 +1,37 @@
+#!/bin/bash
+
+# Hinweise:
+# Erzeugung der ausgabe.lp durch: clingo examples/... assignSpiel/assignHorizon.lp 30 bzw. 0 > assignSpiel/verschiedeneModelle/ausgabe.lp
+# Achtung! wenn alle Modelle ausgegeben und in Datei geschrieben werden sollen, kann's Probleme mit dem Speicherplatz geben
+
+echo "-------------------------------------------"
+rm -r /home/luiwerner/Asprilo/asprilo-encodings/assignSpiel/verschiedeneModelle/Modelle
+rm -r /home/luiwerner/Asprilo/asprilo-encodings/assignSpiel/verschiedeneModelle/ModellePunkt
+
+mkdir /home/luiwerner/Asprilo/asprilo-encodings/assignSpiel/verschiedeneModelle/Modelle
+mkdir /home/luiwerner/Asprilo/asprilo-encodings/assignSpiel/verschiedeneModelle/ModellePunkt
+
+let "i = 0"
+let "k = 0"
+let "safe = 0"
+
+while read line
+do
+  let "i=i+1"
+	if (( $safe == 1 ))
+	then
+		let "k = k+1"
+		echo "GESPEICHERT: $line"
+		echo "${line}." > /home/luiwerner/Asprilo/asprilo-encodings/assignSpiel/verschiedeneModelle/Modelle/$k.lp
+		sed 's/ /. /g' Modelle/$k.lp > ModellePunkt/$k.lp
+		let "safe = 0"		
+	else
+		echo "geloescht:	$line"
+	fi		
+
+	if [[ $line = *Answer* ]]
+	then
+		let "safe = 1"	
+	fi
+done < /home/luiwerner/Asprilo/asprilo-encodings/assignSpiel/verschiedeneModelle/ausgabe.lp
+

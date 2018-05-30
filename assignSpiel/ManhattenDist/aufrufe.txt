@@ -1,0 +1,8 @@
+clingo assignSpiel/ManhattenDist/x5_y5_n25_r2_s2_ps2_pr2_u3_o2_N001.lp assignSpiel/assignOnlyDistOpt.lp --opt-mode=optN > assignSpiel/verschiedeneModelle/ausgabe.lp
+
+inFilesSchreiben im Ordner ausführen, dann zurück
+
+clingo1facts mppd/action-MPP.lp mppd/goal-D-r.lp mppd/output-MPPD.lp control/control.lp assignSpiel/verschiedeneModelle/ModellePunkt/3.lp -c horizon=11 | viz
+
+clingo1facts mppd/action-MPP.lp mppd/goal-D-r.lp mppd/output-MPPD.lp control/control.lp assignSpiel/verschiedeneModelle/ModellePunkt/4.lp -c horizon=10 | viz
+
