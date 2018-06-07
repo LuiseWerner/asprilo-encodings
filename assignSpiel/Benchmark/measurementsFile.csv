@@ -1,0 +1,9 @@
+instance, assign, time1, timeout1, time2, timeout2, horizon, time3, timeout3
+x8_y8_n64_r4_s10_ps2_pr3_u16_o4_N1.lp, assignOnlyROpt.lp, 0.0853011608124, TODO, 3.0956890583, 1, -, -, -
+x8_y8_n64_r4_s10_ps2_pr3_u16_o4_N1.lp, assignAll.lp, 0.106360912323, TODO, 3.08575892448, 1, -, -, -
+x2_y2_n4_r2_s2_ps1_pr2_u4_o2_N1.lp, assignOnlyROpt.lp, 0.0819849967957, TODO, 0.240360975266, 0, 7, 0.169325113297, TODO
+x2_y2_n4_r2_s2_ps1_pr2_u4_o2_N1.lp, assignAll.lp, 0.0806889533997, TODO, 0.216309070587, 0, 7, 0.119911909103, TODO
+x4_y4_n16_r8_s8_ps0_pr0_u0_o0_N1.lp, assignOnlyROpt.lp, 0.0714540481567, TODO, 0.152060031891, 0, 0, 0.122040987015, TODO
+x4_y4_n16_r8_s8_ps0_pr0_u0_o0_N1.lp, assignAll.lp, 0.0742969512939, TODO, 0.208709001541, 0, 0, 0.115577936172, TODO
+x3_y3_n9_r1_s1_ps1_pr1_u1_o1_N1.lp, assignOnlyROpt.lp, 0.0712049007416, TODO, 0.285268068314, 0, 11, 0.132474899292, TODO
+x3_y3_n9_r1_s1_ps1_pr1_u1_o1_N1.lp, assignAll.lp, 0.0620970726013, TODO, 0.241405010223, 0, 11, 0.126398086548, TODO
