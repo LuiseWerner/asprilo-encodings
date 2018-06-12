@@ -13,6 +13,10 @@ csv.write(columnTitleRow)
 workingPath = "/home/luiwerner/Mount/Asprilo/asprilo-encodings"
 examplesPath = os.path.join(workingPath, "assignSpiel/Benchmark/examples")
 assignPath = os.path.join(workingPath, "assignments")
+planPath = os.path.join(workingPath, "assignSpiel/Benchmark/Plaene")
+
+os.system('rm Plaene -r')
+os.system('mkdir Plaene')
 
 #über Instanzen iterieren
 i = 0
@@ -29,74 +33,103 @@ for example in os.listdir(examplesPath):
         row = example + ", " + assign
         j = j+1
         assignFile = os.path.join(assignPath, assign)
-        assignment = 'assignment_' + str(i) + "_" + str(j) + '.txt'
-        assignModel = 'assignModel_' + str(i) + "_" + str(j) + '.lp'
-        horizonStats = 'horizonStats_' + str(i) + "_" + str(j) + '.txt'
-              
-        # Berechnung Assignment aus assign und example
-        commandAssign = 'clingo ' + assignFile + ' ' + exampleFile + ' -q1,0 --time-limit=1800 --out-atomf=%s. > ' + assignment
-        print("Aufruf assign: " + commandAssign)
-        start1 = timer()
-        os.system(commandAssign)
-        end1 = timer()
-        time1 = (end1 - start1)
-        row = row + ", " + str(time1) + ", TODO"
+        assignment = 'assignment_' + str(i) + '_' + str(j) + '.txt'
+        assignModel = 'assignModel_' + str(i) + '_' + str(j) + '.lp'
+        horizonStats = 'horizonStats_' + str(i) + '_' + str(j) + '.txt'
+        planStats = 'planStats_' + str(i) + '_' + str(j) + '.txt'
+        plan = 'plan_' + example.split(".")[0] + assign
 
-        # Assignment in in weiterverarbeitbare Form bringen
+        # Berechnung Assignment aus assign und example
+        commandAssign = 'clingo ' + assignFile + ' ' + exampleFile + ' -q1,0 --time-limit=10 --out-atomf=%s. --stats > ' + assignment
+        print("Aufruf assign: " + commandAssign)
+        os.system(commandAssign)
+
+        # Zeitmessung mit Clingo und Assignment in in weiterverarbeitbare Form bringen
         assignIn = open(assignment, "r")
         assignOut = open(assignModel, "w")
+
         safeNextLine = False
         for line in assignIn:
             if(safeNextLine):
                 assignOut.write(line)
                 safeNextLine = False
             if("Answer" in line):
-                safeNextLine = True
+               safeNextLine = True
+            if(("TIME LIMIT" in line) or ("INTERRUPTED" in line)):
+                row = row + ",- ,1"
+                break
+            else:
+                if("Time" in line):
+                    #Ausgabe in Stats sieht so aus:
+                    #Time         : 0.078s (Solving: 0.00s 1st Model: 0.00s Unsat: 0.00s)
+                    time = line.split(":")[1].split("(")[0]
+                    # gemessene Zeit und timeout = "0" in Zeile schreiben
+                    row = row + ", " + str(time) + ", 0"
+                    break           
         assignIn.close()
         os.remove(assignment)
         assignOut.close()
 
         # Horizont mit mit inkrementellem Modus berechnen
-        commandHorizon = 'clingo ' + assignModel + ' ' + os.path.join(workingPath, "abc/encoding-a.ilp") + ' ' + os.path.join(workingPath, "control/control-abc.ilp") + ' --time-limit=3 --stats > ' + horizonStats
+        commandHorizon = 'clingo ' + assignModel + ' ' + os.path.join(workingPath, "abc/encoding-a.ilp") + ' ' + os.path.join(workingPath, "control/control-abc.ilp") + ' --time-limit=10 --stats > ' + horizonStats
         print("Aufruf horizon: " + commandHorizon)
-        start2 = timer()
         os.system(commandHorizon)
-        end2 = timer()
-        time2 = (end2 - start2)
-        row = row + ", " + str(time2)
         
         # Horizont rausziehen
         horizonIn = open(horizonStats, "r")
         for line in horizonIn:
-            if("TIME LIMIT" in line):
-                print("timeout")
-                #"timeout = 1", "horizon = -" in Zeile schreiben
-                row = row + ", 1, -"
+            if(("TIME LIMIT" in line) or ("INTERRUPTED" in line)):
+                # timeout = "1" in Zeile schreiben
+                row = row + ", -, 1"
                 break
             else:
                 if("Calls" in line):
                     woerter = line.split(":")
                     horizon = int(woerter[1]) - 1
-                    print("Horizont ist " + str(horizon))
-                    #"timeout = 0", horizon in Zeile schreiben
-                    row = row + ", 0, " + str(horizon)
+                if ("Time" in line):
+                    # Ausgabe in Stats sieht so aus:
+                    # Time         : 0.078s (Solving: 0.00s 1st Model: 0.00s Unsat: 0.00s)
+                    time = line.split(":")[1].split("(")[0]
+                    # gemessene Zeit und timeout = "0" in Zeile schreiben
+                    row = row + ", " + str(time) + ", 0"
                     break
+        print("Horizont ist " + str(horizon))
+        row = row + ", " + str(horizon)
         horizonIn.close()
         os.remove(horizonStats)
         
         # Zeitberechnung mit vorher berechnetem Horizont
-        if(horizon != None):
-            print("Horizont konnte berechnet werden")
-            commandTime = 'clingo ' + assignModel + ' ' + os.path.join(workingPath, "abc/encoding-a.lp") + ' ' + os.path.join(workingPath, "control/control-abc.lp") + ' -c horizon=' + str(horizon) + ' --time-limit=3 --out-atomf=%s. -q'
-            print("Aufruf time: " + commandTime)
-            start3 = timer()
-            os.system(commandTime)
-            end3 = timer()
-            time3 = (end3 - start3)
-            row = row + ", " + str(time3) + ", TODO"
+        if((horizon != None) and (horizon!=0)):
+            print("Horizont konnte berechnet werden und horizon ist nicht 0")
+
+            commandPlan = 'clingo ' + assignModel + ' ' + os.path.join(workingPath, "abc/encoding-a.lp") + ' ' + os.path.join(workingPath, "control/control-abc.lp") + ' -c horizon=' + str(horizon) + ' --time-limit=10 --outf=0 -V0 --out-atomf=%s. --quiet=1,2,2 --stats > ' + planStats
+            print("Aufruf Plan: " + commandPlan)
+            os.system(commandPlan)
+            
+            planIn = open(planStats, "r")
+            planOut = open(os.path.join(planPath,plan), "w")
+            writeLine = True
+            for line in planIn:
+                if(writeLine):
+                    planOut.write(line)
+                    writeLine = False
+                if(("TIME LIMIT" in line) or ("INTERRUPTED" in line)):
+                    row = row + ", -, 1"
+                    break
+                else:
+                    if ("Time" in line):
+                        # Ausgabe in Stats sieht so aus:
+                        # Time         : 0.078s (Solving: 0.00s 1st Model: 0.00s Unsat: 0.00s)
+                        time = line.split(":")[1].split("(")[0]
+                        # gemessene Zeit und timeout = "0" in Zeile schreiben
+                        row = row + ", " + str(time) + ", 0"
+                        break
+            planIn.close()
+            os.remove(planStats)
         else:
             print("Horizont konnte nicht berechnet werden")
             row = row + ", -, -"
+        os.remove(assignModel)
 
         # Ergebnisse in Datei schreiben
         row = row + "\n"
