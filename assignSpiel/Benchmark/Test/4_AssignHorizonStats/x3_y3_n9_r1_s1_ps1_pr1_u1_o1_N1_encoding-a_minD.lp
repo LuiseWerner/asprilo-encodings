@@ -1,5 +1,5 @@
 clingo version 5.2.2
-Reading from testAssignModel.lp ...
+Reading from ...s1_ps1_pr1_u1_o1_N1_encoding-a_minD.lp ...
 Solving...
 Solving...
 Solving...
@@ -18,8 +18,8 @@ SATISFIABLE
 
 Models       : 1+
 Calls        : 12
-Time         : 0.595s (Solving: 0.01s 1st Model: 0.00s Unsat: 0.01s)
-CPU Time     : 0.330s
+Time         : 1.086s (Solving: 0.05s 1st Model: 0.00s Unsat: 0.05s)
+CPU Time     : 0.709s
 
 Choices      : 73      
 Conflicts    : 36       (Analyzed: 30)
