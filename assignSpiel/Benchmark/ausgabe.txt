@@ -1,0 +1,979 @@
+1800
+60
+30
+1800
+60
+60
+bigIteration is 1
+
+------------------------
+Instanz Nr. 1: x19_y9_n171_r6_s45_ps3_pr180_u540_o12_N010.lp
+------------------------
+
+command: clingo /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignSpiel/Benchmark/examples_a/x19_y9_n171_r6_s45_ps3_pr180_u540_o12_N010.lp /home/luiwerner/Mount/Asprilo/asprilo-encodings/abc/encoding-a.ilp --stats --time-limit=1800 > /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignSpiel/Benchmark/1_MinHorizonStats/A_x19_y9_n171_r6_s45_ps3_pr180_u540_o12_N010_encoding-a.lp
+('-', '1', '-')
+
+------------------------
+assign Nr. 1: maxS.lp
+------------------------
+
+command: clingo /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignSpiel/Benchmark/examples_a/x19_y9_n171_r6_s45_ps3_pr180_u540_o12_N010.lp /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignments/maxS.lp -q1,0 --out-atomf=%s. --stats --time-limit=30 > /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignSpiel/Benchmark/3a_AssignModelsStats/A_x19_y9_n171_r6_s45_ps3_pr180_u540_o12_N010_encoding-a_maxS.lp
+ 0.043s 
+(' 0.043s ', '0')
+model exists
+command: clingo /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignSpiel/Benchmark/3b_AssignModels/A_x19_y9_n171_r6_s45_ps3_pr180_u540_o12_N010_encoding-a_maxS.lp /home/luiwerner/Mount/Asprilo/asprilo-encodings/abc/encoding-a.ilp /home/luiwerner/Mount/Asprilo/asprilo-encodings/control/control-abc.ilp --stats --time-limit=1800 > /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignSpiel/Benchmark/4_AssignHorizonStats/A_x19_y9_n171_r6_s45_ps3_pr180_u540_o12_N010_encoding-a_maxS.lp
+('-', '1', '-')
+ , , , , , , , , maxS.lp,  0.043s , 0, -, 1, -, -, -, -, -
+
+
+------------------------
+assign Nr. 2: maxR.lp
+------------------------
+
+command: clingo /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignSpiel/Benchmark/examples_a/x19_y9_n171_r6_s45_ps3_pr180_u540_o12_N010.lp /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignments/maxR.lp -q1,0 --out-atomf=%s. --stats --time-limit=30 > /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignSpiel/Benchmark/3a_AssignModelsStats/A_x19_y9_n171_r6_s45_ps3_pr180_u540_o12_N010_encoding-a_maxR.lp
+ 0.042s 
+(' 0.042s ', '0')
+model exists
+command: clingo /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignSpiel/Benchmark/3b_AssignModels/A_x19_y9_n171_r6_s45_ps3_pr180_u540_o12_N010_encoding-a_maxR.lp /home/luiwerner/Mount/Asprilo/asprilo-encodings/abc/encoding-a.ilp /home/luiwerner/Mount/Asprilo/asprilo-encodings/control/control-abc.ilp --stats --time-limit=1800 > /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignSpiel/Benchmark/4_AssignHorizonStats/A_x19_y9_n171_r6_s45_ps3_pr180_u540_o12_N010_encoding-a_maxR.lp
+('-', '1', '-')
+ , , , , , , , , maxR.lp,  0.042s , 0, -, 1, -, -, -, -, -
+
+
+------------------------
+assign Nr. 3: maxP.lp
+------------------------
+
+command: clingo /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignSpiel/Benchmark/examples_a/x19_y9_n171_r6_s45_ps3_pr180_u540_o12_N010.lp /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignments/maxP.lp -q1,0 --out-atomf=%s. --stats --time-limit=30 > /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignSpiel/Benchmark/3a_AssignModelsStats/A_x19_y9_n171_r6_s45_ps3_pr180_u540_o12_N010_encoding-a_maxP.lp
+ 0.041s 
+(' 0.041s ', '0')
+model exists
+command: clingo /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignSpiel/Benchmark/3b_AssignModels/A_x19_y9_n171_r6_s45_ps3_pr180_u540_o12_N010_encoding-a_maxP.lp /home/luiwerner/Mount/Asprilo/asprilo-encodings/abc/encoding-a.ilp /home/luiwerner/Mount/Asprilo/asprilo-encodings/control/control-abc.ilp --stats --time-limit=1800 > /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignSpiel/Benchmark/4_AssignHorizonStats/A_x19_y9_n171_r6_s45_ps3_pr180_u540_o12_N010_encoding-a_maxP.lp
+('-', '1', '-')
+ , , , , , , , , maxP.lp,  0.041s , 0, -, 1, -, -, -, -, -
+
+
+------------------------
+assign Nr. 4: minRSP.lp
+------------------------
+
+command: clingo /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignSpiel/Benchmark/examples_a/x19_y9_n171_r6_s45_ps3_pr180_u540_o12_N010.lp /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignments/minRSP.lp -q1,0 --out-atomf=%s. --stats --time-limit=30 > /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignSpiel/Benchmark/3a_AssignModelsStats/A_x19_y9_n171_r6_s45_ps3_pr180_u540_o12_N010_encoding-a_minRSP.lp
+('-', '1')
+no model
+ , , , , , , , , minRSP.lp, -, 1, -, -, -, -, -, -, -
+
+
+------------------------
+assign Nr. 5: minD.lp
+------------------------
+
+command: clingo /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignSpiel/Benchmark/examples_a/x19_y9_n171_r6_s45_ps3_pr180_u540_o12_N010.lp /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignments/minD.lp -q1,0 --out-atomf=%s. --stats --time-limit=30 > /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignSpiel/Benchmark/3a_AssignModelsStats/A_x19_y9_n171_r6_s45_ps3_pr180_u540_o12_N010_encoding-a_minD.lp
+('-', '1')
+no model
+ , , , , , , , , minD.lp, -, 1, -, -, -, -, -, -, -
+
+
+------------------------
+assign Nr. 6: minR.lp
+------------------------
+
+command: clingo /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignSpiel/Benchmark/examples_a/x19_y9_n171_r6_s45_ps3_pr180_u540_o12_N010.lp /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignments/minR.lp -q1,0 --out-atomf=%s. --stats --time-limit=30 > /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignSpiel/Benchmark/3a_AssignModelsStats/A_x19_y9_n171_r6_s45_ps3_pr180_u540_o12_N010_encoding-a_minR.lp
+ 0.048s 
+(' 0.048s ', '0')
+model exists
+command: clingo /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignSpiel/Benchmark/3b_AssignModels/A_x19_y9_n171_r6_s45_ps3_pr180_u540_o12_N010_encoding-a_minR.lp /home/luiwerner/Mount/Asprilo/asprilo-encodings/abc/encoding-a.ilp /home/luiwerner/Mount/Asprilo/asprilo-encodings/control/control-abc.ilp --stats --time-limit=1800 > /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignSpiel/Benchmark/4_AssignHorizonStats/A_x19_y9_n171_r6_s45_ps3_pr180_u540_o12_N010_encoding-a_minR.lp
+('-', '1', '-')
+ , , , , , , , , minR.lp,  0.048s , 0, -, 1, -, -, -, -, -
+
+
+------------------------
+assign Nr. 7: maxRS.lp
+------------------------
+
+command: clingo /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignSpiel/Benchmark/examples_a/x19_y9_n171_r6_s45_ps3_pr180_u540_o12_N010.lp /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignments/maxRS.lp -q1,0 --out-atomf=%s. --stats --time-limit=30 > /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignSpiel/Benchmark/3a_AssignModelsStats/A_x19_y9_n171_r6_s45_ps3_pr180_u540_o12_N010_encoding-a_maxRS.lp
+('-', '1')
+no model
+ , , , , , , , , maxRS.lp, -, 1, -, -, -, -, -, -, -
+
+
+------------------------
+assign Nr. 8: minRS.lp
+------------------------
+
+command: clingo /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignSpiel/Benchmark/examples_a/x19_y9_n171_r6_s45_ps3_pr180_u540_o12_N010.lp /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignments/minRS.lp -q1,0 --out-atomf=%s. --stats --time-limit=30 > /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignSpiel/Benchmark/3a_AssignModelsStats/A_x19_y9_n171_r6_s45_ps3_pr180_u540_o12_N010_encoding-a_minRS.lp
+('-', '1')
+no model
+ , , , , , , , , minRS.lp, -, 1, -, -, -, -, -, -, -
+
+
+------------------------
+assign Nr. 9: minS.lp
+------------------------
+
+command: clingo /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignSpiel/Benchmark/examples_a/x19_y9_n171_r6_s45_ps3_pr180_u540_o12_N010.lp /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignments/minS.lp -q1,0 --out-atomf=%s. --stats --time-limit=30 > /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignSpiel/Benchmark/3a_AssignModelsStats/A_x19_y9_n171_r6_s45_ps3_pr180_u540_o12_N010_encoding-a_minS.lp
+ 0.043s 
+(' 0.043s ', '0')
+model exists
+command: clingo /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignSpiel/Benchmark/3b_AssignModels/A_x19_y9_n171_r6_s45_ps3_pr180_u540_o12_N010_encoding-a_minS.lp /home/luiwerner/Mount/Asprilo/asprilo-encodings/abc/encoding-a.ilp /home/luiwerner/Mount/Asprilo/asprilo-encodings/control/control-abc.ilp --stats --time-limit=1800 > /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignSpiel/Benchmark/4_AssignHorizonStats/A_x19_y9_n171_r6_s45_ps3_pr180_u540_o12_N010_encoding-a_minS.lp
+('-', '1', '-')
+ , , , , , , , , minS.lp,  0.043s , 0, -, 1, -, -, -, -, -
+
+
+------------------------
+assign Nr. 10: maxRP.lp
+------------------------
+
+command: clingo /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignSpiel/Benchmark/examples_a/x19_y9_n171_r6_s45_ps3_pr180_u540_o12_N010.lp /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignments/maxRP.lp -q1,0 --out-atomf=%s. --stats --time-limit=30 > /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignSpiel/Benchmark/3a_AssignModelsStats/A_x19_y9_n171_r6_s45_ps3_pr180_u540_o12_N010_encoding-a_maxRP.lp
+ 0.054s 
+(' 0.054s ', '0')
+model exists
+command: clingo /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignSpiel/Benchmark/3b_AssignModels/A_x19_y9_n171_r6_s45_ps3_pr180_u540_o12_N010_encoding-a_maxRP.lp /home/luiwerner/Mount/Asprilo/asprilo-encodings/abc/encoding-a.ilp /home/luiwerner/Mount/Asprilo/asprilo-encodings/control/control-abc.ilp --stats --time-limit=1800 > /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignSpiel/Benchmark/4_AssignHorizonStats/A_x19_y9_n171_r6_s45_ps3_pr180_u540_o12_N010_encoding-a_maxRP.lp
+('-', '1', '-')
+ , , , , , , , , maxRP.lp,  0.054s , 0, -, 1, -, -, -, -, -
+
+
+------------------------
+assign Nr. 11: minRP.lp
+------------------------
+
+command: clingo /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignSpiel/Benchmark/examples_a/x19_y9_n171_r6_s45_ps3_pr180_u540_o12_N010.lp /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignments/minRP.lp -q1,0 --out-atomf=%s. --stats --time-limit=30 > /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignSpiel/Benchmark/3a_AssignModelsStats/A_x19_y9_n171_r6_s45_ps3_pr180_u540_o12_N010_encoding-a_minRP.lp
+ 0.050s 
+(' 0.050s ', '0')
+model exists
+command: clingo /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignSpiel/Benchmark/3b_AssignModels/A_x19_y9_n171_r6_s45_ps3_pr180_u540_o12_N010_encoding-a_minRP.lp /home/luiwerner/Mount/Asprilo/asprilo-encodings/abc/encoding-a.ilp /home/luiwerner/Mount/Asprilo/asprilo-encodings/control/control-abc.ilp --stats --time-limit=1800 > /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignSpiel/Benchmark/4_AssignHorizonStats/A_x19_y9_n171_r6_s45_ps3_pr180_u540_o12_N010_encoding-a_minRP.lp
+('-', '1', '-')
+ , , , , , , , , minRP.lp,  0.050s , 0, -, 1, -, -, -, -, -
+
+
+------------------------
+assign Nr. 12: minP.lp
+------------------------
+
+command: clingo /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignSpiel/Benchmark/examples_a/x19_y9_n171_r6_s45_ps3_pr180_u540_o12_N010.lp /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignments/minP.lp -q1,0 --out-atomf=%s. --stats --time-limit=30 > /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignSpiel/Benchmark/3a_AssignModelsStats/A_x19_y9_n171_r6_s45_ps3_pr180_u540_o12_N010_encoding-a_minP.lp
+ 0.053s 
+(' 0.053s ', '0')
+model exists
+command: clingo /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignSpiel/Benchmark/3b_AssignModels/A_x19_y9_n171_r6_s45_ps3_pr180_u540_o12_N010_encoding-a_minP.lp /home/luiwerner/Mount/Asprilo/asprilo-encodings/abc/encoding-a.ilp /home/luiwerner/Mount/Asprilo/asprilo-encodings/control/control-abc.ilp --stats --time-limit=1800 > /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignSpiel/Benchmark/4_AssignHorizonStats/A_x19_y9_n171_r6_s45_ps3_pr180_u540_o12_N010_encoding-a_minP.lp
+('-', '1', '-')
+ , , , , , , , , minP.lp,  0.053s , 0, -, 1, -, -, -, -, -
+
+
+------------------------
+assign Nr. 13: maxRSP.lp
+------------------------
+
+command: clingo /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignSpiel/Benchmark/examples_a/x19_y9_n171_r6_s45_ps3_pr180_u540_o12_N010.lp /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignments/maxRSP.lp -q1,0 --out-atomf=%s. --stats --time-limit=30 > /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignSpiel/Benchmark/3a_AssignModelsStats/A_x19_y9_n171_r6_s45_ps3_pr180_u540_o12_N010_encoding-a_maxRSP.lp
+('-', '1')
+no model
+ , , , , , , , , maxRSP.lp, -, 1, -, -, -, -, -, -, -
+
+
+------------------------
+assign Nr. 14: maxSP.lp
+------------------------
+
+command: clingo /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignSpiel/Benchmark/examples_a/x19_y9_n171_r6_s45_ps3_pr180_u540_o12_N010.lp /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignments/maxSP.lp -q1,0 --out-atomf=%s. --stats --time-limit=30 > /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignSpiel/Benchmark/3a_AssignModelsStats/A_x19_y9_n171_r6_s45_ps3_pr180_u540_o12_N010_encoding-a_maxSP.lp
+ 0.051s 
+(' 0.051s ', '0')
+model exists
+command: clingo /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignSpiel/Benchmark/3b_AssignModels/A_x19_y9_n171_r6_s45_ps3_pr180_u540_o12_N010_encoding-a_maxSP.lp /home/luiwerner/Mount/Asprilo/asprilo-encodings/abc/encoding-a.ilp /home/luiwerner/Mount/Asprilo/asprilo-encodings/control/control-abc.ilp --stats --time-limit=1800 > /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignSpiel/Benchmark/4_AssignHorizonStats/A_x19_y9_n171_r6_s45_ps3_pr180_u540_o12_N010_encoding-a_maxSP.lp
+('-', '1', '-')
+ , , , , , , , , maxSP.lp,  0.051s , 0, -, 1, -, -, -, -, -
+
+
+------------------------
+assign Nr. 15: minSP.lp
+------------------------
+
+command: clingo /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignSpiel/Benchmark/examples_a/x19_y9_n171_r6_s45_ps3_pr180_u540_o12_N010.lp /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignments/minSP.lp -q1,0 --out-atomf=%s. --stats --time-limit=30 > /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignSpiel/Benchmark/3a_AssignModelsStats/A_x19_y9_n171_r6_s45_ps3_pr180_u540_o12_N010_encoding-a_minSP.lp
+ 0.052s 
+(' 0.052s ', '0')
+model exists
+command: clingo /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignSpiel/Benchmark/3b_AssignModels/A_x19_y9_n171_r6_s45_ps3_pr180_u540_o12_N010_encoding-a_minSP.lp /home/luiwerner/Mount/Asprilo/asprilo-encodings/abc/encoding-a.ilp /home/luiwerner/Mount/Asprilo/asprilo-encodings/control/control-abc.ilp --stats --time-limit=1800 > /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignSpiel/Benchmark/4_AssignHorizonStats/A_x19_y9_n171_r6_s45_ps3_pr180_u540_o12_N010_encoding-a_minSP.lp
+('-', '1', '-')
+ , , , , , , , , minSP.lp,  0.052s , 0, -, 1, -, -, -, -, -
+
+
+------------------------
+Instanz Nr. 2: x11_y6_n66_r1_s16_ps1_pr32_u96_o2_N003.lp
+------------------------
+
+command: clingo /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignSpiel/Benchmark/examples_a/x11_y6_n66_r1_s16_ps1_pr32_u96_o2_N003.lp /home/luiwerner/Mount/Asprilo/asprilo-encodings/abc/encoding-a.ilp --stats --time-limit=1800 > /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignSpiel/Benchmark/1_MinHorizonStats/A_x11_y6_n66_r1_s16_ps1_pr32_u96_o2_N003_encoding-a.lp
+ 1.497s 
+(' 1.497s ', '0', '21')
+Horizont wurde berechnet und ist nicht 0. Horizont ist 21
+command: clingo /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignSpiel/Benchmark/examples_a/x11_y6_n66_r1_s16_ps1_pr32_u96_o2_N003.lp /home/luiwerner/Mount/Asprilo/asprilo-encodings/abc/encoding-a.lp -c horizon=21 --out-atomf=%s. --stats --time-limit=60 > /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignSpiel/Benchmark/2a_MinHorizonPlansStats/A_x11_y6_n66_r1_s16_ps1_pr32_u96_o2_N003_encoding-a.lp
+ 0.558s 
+(' 0.558s ', '0')
+
+------------------------
+assign Nr. 1: maxS.lp
+------------------------
+
+command: clingo /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignSpiel/Benchmark/examples_a/x11_y6_n66_r1_s16_ps1_pr32_u96_o2_N003.lp /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignments/maxS.lp -q1,0 --out-atomf=%s. --stats --time-limit=30 > /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignSpiel/Benchmark/3a_AssignModelsStats/A_x11_y6_n66_r1_s16_ps1_pr32_u96_o2_N003_encoding-a_maxS.lp
+ 0.017s 
+(' 0.017s ', '0')
+model exists
+command: clingo /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignSpiel/Benchmark/3b_AssignModels/A_x11_y6_n66_r1_s16_ps1_pr32_u96_o2_N003_encoding-a_maxS.lp /home/luiwerner/Mount/Asprilo/asprilo-encodings/abc/encoding-a.ilp /home/luiwerner/Mount/Asprilo/asprilo-encodings/control/control-abc.ilp /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignSpiel/Benchmark/mh.lp -c mh=21 --stats --time-limit=1800 > /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignSpiel/Benchmark/4_AssignHorizonStats/A_x11_y6_n66_r1_s16_ps1_pr32_u96_o2_N003_encoding-a_maxS.lp
+ 0.764s 
+(' 0.764s ', '0', '21')
+Horizont konnte berechnet werden und ist nicht 0. Horizont ist 21
+command: clingo /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignSpiel/Benchmark/3b_AssignModels/A_x11_y6_n66_r1_s16_ps1_pr32_u96_o2_N003_encoding-a_maxS.lp /home/luiwerner/Mount/Asprilo/asprilo-encodings/abc/encoding-a.lp /home/luiwerner/Mount/Asprilo/asprilo-encodings/control/control-abc.lp -c horizon=21 --out-atomf=%s. --stats --time-limit=60 > /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignSpiel/Benchmark/5a_AssignPlansStats/A_x11_y6_n66_r1_s16_ps1_pr32_u96_o2_N003_encoding-a_maxS.lp
+ 0.391s 
+(' 0.391s ', '0')
+ , , , , , , , , maxS.lp,  0.017s , 0,  0.764s , 0, 21,  0.391s , 0, redundant, redundant
+
+
+------------------------
+assign Nr. 2: maxR.lp
+------------------------
+
+command: clingo /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignSpiel/Benchmark/examples_a/x11_y6_n66_r1_s16_ps1_pr32_u96_o2_N003.lp /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignments/maxR.lp -q1,0 --out-atomf=%s. --stats --time-limit=30 > /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignSpiel/Benchmark/3a_AssignModelsStats/A_x11_y6_n66_r1_s16_ps1_pr32_u96_o2_N003_encoding-a_maxR.lp
+ 0.013s 
+(' 0.013s ', '0')
+model exists
+command: clingo /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignSpiel/Benchmark/3b_AssignModels/A_x11_y6_n66_r1_s16_ps1_pr32_u96_o2_N003_encoding-a_maxR.lp /home/luiwerner/Mount/Asprilo/asprilo-encodings/abc/encoding-a.ilp /home/luiwerner/Mount/Asprilo/asprilo-encodings/control/control-abc.ilp /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignSpiel/Benchmark/mh.lp -c mh=21 --stats --time-limit=1800 > /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignSpiel/Benchmark/4_AssignHorizonStats/A_x11_y6_n66_r1_s16_ps1_pr32_u96_o2_N003_encoding-a_maxR.lp
+ 0.758s 
+(' 0.758s ', '0', '21')
+Horizont konnte berechnet werden und ist nicht 0. Horizont ist 21
+command: clingo /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignSpiel/Benchmark/3b_AssignModels/A_x11_y6_n66_r1_s16_ps1_pr32_u96_o2_N003_encoding-a_maxR.lp /home/luiwerner/Mount/Asprilo/asprilo-encodings/abc/encoding-a.lp /home/luiwerner/Mount/Asprilo/asprilo-encodings/control/control-abc.lp -c horizon=21 --out-atomf=%s. --stats --time-limit=60 > /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignSpiel/Benchmark/5a_AssignPlansStats/A_x11_y6_n66_r1_s16_ps1_pr32_u96_o2_N003_encoding-a_maxR.lp
+ 0.380s 
+(' 0.380s ', '0')
+ , , , , , , , , maxR.lp,  0.013s , 0,  0.758s , 0, 21,  0.380s , 0, redundant, redundant
+
+
+------------------------
+assign Nr. 3: maxP.lp
+------------------------
+
+command: clingo /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignSpiel/Benchmark/examples_a/x11_y6_n66_r1_s16_ps1_pr32_u96_o2_N003.lp /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignments/maxP.lp -q1,0 --out-atomf=%s. --stats --time-limit=30 > /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignSpiel/Benchmark/3a_AssignModelsStats/A_x11_y6_n66_r1_s16_ps1_pr32_u96_o2_N003_encoding-a_maxP.lp
+ 0.020s 
+(' 0.020s ', '0')
+model exists
+command: clingo /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignSpiel/Benchmark/3b_AssignModels/A_x11_y6_n66_r1_s16_ps1_pr32_u96_o2_N003_encoding-a_maxP.lp /home/luiwerner/Mount/Asprilo/asprilo-encodings/abc/encoding-a.ilp /home/luiwerner/Mount/Asprilo/asprilo-encodings/control/control-abc.ilp /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignSpiel/Benchmark/mh.lp -c mh=21 --stats --time-limit=1800 > /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignSpiel/Benchmark/4_AssignHorizonStats/A_x11_y6_n66_r1_s16_ps1_pr32_u96_o2_N003_encoding-a_maxP.lp
+ 0.762s 
+(' 0.762s ', '0', '21')
+Horizont konnte berechnet werden und ist nicht 0. Horizont ist 21
+command: clingo /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignSpiel/Benchmark/3b_AssignModels/A_x11_y6_n66_r1_s16_ps1_pr32_u96_o2_N003_encoding-a_maxP.lp /home/luiwerner/Mount/Asprilo/asprilo-encodings/abc/encoding-a.lp /home/luiwerner/Mount/Asprilo/asprilo-encodings/control/control-abc.lp -c horizon=21 --out-atomf=%s. --stats --time-limit=60 > /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignSpiel/Benchmark/5a_AssignPlansStats/A_x11_y6_n66_r1_s16_ps1_pr32_u96_o2_N003_encoding-a_maxP.lp
+ 0.383s 
+(' 0.383s ', '0')
+ , , , , , , , , maxP.lp,  0.020s , 0,  0.762s , 0, 21,  0.383s , 0, redundant, redundant
+
+
+------------------------
+assign Nr. 4: minRSP.lp
+------------------------
+
+command: clingo /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignSpiel/Benchmark/examples_a/x11_y6_n66_r1_s16_ps1_pr32_u96_o2_N003.lp /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignments/minRSP.lp -q1,0 --out-atomf=%s. --stats --time-limit=30 > /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignSpiel/Benchmark/3a_AssignModelsStats/A_x11_y6_n66_r1_s16_ps1_pr32_u96_o2_N003_encoding-a_minRSP.lp
+ 0.012s 
+(' 0.012s ', '0')
+model exists
+command: clingo /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignSpiel/Benchmark/3b_AssignModels/A_x11_y6_n66_r1_s16_ps1_pr32_u96_o2_N003_encoding-a_minRSP.lp /home/luiwerner/Mount/Asprilo/asprilo-encodings/abc/encoding-a.ilp /home/luiwerner/Mount/Asprilo/asprilo-encodings/control/control-abc.ilp /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignSpiel/Benchmark/mh.lp -c mh=21 --stats --time-limit=1800 > /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignSpiel/Benchmark/4_AssignHorizonStats/A_x11_y6_n66_r1_s16_ps1_pr32_u96_o2_N003_encoding-a_minRSP.lp
+ 0.760s 
+(' 0.760s ', '0', '21')
+Horizont konnte berechnet werden und ist nicht 0. Horizont ist 21
+command: clingo /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignSpiel/Benchmark/3b_AssignModels/A_x11_y6_n66_r1_s16_ps1_pr32_u96_o2_N003_encoding-a_minRSP.lp /home/luiwerner/Mount/Asprilo/asprilo-encodings/abc/encoding-a.lp /home/luiwerner/Mount/Asprilo/asprilo-encodings/control/control-abc.lp -c horizon=21 --out-atomf=%s. --stats --time-limit=60 > /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignSpiel/Benchmark/5a_AssignPlansStats/A_x11_y6_n66_r1_s16_ps1_pr32_u96_o2_N003_encoding-a_minRSP.lp
+ 0.388s 
+(' 0.388s ', '0')
+ , , , , , , , , minRSP.lp,  0.012s , 0,  0.760s , 0, 21,  0.388s , 0, redundant, redundant
+
+
+------------------------
+assign Nr. 5: minD.lp
+------------------------
+
+command: clingo /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignSpiel/Benchmark/examples_a/x11_y6_n66_r1_s16_ps1_pr32_u96_o2_N003.lp /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignments/minD.lp -q1,0 --out-atomf=%s. --stats --time-limit=30 > /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignSpiel/Benchmark/3a_AssignModelsStats/A_x11_y6_n66_r1_s16_ps1_pr32_u96_o2_N003_encoding-a_minD.lp
+ 0.013s 
+(' 0.013s ', '0')
+model exists
+command: clingo /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignSpiel/Benchmark/3b_AssignModels/A_x11_y6_n66_r1_s16_ps1_pr32_u96_o2_N003_encoding-a_minD.lp /home/luiwerner/Mount/Asprilo/asprilo-encodings/abc/encoding-a.ilp /home/luiwerner/Mount/Asprilo/asprilo-encodings/control/control-abc.ilp /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignSpiel/Benchmark/mh.lp -c mh=21 --stats --time-limit=1800 > /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignSpiel/Benchmark/4_AssignHorizonStats/A_x11_y6_n66_r1_s16_ps1_pr32_u96_o2_N003_encoding-a_minD.lp
+ 0.757s 
+(' 0.757s ', '0', '21')
+Horizont konnte berechnet werden und ist nicht 0. Horizont ist 21
+command: clingo /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignSpiel/Benchmark/3b_AssignModels/A_x11_y6_n66_r1_s16_ps1_pr32_u96_o2_N003_encoding-a_minD.lp /home/luiwerner/Mount/Asprilo/asprilo-encodings/abc/encoding-a.lp /home/luiwerner/Mount/Asprilo/asprilo-encodings/control/control-abc.lp -c horizon=21 --out-atomf=%s. --stats --time-limit=60 > /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignSpiel/Benchmark/5a_AssignPlansStats/A_x11_y6_n66_r1_s16_ps1_pr32_u96_o2_N003_encoding-a_minD.lp
+ 0.383s 
+(' 0.383s ', '0')
+ , , , , , , , , minD.lp,  0.013s , 0,  0.757s , 0, 21,  0.383s , 0, redundant, redundant
+
+
+------------------------
+assign Nr. 6: minR.lp
+------------------------
+
+command: clingo /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignSpiel/Benchmark/examples_a/x11_y6_n66_r1_s16_ps1_pr32_u96_o2_N003.lp /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignments/minR.lp -q1,0 --out-atomf=%s. --stats --time-limit=30 > /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignSpiel/Benchmark/3a_AssignModelsStats/A_x11_y6_n66_r1_s16_ps1_pr32_u96_o2_N003_encoding-a_minR.lp
+ 0.012s 
+(' 0.012s ', '0')
+model exists
+command: clingo /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignSpiel/Benchmark/3b_AssignModels/A_x11_y6_n66_r1_s16_ps1_pr32_u96_o2_N003_encoding-a_minR.lp /home/luiwerner/Mount/Asprilo/asprilo-encodings/abc/encoding-a.ilp /home/luiwerner/Mount/Asprilo/asprilo-encodings/control/control-abc.ilp /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignSpiel/Benchmark/mh.lp -c mh=21 --stats --time-limit=1800 > /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignSpiel/Benchmark/4_AssignHorizonStats/A_x11_y6_n66_r1_s16_ps1_pr32_u96_o2_N003_encoding-a_minR.lp
+ 0.758s 
+(' 0.758s ', '0', '21')
+Horizont konnte berechnet werden und ist nicht 0. Horizont ist 21
+command: clingo /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignSpiel/Benchmark/3b_AssignModels/A_x11_y6_n66_r1_s16_ps1_pr32_u96_o2_N003_encoding-a_minR.lp /home/luiwerner/Mount/Asprilo/asprilo-encodings/abc/encoding-a.lp /home/luiwerner/Mount/Asprilo/asprilo-encodings/control/control-abc.lp -c horizon=21 --out-atomf=%s. --stats --time-limit=60 > /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignSpiel/Benchmark/5a_AssignPlansStats/A_x11_y6_n66_r1_s16_ps1_pr32_u96_o2_N003_encoding-a_minR.lp
+ 0.382s 
+(' 0.382s ', '0')
+ , , , , , , , , minR.lp,  0.012s , 0,  0.758s , 0, 21,  0.382s , 0, redundant, redundant
+
+
+------------------------
+assign Nr. 7: maxRS.lp
+------------------------
+
+command: clingo /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignSpiel/Benchmark/examples_a/x11_y6_n66_r1_s16_ps1_pr32_u96_o2_N003.lp /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignments/maxRS.lp -q1,0 --out-atomf=%s. --stats --time-limit=30 > /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignSpiel/Benchmark/3a_AssignModelsStats/A_x11_y6_n66_r1_s16_ps1_pr32_u96_o2_N003_encoding-a_maxRS.lp
+ 0.012s 
+(' 0.012s ', '0')
+model exists
+command: clingo /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignSpiel/Benchmark/3b_AssignModels/A_x11_y6_n66_r1_s16_ps1_pr32_u96_o2_N003_encoding-a_maxRS.lp /home/luiwerner/Mount/Asprilo/asprilo-encodings/abc/encoding-a.ilp /home/luiwerner/Mount/Asprilo/asprilo-encodings/control/control-abc.ilp /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignSpiel/Benchmark/mh.lp -c mh=21 --stats --time-limit=1800 > /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignSpiel/Benchmark/4_AssignHorizonStats/A_x11_y6_n66_r1_s16_ps1_pr32_u96_o2_N003_encoding-a_maxRS.lp
+ 0.760s 
+(' 0.760s ', '0', '21')
+Horizont konnte berechnet werden und ist nicht 0. Horizont ist 21
+command: clingo /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignSpiel/Benchmark/3b_AssignModels/A_x11_y6_n66_r1_s16_ps1_pr32_u96_o2_N003_encoding-a_maxRS.lp /home/luiwerner/Mount/Asprilo/asprilo-encodings/abc/encoding-a.lp /home/luiwerner/Mount/Asprilo/asprilo-encodings/control/control-abc.lp -c horizon=21 --out-atomf=%s. --stats --time-limit=60 > /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignSpiel/Benchmark/5a_AssignPlansStats/A_x11_y6_n66_r1_s16_ps1_pr32_u96_o2_N003_encoding-a_maxRS.lp
+ 0.382s 
+(' 0.382s ', '0')
+ , , , , , , , , maxRS.lp,  0.012s , 0,  0.760s , 0, 21,  0.382s , 0, redundant, redundant
+
+
+------------------------
+assign Nr. 8: minRS.lp
+------------------------
+
+command: clingo /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignSpiel/Benchmark/examples_a/x11_y6_n66_r1_s16_ps1_pr32_u96_o2_N003.lp /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignments/minRS.lp -q1,0 --out-atomf=%s. --stats --time-limit=30 > /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignSpiel/Benchmark/3a_AssignModelsStats/A_x11_y6_n66_r1_s16_ps1_pr32_u96_o2_N003_encoding-a_minRS.lp
+ 0.012s 
+(' 0.012s ', '0')
+model exists
+command: clingo /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignSpiel/Benchmark/3b_AssignModels/A_x11_y6_n66_r1_s16_ps1_pr32_u96_o2_N003_encoding-a_minRS.lp /home/luiwerner/Mount/Asprilo/asprilo-encodings/abc/encoding-a.ilp /home/luiwerner/Mount/Asprilo/asprilo-encodings/control/control-abc.ilp /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignSpiel/Benchmark/mh.lp -c mh=21 --stats --time-limit=1800 > /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignSpiel/Benchmark/4_AssignHorizonStats/A_x11_y6_n66_r1_s16_ps1_pr32_u96_o2_N003_encoding-a_minRS.lp
+ 0.759s 
+(' 0.759s ', '0', '21')
+Horizont konnte berechnet werden und ist nicht 0. Horizont ist 21
+command: clingo /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignSpiel/Benchmark/3b_AssignModels/A_x11_y6_n66_r1_s16_ps1_pr32_u96_o2_N003_encoding-a_minRS.lp /home/luiwerner/Mount/Asprilo/asprilo-encodings/abc/encoding-a.lp /home/luiwerner/Mount/Asprilo/asprilo-encodings/control/control-abc.lp -c horizon=21 --out-atomf=%s. --stats --time-limit=60 > /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignSpiel/Benchmark/5a_AssignPlansStats/A_x11_y6_n66_r1_s16_ps1_pr32_u96_o2_N003_encoding-a_minRS.lp
+ 0.380s 
+(' 0.380s ', '0')
+ , , , , , , , , minRS.lp,  0.012s , 0,  0.759s , 0, 21,  0.380s , 0, redundant, redundant
+
+
+------------------------
+assign Nr. 9: minS.lp
+------------------------
+
+command: clingo /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignSpiel/Benchmark/examples_a/x11_y6_n66_r1_s16_ps1_pr32_u96_o2_N003.lp /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignments/minS.lp -q1,0 --out-atomf=%s. --stats --time-limit=30 > /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignSpiel/Benchmark/3a_AssignModelsStats/A_x11_y6_n66_r1_s16_ps1_pr32_u96_o2_N003_encoding-a_minS.lp
+ 0.012s 
+(' 0.012s ', '0')
+model exists
+command: clingo /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignSpiel/Benchmark/3b_AssignModels/A_x11_y6_n66_r1_s16_ps1_pr32_u96_o2_N003_encoding-a_minS.lp /home/luiwerner/Mount/Asprilo/asprilo-encodings/abc/encoding-a.ilp /home/luiwerner/Mount/Asprilo/asprilo-encodings/control/control-abc.ilp /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignSpiel/Benchmark/mh.lp -c mh=21 --stats --time-limit=1800 > /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignSpiel/Benchmark/4_AssignHorizonStats/A_x11_y6_n66_r1_s16_ps1_pr32_u96_o2_N003_encoding-a_minS.lp
+ 0.761s 
+(' 0.761s ', '0', '21')
+Horizont konnte berechnet werden und ist nicht 0. Horizont ist 21
+command: clingo /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignSpiel/Benchmark/3b_AssignModels/A_x11_y6_n66_r1_s16_ps1_pr32_u96_o2_N003_encoding-a_minS.lp /home/luiwerner/Mount/Asprilo/asprilo-encodings/abc/encoding-a.lp /home/luiwerner/Mount/Asprilo/asprilo-encodings/control/control-abc.lp -c horizon=21 --out-atomf=%s. --stats --time-limit=60 > /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignSpiel/Benchmark/5a_AssignPlansStats/A_x11_y6_n66_r1_s16_ps1_pr32_u96_o2_N003_encoding-a_minS.lp
+ 0.383s 
+(' 0.383s ', '0')
+ , , , , , , , , minS.lp,  0.012s , 0,  0.761s , 0, 21,  0.383s , 0, redundant, redundant
+
+
+------------------------
+assign Nr. 10: maxRP.lp
+------------------------
+
+command: clingo /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignSpiel/Benchmark/examples_a/x11_y6_n66_r1_s16_ps1_pr32_u96_o2_N003.lp /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignments/maxRP.lp -q1,0 --out-atomf=%s. --stats --time-limit=30 > /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignSpiel/Benchmark/3a_AssignModelsStats/A_x11_y6_n66_r1_s16_ps1_pr32_u96_o2_N003_encoding-a_maxRP.lp
+ 0.013s 
+(' 0.013s ', '0')
+model exists
+command: clingo /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignSpiel/Benchmark/3b_AssignModels/A_x11_y6_n66_r1_s16_ps1_pr32_u96_o2_N003_encoding-a_maxRP.lp /home/luiwerner/Mount/Asprilo/asprilo-encodings/abc/encoding-a.ilp /home/luiwerner/Mount/Asprilo/asprilo-encodings/control/control-abc.ilp /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignSpiel/Benchmark/mh.lp -c mh=21 --stats --time-limit=1800 > /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignSpiel/Benchmark/4_AssignHorizonStats/A_x11_y6_n66_r1_s16_ps1_pr32_u96_o2_N003_encoding-a_maxRP.lp
+ 0.765s 
+(' 0.765s ', '0', '21')
+Horizont konnte berechnet werden und ist nicht 0. Horizont ist 21
+command: clingo /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignSpiel/Benchmark/3b_AssignModels/A_x11_y6_n66_r1_s16_ps1_pr32_u96_o2_N003_encoding-a_maxRP.lp /home/luiwerner/Mount/Asprilo/asprilo-encodings/abc/encoding-a.lp /home/luiwerner/Mount/Asprilo/asprilo-encodings/control/control-abc.lp -c horizon=21 --out-atomf=%s. --stats --time-limit=60 > /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignSpiel/Benchmark/5a_AssignPlansStats/A_x11_y6_n66_r1_s16_ps1_pr32_u96_o2_N003_encoding-a_maxRP.lp
+ 0.383s 
+(' 0.383s ', '0')
+ , , , , , , , , maxRP.lp,  0.013s , 0,  0.765s , 0, 21,  0.383s , 0, redundant, redundant
+
+
+------------------------
+assign Nr. 11: minRP.lp
+------------------------
+
+command: clingo /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignSpiel/Benchmark/examples_a/x11_y6_n66_r1_s16_ps1_pr32_u96_o2_N003.lp /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignments/minRP.lp -q1,0 --out-atomf=%s. --stats --time-limit=30 > /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignSpiel/Benchmark/3a_AssignModelsStats/A_x11_y6_n66_r1_s16_ps1_pr32_u96_o2_N003_encoding-a_minRP.lp
+ 0.012s 
+(' 0.012s ', '0')
+model exists
+command: clingo /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignSpiel/Benchmark/3b_AssignModels/A_x11_y6_n66_r1_s16_ps1_pr32_u96_o2_N003_encoding-a_minRP.lp /home/luiwerner/Mount/Asprilo/asprilo-encodings/abc/encoding-a.ilp /home/luiwerner/Mount/Asprilo/asprilo-encodings/control/control-abc.ilp /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignSpiel/Benchmark/mh.lp -c mh=21 --stats --time-limit=1800 > /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignSpiel/Benchmark/4_AssignHorizonStats/A_x11_y6_n66_r1_s16_ps1_pr32_u96_o2_N003_encoding-a_minRP.lp
+ 0.755s 
+(' 0.755s ', '0', '21')
+Horizont konnte berechnet werden und ist nicht 0. Horizont ist 21
+command: clingo /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignSpiel/Benchmark/3b_AssignModels/A_x11_y6_n66_r1_s16_ps1_pr32_u96_o2_N003_encoding-a_minRP.lp /home/luiwerner/Mount/Asprilo/asprilo-encodings/abc/encoding-a.lp /home/luiwerner/Mount/Asprilo/asprilo-encodings/control/control-abc.lp -c horizon=21 --out-atomf=%s. --stats --time-limit=60 > /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignSpiel/Benchmark/5a_AssignPlansStats/A_x11_y6_n66_r1_s16_ps1_pr32_u96_o2_N003_encoding-a_minRP.lp
+ 0.386s 
+(' 0.386s ', '0')
+ , , , , , , , , minRP.lp,  0.012s , 0,  0.755s , 0, 21,  0.386s , 0, redundant, redundant
+
+
+------------------------
+assign Nr. 12: minP.lp
+------------------------
+
+command: clingo /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignSpiel/Benchmark/examples_a/x11_y6_n66_r1_s16_ps1_pr32_u96_o2_N003.lp /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignments/minP.lp -q1,0 --out-atomf=%s. --stats --time-limit=30 > /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignSpiel/Benchmark/3a_AssignModelsStats/A_x11_y6_n66_r1_s16_ps1_pr32_u96_o2_N003_encoding-a_minP.lp
+ 0.012s 
+(' 0.012s ', '0')
+model exists
+command: clingo /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignSpiel/Benchmark/3b_AssignModels/A_x11_y6_n66_r1_s16_ps1_pr32_u96_o2_N003_encoding-a_minP.lp /home/luiwerner/Mount/Asprilo/asprilo-encodings/abc/encoding-a.ilp /home/luiwerner/Mount/Asprilo/asprilo-encodings/control/control-abc.ilp /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignSpiel/Benchmark/mh.lp -c mh=21 --stats --time-limit=1800 > /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignSpiel/Benchmark/4_AssignHorizonStats/A_x11_y6_n66_r1_s16_ps1_pr32_u96_o2_N003_encoding-a_minP.lp
+ 0.765s 
+(' 0.765s ', '0', '21')
+Horizont konnte berechnet werden und ist nicht 0. Horizont ist 21
+command: clingo /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignSpiel/Benchmark/3b_AssignModels/A_x11_y6_n66_r1_s16_ps1_pr32_u96_o2_N003_encoding-a_minP.lp /home/luiwerner/Mount/Asprilo/asprilo-encodings/abc/encoding-a.lp /home/luiwerner/Mount/Asprilo/asprilo-encodings/control/control-abc.lp -c horizon=21 --out-atomf=%s. --stats --time-limit=60 > /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignSpiel/Benchmark/5a_AssignPlansStats/A_x11_y6_n66_r1_s16_ps1_pr32_u96_o2_N003_encoding-a_minP.lp
+ 0.381s 
+(' 0.381s ', '0')
+ , , , , , , , , minP.lp,  0.012s , 0,  0.765s , 0, 21,  0.381s , 0, redundant, redundant
+
+
+------------------------
+assign Nr. 13: maxRSP.lp
+------------------------
+
+command: clingo /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignSpiel/Benchmark/examples_a/x11_y6_n66_r1_s16_ps1_pr32_u96_o2_N003.lp /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignments/maxRSP.lp -q1,0 --out-atomf=%s. --stats --time-limit=30 > /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignSpiel/Benchmark/3a_AssignModelsStats/A_x11_y6_n66_r1_s16_ps1_pr32_u96_o2_N003_encoding-a_maxRSP.lp
+ 0.012s 
+(' 0.012s ', '0')
+model exists
+command: clingo /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignSpiel/Benchmark/3b_AssignModels/A_x11_y6_n66_r1_s16_ps1_pr32_u96_o2_N003_encoding-a_maxRSP.lp /home/luiwerner/Mount/Asprilo/asprilo-encodings/abc/encoding-a.ilp /home/luiwerner/Mount/Asprilo/asprilo-encodings/control/control-abc.ilp /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignSpiel/Benchmark/mh.lp -c mh=21 --stats --time-limit=1800 > /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignSpiel/Benchmark/4_AssignHorizonStats/A_x11_y6_n66_r1_s16_ps1_pr32_u96_o2_N003_encoding-a_maxRSP.lp
+ 0.758s 
+(' 0.758s ', '0', '21')
+Horizont konnte berechnet werden und ist nicht 0. Horizont ist 21
+command: clingo /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignSpiel/Benchmark/3b_AssignModels/A_x11_y6_n66_r1_s16_ps1_pr32_u96_o2_N003_encoding-a_maxRSP.lp /home/luiwerner/Mount/Asprilo/asprilo-encodings/abc/encoding-a.lp /home/luiwerner/Mount/Asprilo/asprilo-encodings/control/control-abc.lp -c horizon=21 --out-atomf=%s. --stats --time-limit=60 > /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignSpiel/Benchmark/5a_AssignPlansStats/A_x11_y6_n66_r1_s16_ps1_pr32_u96_o2_N003_encoding-a_maxRSP.lp
+ 0.382s 
+(' 0.382s ', '0')
+ , , , , , , , , maxRSP.lp,  0.012s , 0,  0.758s , 0, 21,  0.382s , 0, redundant, redundant
+
+
+------------------------
+assign Nr. 14: maxSP.lp
+------------------------
+
+command: clingo /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignSpiel/Benchmark/examples_a/x11_y6_n66_r1_s16_ps1_pr32_u96_o2_N003.lp /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignments/maxSP.lp -q1,0 --out-atomf=%s. --stats --time-limit=30 > /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignSpiel/Benchmark/3a_AssignModelsStats/A_x11_y6_n66_r1_s16_ps1_pr32_u96_o2_N003_encoding-a_maxSP.lp
+ 0.012s 
+(' 0.012s ', '0')
+model exists
+command: clingo /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignSpiel/Benchmark/3b_AssignModels/A_x11_y6_n66_r1_s16_ps1_pr32_u96_o2_N003_encoding-a_maxSP.lp /home/luiwerner/Mount/Asprilo/asprilo-encodings/abc/encoding-a.ilp /home/luiwerner/Mount/Asprilo/asprilo-encodings/control/control-abc.ilp /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignSpiel/Benchmark/mh.lp -c mh=21 --stats --time-limit=1800 > /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignSpiel/Benchmark/4_AssignHorizonStats/A_x11_y6_n66_r1_s16_ps1_pr32_u96_o2_N003_encoding-a_maxSP.lp
+ 0.761s 
+(' 0.761s ', '0', '21')
+Horizont konnte berechnet werden und ist nicht 0. Horizont ist 21
+command: clingo /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignSpiel/Benchmark/3b_AssignModels/A_x11_y6_n66_r1_s16_ps1_pr32_u96_o2_N003_encoding-a_maxSP.lp /home/luiwerner/Mount/Asprilo/asprilo-encodings/abc/encoding-a.lp /home/luiwerner/Mount/Asprilo/asprilo-encodings/control/control-abc.lp -c horizon=21 --out-atomf=%s. --stats --time-limit=60 > /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignSpiel/Benchmark/5a_AssignPlansStats/A_x11_y6_n66_r1_s16_ps1_pr32_u96_o2_N003_encoding-a_maxSP.lp
+ 0.384s 
+(' 0.384s ', '0')
+ , , , , , , , , maxSP.lp,  0.012s , 0,  0.761s , 0, 21,  0.384s , 0, redundant, redundant
+
+
+------------------------
+assign Nr. 15: minSP.lp
+------------------------
+
+command: clingo /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignSpiel/Benchmark/examples_a/x11_y6_n66_r1_s16_ps1_pr32_u96_o2_N003.lp /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignments/minSP.lp -q1,0 --out-atomf=%s. --stats --time-limit=30 > /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignSpiel/Benchmark/3a_AssignModelsStats/A_x11_y6_n66_r1_s16_ps1_pr32_u96_o2_N003_encoding-a_minSP.lp
+ 0.013s 
+(' 0.013s ', '0')
+model exists
+command: clingo /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignSpiel/Benchmark/3b_AssignModels/A_x11_y6_n66_r1_s16_ps1_pr32_u96_o2_N003_encoding-a_minSP.lp /home/luiwerner/Mount/Asprilo/asprilo-encodings/abc/encoding-a.ilp /home/luiwerner/Mount/Asprilo/asprilo-encodings/control/control-abc.ilp /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignSpiel/Benchmark/mh.lp -c mh=21 --stats --time-limit=1800 > /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignSpiel/Benchmark/4_AssignHorizonStats/A_x11_y6_n66_r1_s16_ps1_pr32_u96_o2_N003_encoding-a_minSP.lp
+ 0.758s 
+(' 0.758s ', '0', '21')
+Horizont konnte berechnet werden und ist nicht 0. Horizont ist 21
+command: clingo /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignSpiel/Benchmark/3b_AssignModels/A_x11_y6_n66_r1_s16_ps1_pr32_u96_o2_N003_encoding-a_minSP.lp /home/luiwerner/Mount/Asprilo/asprilo-encodings/abc/encoding-a.lp /home/luiwerner/Mount/Asprilo/asprilo-encodings/control/control-abc.lp -c horizon=21 --out-atomf=%s. --stats --time-limit=60 > /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignSpiel/Benchmark/5a_AssignPlansStats/A_x11_y6_n66_r1_s16_ps1_pr32_u96_o2_N003_encoding-a_minSP.lp
+ 0.383s 
+(' 0.383s ', '0')
+ , , , , , , , , minSP.lp,  0.013s , 0,  0.758s , 0, 21,  0.383s , 0, redundant, redundant
+
+bigIteration is 2
+
+---domain ist: 	M
+
+------------------------
+Instanz Nr. 1: x11_y6_n66_r2_s16_ps1_pr16_u16_o2_N001.lp
+------------------------
+
+command: clingo /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignSpiel/Benchmark/examples_m/x11_y6_n66_r2_s16_ps1_pr16_u16_o2_N001.lp /home/luiwerner/Mount/Asprilo/asprilo-encodings/abc/encoding-a.ilp --stats --time-limit=1800 > /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignSpiel/Benchmark/1_MinHorizonStats/M_x11_y6_n66_r2_s16_ps1_pr16_u16_o2_N001_encoding-a.lp
+ 0.600s 
+(' 0.600s ', '0', '15')
+Horizont wurde berechnet und ist nicht 0. Horizont ist 15
+command: clingo /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignSpiel/Benchmark/examples_m/x11_y6_n66_r2_s16_ps1_pr16_u16_o2_N001.lp /home/luiwerner/Mount/Asprilo/asprilo-encodings/abc/encoding-a.lp -c horizon=15 --out-atomf=%s. --stats --time-limit=60 > /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignSpiel/Benchmark/2a_MinHorizonPlansStats/M_x11_y6_n66_r2_s16_ps1_pr16_u16_o2_N001_encoding-a.lp
+ 0.420s 
+(' 0.420s ', '0')
+
+------------------------
+assign Nr. 1: maxS.lp
+------------------------
+
+command: clingo /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignSpiel/Benchmark/examples_m/x11_y6_n66_r2_s16_ps1_pr16_u16_o2_N001.lp /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignments/maxS.lp -q1,0 --out-atomf=%s. --stats --time-limit=30 > /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignSpiel/Benchmark/3a_AssignModelsStats/M_x11_y6_n66_r2_s16_ps1_pr16_u16_o2_N001_encoding-a_maxS.lp
+ 0.011s 
+(' 0.011s ', '0')
+model exists
+command: clingo /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignSpiel/Benchmark/3b_AssignModels/M_x11_y6_n66_r2_s16_ps1_pr16_u16_o2_N001_encoding-a_maxS.lp /home/luiwerner/Mount/Asprilo/asprilo-encodings/abc/encoding-a.ilp /home/luiwerner/Mount/Asprilo/asprilo-encodings/control/control-abc.ilp /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignSpiel/Benchmark/mh.lp -c mh=15 --stats --time-limit=1800 > /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignSpiel/Benchmark/4_AssignHorizonStats/M_x11_y6_n66_r2_s16_ps1_pr16_u16_o2_N001_encoding-a_maxS.lp
+ 0.802s 
+(' 0.802s ', '0', '22')
+Horizont konnte berechnet werden und ist nicht 0. Horizont ist 22
+command: clingo /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignSpiel/Benchmark/3b_AssignModels/M_x11_y6_n66_r2_s16_ps1_pr16_u16_o2_N001_encoding-a_maxS.lp /home/luiwerner/Mount/Asprilo/asprilo-encodings/abc/encoding-a.lp /home/luiwerner/Mount/Asprilo/asprilo-encodings/control/control-abc.lp -c horizon=22 --out-atomf=%s. --stats --time-limit=60 > /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignSpiel/Benchmark/5a_AssignPlansStats/M_x11_y6_n66_r2_s16_ps1_pr16_u16_o2_N001_encoding-a_maxS.lp
+ 0.654s 
+(' 0.654s ', '0')
+command: clingo /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignSpiel/Benchmark/examples_m/x11_y6_n66_r2_s16_ps1_pr16_u16_o2_N001.lp /home/luiwerner/Mount/Asprilo/asprilo-encodings/abc/encoding-a.lp -c horizon=22 --out-atomf=%s. --stats --time-limit=60 > /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignSpiel/Benchmark/6a_AssignHorizonPlansStats/M_x11_y6_n66_r2_s16_ps1_pr16_u16_o2_N001_encoding-a_maxS.lp
+ 0.976s 
+(' 0.976s ', '0')
+ , , , , , , , , maxS.lp,  0.011s , 0,  0.802s , 0, 22,  0.654s , 0,  0.976s , 0
+
+
+------------------------
+assign Nr. 2: maxR.lp
+------------------------
+
+command: clingo /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignSpiel/Benchmark/examples_m/x11_y6_n66_r2_s16_ps1_pr16_u16_o2_N001.lp /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignments/maxR.lp -q1,0 --out-atomf=%s. --stats --time-limit=30 > /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignSpiel/Benchmark/3a_AssignModelsStats/M_x11_y6_n66_r2_s16_ps1_pr16_u16_o2_N001_encoding-a_maxR.lp
+ 0.011s 
+(' 0.011s ', '0')
+model exists
+command: clingo /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignSpiel/Benchmark/3b_AssignModels/M_x11_y6_n66_r2_s16_ps1_pr16_u16_o2_N001_encoding-a_maxR.lp /home/luiwerner/Mount/Asprilo/asprilo-encodings/abc/encoding-a.ilp /home/luiwerner/Mount/Asprilo/asprilo-encodings/control/control-abc.ilp /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignSpiel/Benchmark/mh.lp -c mh=15 --stats --time-limit=1800 > /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignSpiel/Benchmark/4_AssignHorizonStats/M_x11_y6_n66_r2_s16_ps1_pr16_u16_o2_N001_encoding-a_maxR.lp
+ 0.397s 
+(' 0.397s ', '0', '15')
+Horizont konnte berechnet werden und ist nicht 0. Horizont ist 15
+command: clingo /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignSpiel/Benchmark/3b_AssignModels/M_x11_y6_n66_r2_s16_ps1_pr16_u16_o2_N001_encoding-a_maxR.lp /home/luiwerner/Mount/Asprilo/asprilo-encodings/abc/encoding-a.lp /home/luiwerner/Mount/Asprilo/asprilo-encodings/control/control-abc.lp -c horizon=15 --out-atomf=%s. --stats --time-limit=60 > /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignSpiel/Benchmark/5a_AssignPlansStats/M_x11_y6_n66_r2_s16_ps1_pr16_u16_o2_N001_encoding-a_maxR.lp
+ 0.322s 
+(' 0.322s ', '0')
+ , , , , , , , , maxR.lp,  0.011s , 0,  0.397s , 0, 15,  0.322s , 0, redundant, redundant
+
+
+------------------------
+assign Nr. 3: maxP.lp
+------------------------
+
+command: clingo /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignSpiel/Benchmark/examples_m/x11_y6_n66_r2_s16_ps1_pr16_u16_o2_N001.lp /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignments/maxP.lp -q1,0 --out-atomf=%s. --stats --time-limit=30 > /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignSpiel/Benchmark/3a_AssignModelsStats/M_x11_y6_n66_r2_s16_ps1_pr16_u16_o2_N001_encoding-a_maxP.lp
+ 0.011s 
+(' 0.011s ', '0')
+model exists
+command: clingo /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignSpiel/Benchmark/3b_AssignModels/M_x11_y6_n66_r2_s16_ps1_pr16_u16_o2_N001_encoding-a_maxP.lp /home/luiwerner/Mount/Asprilo/asprilo-encodings/abc/encoding-a.ilp /home/luiwerner/Mount/Asprilo/asprilo-encodings/control/control-abc.ilp /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignSpiel/Benchmark/mh.lp -c mh=15 --stats --time-limit=1800 > /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignSpiel/Benchmark/4_AssignHorizonStats/M_x11_y6_n66_r2_s16_ps1_pr16_u16_o2_N001_encoding-a_maxP.lp
+ 0.806s 
+(' 0.806s ', '0', '22')
+Horizont konnte berechnet werden und ist nicht 0. Horizont ist 22
+command: clingo /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignSpiel/Benchmark/3b_AssignModels/M_x11_y6_n66_r2_s16_ps1_pr16_u16_o2_N001_encoding-a_maxP.lp /home/luiwerner/Mount/Asprilo/asprilo-encodings/abc/encoding-a.lp /home/luiwerner/Mount/Asprilo/asprilo-encodings/control/control-abc.lp -c horizon=22 --out-atomf=%s. --stats --time-limit=60 > /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignSpiel/Benchmark/5a_AssignPlansStats/M_x11_y6_n66_r2_s16_ps1_pr16_u16_o2_N001_encoding-a_maxP.lp
+ 0.658s 
+(' 0.658s ', '0')
+ , , , , , , , , maxP.lp,  0.011s , 0,  0.806s , 0, 22,  0.658s , 0, redundant, redundant
+
+
+------------------------
+assign Nr. 4: minRSP.lp
+------------------------
+
+command: clingo /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignSpiel/Benchmark/examples_m/x11_y6_n66_r2_s16_ps1_pr16_u16_o2_N001.lp /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignments/minRSP.lp -q1,0 --out-atomf=%s. --stats --time-limit=30 > /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignSpiel/Benchmark/3a_AssignModelsStats/M_x11_y6_n66_r2_s16_ps1_pr16_u16_o2_N001_encoding-a_minRSP.lp
+ 0.011s 
+(' 0.011s ', '0')
+model exists
+command: clingo /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignSpiel/Benchmark/3b_AssignModels/M_x11_y6_n66_r2_s16_ps1_pr16_u16_o2_N001_encoding-a_minRSP.lp /home/luiwerner/Mount/Asprilo/asprilo-encodings/abc/encoding-a.ilp /home/luiwerner/Mount/Asprilo/asprilo-encodings/control/control-abc.ilp /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignSpiel/Benchmark/mh.lp -c mh=15 --stats --time-limit=1800 > /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignSpiel/Benchmark/4_AssignHorizonStats/M_x11_y6_n66_r2_s16_ps1_pr16_u16_o2_N001_encoding-a_minRSP.lp
+ 0.809s 
+(' 0.809s ', '0', '22')
+Horizont konnte berechnet werden und ist nicht 0. Horizont ist 22
+command: clingo /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignSpiel/Benchmark/3b_AssignModels/M_x11_y6_n66_r2_s16_ps1_pr16_u16_o2_N001_encoding-a_minRSP.lp /home/luiwerner/Mount/Asprilo/asprilo-encodings/abc/encoding-a.lp /home/luiwerner/Mount/Asprilo/asprilo-encodings/control/control-abc.lp -c horizon=22 --out-atomf=%s. --stats --time-limit=60 > /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignSpiel/Benchmark/5a_AssignPlansStats/M_x11_y6_n66_r2_s16_ps1_pr16_u16_o2_N001_encoding-a_minRSP.lp
+ 0.659s 
+(' 0.659s ', '0')
+ , , , , , , , , minRSP.lp,  0.011s , 0,  0.809s , 0, 22,  0.659s , 0, redundant, redundant
+
+
+------------------------
+assign Nr. 5: minD.lp
+------------------------
+
+command: clingo /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignSpiel/Benchmark/examples_m/x11_y6_n66_r2_s16_ps1_pr16_u16_o2_N001.lp /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignments/minD.lp -q1,0 --out-atomf=%s. --stats --time-limit=30 > /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignSpiel/Benchmark/3a_AssignModelsStats/M_x11_y6_n66_r2_s16_ps1_pr16_u16_o2_N001_encoding-a_minD.lp
+ 0.011s 
+(' 0.011s ', '0')
+model exists
+command: clingo /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignSpiel/Benchmark/3b_AssignModels/M_x11_y6_n66_r2_s16_ps1_pr16_u16_o2_N001_encoding-a_minD.lp /home/luiwerner/Mount/Asprilo/asprilo-encodings/abc/encoding-a.ilp /home/luiwerner/Mount/Asprilo/asprilo-encodings/control/control-abc.ilp /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignSpiel/Benchmark/mh.lp -c mh=15 --stats --time-limit=1800 > /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignSpiel/Benchmark/4_AssignHorizonStats/M_x11_y6_n66_r2_s16_ps1_pr16_u16_o2_N001_encoding-a_minD.lp
+ 0.806s 
+(' 0.806s ', '0', '22')
+Horizont konnte berechnet werden und ist nicht 0. Horizont ist 22
+command: clingo /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignSpiel/Benchmark/3b_AssignModels/M_x11_y6_n66_r2_s16_ps1_pr16_u16_o2_N001_encoding-a_minD.lp /home/luiwerner/Mount/Asprilo/asprilo-encodings/abc/encoding-a.lp /home/luiwerner/Mount/Asprilo/asprilo-encodings/control/control-abc.lp -c horizon=22 --out-atomf=%s. --stats --time-limit=60 > /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignSpiel/Benchmark/5a_AssignPlansStats/M_x11_y6_n66_r2_s16_ps1_pr16_u16_o2_N001_encoding-a_minD.lp
+ 0.654s 
+(' 0.654s ', '0')
+ , , , , , , , , minD.lp,  0.011s , 0,  0.806s , 0, 22,  0.654s , 0, redundant, redundant
+
+
+------------------------
+assign Nr. 6: minR.lp
+------------------------
+
+command: clingo /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignSpiel/Benchmark/examples_m/x11_y6_n66_r2_s16_ps1_pr16_u16_o2_N001.lp /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignments/minR.lp -q1,0 --out-atomf=%s. --stats --time-limit=30 > /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignSpiel/Benchmark/3a_AssignModelsStats/M_x11_y6_n66_r2_s16_ps1_pr16_u16_o2_N001_encoding-a_minR.lp
+ 0.011s 
+(' 0.011s ', '0')
+model exists
+command: clingo /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignSpiel/Benchmark/3b_AssignModels/M_x11_y6_n66_r2_s16_ps1_pr16_u16_o2_N001_encoding-a_minR.lp /home/luiwerner/Mount/Asprilo/asprilo-encodings/abc/encoding-a.ilp /home/luiwerner/Mount/Asprilo/asprilo-encodings/control/control-abc.ilp /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignSpiel/Benchmark/mh.lp -c mh=15 --stats --time-limit=1800 > /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignSpiel/Benchmark/4_AssignHorizonStats/M_x11_y6_n66_r2_s16_ps1_pr16_u16_o2_N001_encoding-a_minR.lp
+ 0.809s 
+(' 0.809s ', '0', '22')
+Horizont konnte berechnet werden und ist nicht 0. Horizont ist 22
+command: clingo /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignSpiel/Benchmark/3b_AssignModels/M_x11_y6_n66_r2_s16_ps1_pr16_u16_o2_N001_encoding-a_minR.lp /home/luiwerner/Mount/Asprilo/asprilo-encodings/abc/encoding-a.lp /home/luiwerner/Mount/Asprilo/asprilo-encodings/control/control-abc.lp -c horizon=22 --out-atomf=%s. --stats --time-limit=60 > /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignSpiel/Benchmark/5a_AssignPlansStats/M_x11_y6_n66_r2_s16_ps1_pr16_u16_o2_N001_encoding-a_minR.lp
+ 0.652s 
+(' 0.652s ', '0')
+ , , , , , , , , minR.lp,  0.011s , 0,  0.809s , 0, 22,  0.652s , 0, redundant, redundant
+
+
+------------------------
+assign Nr. 7: maxRS.lp
+------------------------
+
+command: clingo /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignSpiel/Benchmark/examples_m/x11_y6_n66_r2_s16_ps1_pr16_u16_o2_N001.lp /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignments/maxRS.lp -q1,0 --out-atomf=%s. --stats --time-limit=30 > /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignSpiel/Benchmark/3a_AssignModelsStats/M_x11_y6_n66_r2_s16_ps1_pr16_u16_o2_N001_encoding-a_maxRS.lp
+ 0.011s 
+(' 0.011s ', '0')
+model exists
+command: clingo /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignSpiel/Benchmark/3b_AssignModels/M_x11_y6_n66_r2_s16_ps1_pr16_u16_o2_N001_encoding-a_maxRS.lp /home/luiwerner/Mount/Asprilo/asprilo-encodings/abc/encoding-a.ilp /home/luiwerner/Mount/Asprilo/asprilo-encodings/control/control-abc.ilp /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignSpiel/Benchmark/mh.lp -c mh=15 --stats --time-limit=1800 > /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignSpiel/Benchmark/4_AssignHorizonStats/M_x11_y6_n66_r2_s16_ps1_pr16_u16_o2_N001_encoding-a_maxRS.lp
+ 0.808s 
+(' 0.808s ', '0', '22')
+Horizont konnte berechnet werden und ist nicht 0. Horizont ist 22
+command: clingo /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignSpiel/Benchmark/3b_AssignModels/M_x11_y6_n66_r2_s16_ps1_pr16_u16_o2_N001_encoding-a_maxRS.lp /home/luiwerner/Mount/Asprilo/asprilo-encodings/abc/encoding-a.lp /home/luiwerner/Mount/Asprilo/asprilo-encodings/control/control-abc.lp -c horizon=22 --out-atomf=%s. --stats --time-limit=60 > /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignSpiel/Benchmark/5a_AssignPlansStats/M_x11_y6_n66_r2_s16_ps1_pr16_u16_o2_N001_encoding-a_maxRS.lp
+ 0.659s 
+(' 0.659s ', '0')
+ , , , , , , , , maxRS.lp,  0.011s , 0,  0.808s , 0, 22,  0.659s , 0, redundant, redundant
+
+
+------------------------
+assign Nr. 8: minRS.lp
+------------------------
+
+command: clingo /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignSpiel/Benchmark/examples_m/x11_y6_n66_r2_s16_ps1_pr16_u16_o2_N001.lp /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignments/minRS.lp -q1,0 --out-atomf=%s. --stats --time-limit=30 > /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignSpiel/Benchmark/3a_AssignModelsStats/M_x11_y6_n66_r2_s16_ps1_pr16_u16_o2_N001_encoding-a_minRS.lp
+ 0.011s 
+(' 0.011s ', '0')
+model exists
+command: clingo /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignSpiel/Benchmark/3b_AssignModels/M_x11_y6_n66_r2_s16_ps1_pr16_u16_o2_N001_encoding-a_minRS.lp /home/luiwerner/Mount/Asprilo/asprilo-encodings/abc/encoding-a.ilp /home/luiwerner/Mount/Asprilo/asprilo-encodings/control/control-abc.ilp /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignSpiel/Benchmark/mh.lp -c mh=15 --stats --time-limit=1800 > /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignSpiel/Benchmark/4_AssignHorizonStats/M_x11_y6_n66_r2_s16_ps1_pr16_u16_o2_N001_encoding-a_minRS.lp
+ 0.815s 
+(' 0.815s ', '0', '22')
+Horizont konnte berechnet werden und ist nicht 0. Horizont ist 22
+command: clingo /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignSpiel/Benchmark/3b_AssignModels/M_x11_y6_n66_r2_s16_ps1_pr16_u16_o2_N001_encoding-a_minRS.lp /home/luiwerner/Mount/Asprilo/asprilo-encodings/abc/encoding-a.lp /home/luiwerner/Mount/Asprilo/asprilo-encodings/control/control-abc.lp -c horizon=22 --out-atomf=%s. --stats --time-limit=60 > /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignSpiel/Benchmark/5a_AssignPlansStats/M_x11_y6_n66_r2_s16_ps1_pr16_u16_o2_N001_encoding-a_minRS.lp
+ 0.655s 
+(' 0.655s ', '0')
+ , , , , , , , , minRS.lp,  0.011s , 0,  0.815s , 0, 22,  0.655s , 0, redundant, redundant
+
+
+------------------------
+assign Nr. 9: minS.lp
+------------------------
+
+command: clingo /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignSpiel/Benchmark/examples_m/x11_y6_n66_r2_s16_ps1_pr16_u16_o2_N001.lp /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignments/minS.lp -q1,0 --out-atomf=%s. --stats --time-limit=30 > /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignSpiel/Benchmark/3a_AssignModelsStats/M_x11_y6_n66_r2_s16_ps1_pr16_u16_o2_N001_encoding-a_minS.lp
+ 0.011s 
+(' 0.011s ', '0')
+model exists
+command: clingo /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignSpiel/Benchmark/3b_AssignModels/M_x11_y6_n66_r2_s16_ps1_pr16_u16_o2_N001_encoding-a_minS.lp /home/luiwerner/Mount/Asprilo/asprilo-encodings/abc/encoding-a.ilp /home/luiwerner/Mount/Asprilo/asprilo-encodings/control/control-abc.ilp /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignSpiel/Benchmark/mh.lp -c mh=15 --stats --time-limit=1800 > /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignSpiel/Benchmark/4_AssignHorizonStats/M_x11_y6_n66_r2_s16_ps1_pr16_u16_o2_N001_encoding-a_minS.lp
+ 0.805s 
+(' 0.805s ', '0', '22')
+Horizont konnte berechnet werden und ist nicht 0. Horizont ist 22
+command: clingo /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignSpiel/Benchmark/3b_AssignModels/M_x11_y6_n66_r2_s16_ps1_pr16_u16_o2_N001_encoding-a_minS.lp /home/luiwerner/Mount/Asprilo/asprilo-encodings/abc/encoding-a.lp /home/luiwerner/Mount/Asprilo/asprilo-encodings/control/control-abc.lp -c horizon=22 --out-atomf=%s. --stats --time-limit=60 > /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignSpiel/Benchmark/5a_AssignPlansStats/M_x11_y6_n66_r2_s16_ps1_pr16_u16_o2_N001_encoding-a_minS.lp
+ 0.657s 
+(' 0.657s ', '0')
+ , , , , , , , , minS.lp,  0.011s , 0,  0.805s , 0, 22,  0.657s , 0, redundant, redundant
+
+
+------------------------
+assign Nr. 10: maxRP.lp
+------------------------
+
+command: clingo /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignSpiel/Benchmark/examples_m/x11_y6_n66_r2_s16_ps1_pr16_u16_o2_N001.lp /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignments/maxRP.lp -q1,0 --out-atomf=%s. --stats --time-limit=30 > /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignSpiel/Benchmark/3a_AssignModelsStats/M_x11_y6_n66_r2_s16_ps1_pr16_u16_o2_N001_encoding-a_maxRP.lp
+ 0.012s 
+(' 0.012s ', '0')
+model exists
+command: clingo /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignSpiel/Benchmark/3b_AssignModels/M_x11_y6_n66_r2_s16_ps1_pr16_u16_o2_N001_encoding-a_maxRP.lp /home/luiwerner/Mount/Asprilo/asprilo-encodings/abc/encoding-a.ilp /home/luiwerner/Mount/Asprilo/asprilo-encodings/control/control-abc.ilp /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignSpiel/Benchmark/mh.lp -c mh=15 --stats --time-limit=1800 > /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignSpiel/Benchmark/4_AssignHorizonStats/M_x11_y6_n66_r2_s16_ps1_pr16_u16_o2_N001_encoding-a_maxRP.lp
+ 0.397s 
+(' 0.397s ', '0', '15')
+Horizont konnte berechnet werden und ist nicht 0. Horizont ist 15
+command: clingo /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignSpiel/Benchmark/3b_AssignModels/M_x11_y6_n66_r2_s16_ps1_pr16_u16_o2_N001_encoding-a_maxRP.lp /home/luiwerner/Mount/Asprilo/asprilo-encodings/abc/encoding-a.lp /home/luiwerner/Mount/Asprilo/asprilo-encodings/control/control-abc.lp -c horizon=15 --out-atomf=%s. --stats --time-limit=60 > /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignSpiel/Benchmark/5a_AssignPlansStats/M_x11_y6_n66_r2_s16_ps1_pr16_u16_o2_N001_encoding-a_maxRP.lp
+ 0.325s 
+(' 0.325s ', '0')
+ , , , , , , , , maxRP.lp,  0.012s , 0,  0.397s , 0, 15,  0.325s , 0, redundant, redundant
+
+
+------------------------
+assign Nr. 11: minRP.lp
+------------------------
+
+command: clingo /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignSpiel/Benchmark/examples_m/x11_y6_n66_r2_s16_ps1_pr16_u16_o2_N001.lp /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignments/minRP.lp -q1,0 --out-atomf=%s. --stats --time-limit=30 > /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignSpiel/Benchmark/3a_AssignModelsStats/M_x11_y6_n66_r2_s16_ps1_pr16_u16_o2_N001_encoding-a_minRP.lp
+ 0.011s 
+(' 0.011s ', '0')
+model exists
+command: clingo /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignSpiel/Benchmark/3b_AssignModels/M_x11_y6_n66_r2_s16_ps1_pr16_u16_o2_N001_encoding-a_minRP.lp /home/luiwerner/Mount/Asprilo/asprilo-encodings/abc/encoding-a.ilp /home/luiwerner/Mount/Asprilo/asprilo-encodings/control/control-abc.ilp /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignSpiel/Benchmark/mh.lp -c mh=15 --stats --time-limit=1800 > /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignSpiel/Benchmark/4_AssignHorizonStats/M_x11_y6_n66_r2_s16_ps1_pr16_u16_o2_N001_encoding-a_minRP.lp
+ 0.813s 
+(' 0.813s ', '0', '22')
+Horizont konnte berechnet werden und ist nicht 0. Horizont ist 22
+command: clingo /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignSpiel/Benchmark/3b_AssignModels/M_x11_y6_n66_r2_s16_ps1_pr16_u16_o2_N001_encoding-a_minRP.lp /home/luiwerner/Mount/Asprilo/asprilo-encodings/abc/encoding-a.lp /home/luiwerner/Mount/Asprilo/asprilo-encodings/control/control-abc.lp -c horizon=22 --out-atomf=%s. --stats --time-limit=60 > /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignSpiel/Benchmark/5a_AssignPlansStats/M_x11_y6_n66_r2_s16_ps1_pr16_u16_o2_N001_encoding-a_minRP.lp
+ 0.658s 
+(' 0.658s ', '0')
+ , , , , , , , , minRP.lp,  0.011s , 0,  0.813s , 0, 22,  0.658s , 0, redundant, redundant
+
+
+------------------------
+assign Nr. 12: minP.lp
+------------------------
+
+command: clingo /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignSpiel/Benchmark/examples_m/x11_y6_n66_r2_s16_ps1_pr16_u16_o2_N001.lp /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignments/minP.lp -q1,0 --out-atomf=%s. --stats --time-limit=30 > /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignSpiel/Benchmark/3a_AssignModelsStats/M_x11_y6_n66_r2_s16_ps1_pr16_u16_o2_N001_encoding-a_minP.lp
+ 0.011s 
+(' 0.011s ', '0')
+model exists
+command: clingo /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignSpiel/Benchmark/3b_AssignModels/M_x11_y6_n66_r2_s16_ps1_pr16_u16_o2_N001_encoding-a_minP.lp /home/luiwerner/Mount/Asprilo/asprilo-encodings/abc/encoding-a.ilp /home/luiwerner/Mount/Asprilo/asprilo-encodings/control/control-abc.ilp /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignSpiel/Benchmark/mh.lp -c mh=15 --stats --time-limit=1800 > /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignSpiel/Benchmark/4_AssignHorizonStats/M_x11_y6_n66_r2_s16_ps1_pr16_u16_o2_N001_encoding-a_minP.lp
+ 0.802s 
+(' 0.802s ', '0', '22')
+Horizont konnte berechnet werden und ist nicht 0. Horizont ist 22
+command: clingo /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignSpiel/Benchmark/3b_AssignModels/M_x11_y6_n66_r2_s16_ps1_pr16_u16_o2_N001_encoding-a_minP.lp /home/luiwerner/Mount/Asprilo/asprilo-encodings/abc/encoding-a.lp /home/luiwerner/Mount/Asprilo/asprilo-encodings/control/control-abc.lp -c horizon=22 --out-atomf=%s. --stats --time-limit=60 > /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignSpiel/Benchmark/5a_AssignPlansStats/M_x11_y6_n66_r2_s16_ps1_pr16_u16_o2_N001_encoding-a_minP.lp
+ 0.654s 
+(' 0.654s ', '0')
+ , , , , , , , , minP.lp,  0.011s , 0,  0.802s , 0, 22,  0.654s , 0, redundant, redundant
+
+
+------------------------
+assign Nr. 13: maxRSP.lp
+------------------------
+
+command: clingo /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignSpiel/Benchmark/examples_m/x11_y6_n66_r2_s16_ps1_pr16_u16_o2_N001.lp /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignments/maxRSP.lp -q1,0 --out-atomf=%s. --stats --time-limit=30 > /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignSpiel/Benchmark/3a_AssignModelsStats/M_x11_y6_n66_r2_s16_ps1_pr16_u16_o2_N001_encoding-a_maxRSP.lp
+ 0.011s 
+(' 0.011s ', '0')
+model exists
+command: clingo /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignSpiel/Benchmark/3b_AssignModels/M_x11_y6_n66_r2_s16_ps1_pr16_u16_o2_N001_encoding-a_maxRSP.lp /home/luiwerner/Mount/Asprilo/asprilo-encodings/abc/encoding-a.ilp /home/luiwerner/Mount/Asprilo/asprilo-encodings/control/control-abc.ilp /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignSpiel/Benchmark/mh.lp -c mh=15 --stats --time-limit=1800 > /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignSpiel/Benchmark/4_AssignHorizonStats/M_x11_y6_n66_r2_s16_ps1_pr16_u16_o2_N001_encoding-a_maxRSP.lp
+ 0.808s 
+(' 0.808s ', '0', '22')
+Horizont konnte berechnet werden und ist nicht 0. Horizont ist 22
+command: clingo /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignSpiel/Benchmark/3b_AssignModels/M_x11_y6_n66_r2_s16_ps1_pr16_u16_o2_N001_encoding-a_maxRSP.lp /home/luiwerner/Mount/Asprilo/asprilo-encodings/abc/encoding-a.lp /home/luiwerner/Mount/Asprilo/asprilo-encodings/control/control-abc.lp -c horizon=22 --out-atomf=%s. --stats --time-limit=60 > /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignSpiel/Benchmark/5a_AssignPlansStats/M_x11_y6_n66_r2_s16_ps1_pr16_u16_o2_N001_encoding-a_maxRSP.lp
+ 0.653s 
+(' 0.653s ', '0')
+ , , , , , , , , maxRSP.lp,  0.011s , 0,  0.808s , 0, 22,  0.653s , 0, redundant, redundant
+
+
+------------------------
+assign Nr. 14: maxSP.lp
+------------------------
+
+command: clingo /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignSpiel/Benchmark/examples_m/x11_y6_n66_r2_s16_ps1_pr16_u16_o2_N001.lp /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignments/maxSP.lp -q1,0 --out-atomf=%s. --stats --time-limit=30 > /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignSpiel/Benchmark/3a_AssignModelsStats/M_x11_y6_n66_r2_s16_ps1_pr16_u16_o2_N001_encoding-a_maxSP.lp
+ 0.011s 
+(' 0.011s ', '0')
+model exists
+command: clingo /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignSpiel/Benchmark/3b_AssignModels/M_x11_y6_n66_r2_s16_ps1_pr16_u16_o2_N001_encoding-a_maxSP.lp /home/luiwerner/Mount/Asprilo/asprilo-encodings/abc/encoding-a.ilp /home/luiwerner/Mount/Asprilo/asprilo-encodings/control/control-abc.ilp /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignSpiel/Benchmark/mh.lp -c mh=15 --stats --time-limit=1800 > /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignSpiel/Benchmark/4_AssignHorizonStats/M_x11_y6_n66_r2_s16_ps1_pr16_u16_o2_N001_encoding-a_maxSP.lp
+ 0.806s 
+(' 0.806s ', '0', '22')
+Horizont konnte berechnet werden und ist nicht 0. Horizont ist 22
+command: clingo /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignSpiel/Benchmark/3b_AssignModels/M_x11_y6_n66_r2_s16_ps1_pr16_u16_o2_N001_encoding-a_maxSP.lp /home/luiwerner/Mount/Asprilo/asprilo-encodings/abc/encoding-a.lp /home/luiwerner/Mount/Asprilo/asprilo-encodings/control/control-abc.lp -c horizon=22 --out-atomf=%s. --stats --time-limit=60 > /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignSpiel/Benchmark/5a_AssignPlansStats/M_x11_y6_n66_r2_s16_ps1_pr16_u16_o2_N001_encoding-a_maxSP.lp
+ 0.657s 
+(' 0.657s ', '0')
+ , , , , , , , , maxSP.lp,  0.011s , 0,  0.806s , 0, 22,  0.657s , 0, redundant, redundant
+
+
+------------------------
+assign Nr. 15: minSP.lp
+------------------------
+
+command: clingo /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignSpiel/Benchmark/examples_m/x11_y6_n66_r2_s16_ps1_pr16_u16_o2_N001.lp /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignments/minSP.lp -q1,0 --out-atomf=%s. --stats --time-limit=30 > /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignSpiel/Benchmark/3a_AssignModelsStats/M_x11_y6_n66_r2_s16_ps1_pr16_u16_o2_N001_encoding-a_minSP.lp
+ 0.011s 
+(' 0.011s ', '0')
+model exists
+command: clingo /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignSpiel/Benchmark/3b_AssignModels/M_x11_y6_n66_r2_s16_ps1_pr16_u16_o2_N001_encoding-a_minSP.lp /home/luiwerner/Mount/Asprilo/asprilo-encodings/abc/encoding-a.ilp /home/luiwerner/Mount/Asprilo/asprilo-encodings/control/control-abc.ilp /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignSpiel/Benchmark/mh.lp -c mh=15 --stats --time-limit=1800 > /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignSpiel/Benchmark/4_AssignHorizonStats/M_x11_y6_n66_r2_s16_ps1_pr16_u16_o2_N001_encoding-a_minSP.lp
+ 0.808s 
+(' 0.808s ', '0', '22')
+Horizont konnte berechnet werden und ist nicht 0. Horizont ist 22
+command: clingo /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignSpiel/Benchmark/3b_AssignModels/M_x11_y6_n66_r2_s16_ps1_pr16_u16_o2_N001_encoding-a_minSP.lp /home/luiwerner/Mount/Asprilo/asprilo-encodings/abc/encoding-a.lp /home/luiwerner/Mount/Asprilo/asprilo-encodings/control/control-abc.lp -c horizon=22 --out-atomf=%s. --stats --time-limit=60 > /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignSpiel/Benchmark/5a_AssignPlansStats/M_x11_y6_n66_r2_s16_ps1_pr16_u16_o2_N001_encoding-a_minSP.lp
+ 0.654s 
+(' 0.654s ', '0')
+ , , , , , , , , minSP.lp,  0.011s , 0,  0.808s , 0, 22,  0.654s , 0, redundant, redundant
+
+bigIteration is 3
+
+---domain ist: 	M
+
+---encoding ist: 	M
+
+---domain ist: 	M
+
+---encoding ist: 	M
+
+------------------------
+Instanz Nr. 1: x11_y6_n66_r2_s16_ps1_pr16_u16_o2_N001.lp
+------------------------
+
+command: clingo /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignSpiel/Benchmark/examples_m/x11_y6_n66_r2_s16_ps1_pr16_u16_o2_N001.lp /home/luiwerner/Mount/Asprilo/asprilo-encodings/m/encoding.ilp --stats --time-limit=1800 > /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignSpiel/Benchmark/1_MinHorizonStats/M_x11_y6_n66_r2_s16_ps1_pr16_u16_o2_N001_encoding.lp
+ 0.065s 
+(' 0.065s ', '0', '6')
+Horizont wurde berechnet und ist nicht 0. Horizont ist 6
+command: clingo /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignSpiel/Benchmark/examples_m/x11_y6_n66_r2_s16_ps1_pr16_u16_o2_N001.lp /home/luiwerner/Mount/Asprilo/asprilo-encodings/m/encoding.lp -c horizon=6 --out-atomf=%s. --stats --time-limit=60 > /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignSpiel/Benchmark/2a_MinHorizonPlansStats/M_x11_y6_n66_r2_s16_ps1_pr16_u16_o2_N001_encoding.lp
+ 0.038s 
+(' 0.038s ', '0')
+
+------------------------
+assign Nr. 1: maxS.lp
+------------------------
+
+command: clingo /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignSpiel/Benchmark/examples_m/x11_y6_n66_r2_s16_ps1_pr16_u16_o2_N001.lp /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignments/maxS.lp -q1,0 --out-atomf=%s. --stats --time-limit=30 > /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignSpiel/Benchmark/3a_AssignModelsStats/M_x11_y6_n66_r2_s16_ps1_pr16_u16_o2_N001_encoding_maxS.lp
+ 0.011s 
+(' 0.011s ', '0')
+model exists
+command: clingo /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignSpiel/Benchmark/3b_AssignModels/M_x11_y6_n66_r2_s16_ps1_pr16_u16_o2_N001_encoding_maxS.lp /home/luiwerner/Mount/Asprilo/asprilo-encodings/m/encoding.ilp /home/luiwerner/Mount/Asprilo/asprilo-encodings/control/control-m.ilp /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignSpiel/Benchmark/mh.lp -c mh=6 --stats --time-limit=1800 > /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignSpiel/Benchmark/4_AssignHorizonStats/M_x11_y6_n66_r2_s16_ps1_pr16_u16_o2_N001_encoding_maxS.lp
+('-', '1', '-')
+ , , , , , , , , maxS.lp,  0.011s , 0, -, 1, -, -, -, -, -
+
+
+------------------------
+assign Nr. 2: maxR.lp
+------------------------
+
+command: clingo /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignSpiel/Benchmark/examples_m/x11_y6_n66_r2_s16_ps1_pr16_u16_o2_N001.lp /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignments/maxR.lp -q1,0 --out-atomf=%s. --stats --time-limit=30 > /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignSpiel/Benchmark/3a_AssignModelsStats/M_x11_y6_n66_r2_s16_ps1_pr16_u16_o2_N001_encoding_maxR.lp
+ 0.012s 
+(' 0.012s ', '0')
+model exists
+command: clingo /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignSpiel/Benchmark/3b_AssignModels/M_x11_y6_n66_r2_s16_ps1_pr16_u16_o2_N001_encoding_maxR.lp /home/luiwerner/Mount/Asprilo/asprilo-encodings/m/encoding.ilp /home/luiwerner/Mount/Asprilo/asprilo-encodings/control/control-m.ilp /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignSpiel/Benchmark/mh.lp -c mh=6 --stats --time-limit=1800 > /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignSpiel/Benchmark/4_AssignHorizonStats/M_x11_y6_n66_r2_s16_ps1_pr16_u16_o2_N001_encoding_maxR.lp
+ 0.041s 
+(' 0.041s ', '0', '6')
+Horizont konnte berechnet werden und ist nicht 0. Horizont ist 6
+command: clingo /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignSpiel/Benchmark/3b_AssignModels/M_x11_y6_n66_r2_s16_ps1_pr16_u16_o2_N001_encoding_maxR.lp /home/luiwerner/Mount/Asprilo/asprilo-encodings/m/encoding.lp /home/luiwerner/Mount/Asprilo/asprilo-encodings/control/control-m.lp -c horizon=6 --out-atomf=%s. --stats --time-limit=60 > /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignSpiel/Benchmark/5a_AssignPlansStats/M_x11_y6_n66_r2_s16_ps1_pr16_u16_o2_N001_encoding_maxR.lp
+ 0.033s 
+(' 0.033s ', '0')
+ , , , , , , , , maxR.lp,  0.012s , 0,  0.041s , 0, 6,  0.033s , 0, redundant, redundant
+
+
+------------------------
+assign Nr. 3: maxP.lp
+------------------------
+
+command: clingo /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignSpiel/Benchmark/examples_m/x11_y6_n66_r2_s16_ps1_pr16_u16_o2_N001.lp /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignments/maxP.lp -q1,0 --out-atomf=%s. --stats --time-limit=30 > /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignSpiel/Benchmark/3a_AssignModelsStats/M_x11_y6_n66_r2_s16_ps1_pr16_u16_o2_N001_encoding_maxP.lp
+ 0.011s 
+(' 0.011s ', '0')
+model exists
+command: clingo /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignSpiel/Benchmark/3b_AssignModels/M_x11_y6_n66_r2_s16_ps1_pr16_u16_o2_N001_encoding_maxP.lp /home/luiwerner/Mount/Asprilo/asprilo-encodings/m/encoding.ilp /home/luiwerner/Mount/Asprilo/asprilo-encodings/control/control-m.ilp /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignSpiel/Benchmark/mh.lp -c mh=6 --stats --time-limit=1800 > /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignSpiel/Benchmark/4_AssignHorizonStats/M_x11_y6_n66_r2_s16_ps1_pr16_u16_o2_N001_encoding_maxP.lp
+('-', '1', '-')
+ , , , , , , , , maxP.lp,  0.011s , 0, -, 1, -, -, -, -, -
+
+
+------------------------
+assign Nr. 4: minRSP.lp
+------------------------
+
+command: clingo /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignSpiel/Benchmark/examples_m/x11_y6_n66_r2_s16_ps1_pr16_u16_o2_N001.lp /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignments/minRSP.lp -q1,0 --out-atomf=%s. --stats --time-limit=30 > /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignSpiel/Benchmark/3a_AssignModelsStats/M_x11_y6_n66_r2_s16_ps1_pr16_u16_o2_N001_encoding_minRSP.lp
+ 0.013s 
+(' 0.013s ', '0')
+model exists
+command: clingo /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignSpiel/Benchmark/3b_AssignModels/M_x11_y6_n66_r2_s16_ps1_pr16_u16_o2_N001_encoding_minRSP.lp /home/luiwerner/Mount/Asprilo/asprilo-encodings/m/encoding.ilp /home/luiwerner/Mount/Asprilo/asprilo-encodings/control/control-m.ilp /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignSpiel/Benchmark/mh.lp -c mh=6 --stats --time-limit=1800 > /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignSpiel/Benchmark/4_AssignHorizonStats/M_x11_y6_n66_r2_s16_ps1_pr16_u16_o2_N001_encoding_minRSP.lp
+('-', '1', '-')
+ , , , , , , , , minRSP.lp,  0.013s , 0, -, 1, -, -, -, -, -
+
+
+------------------------
+assign Nr. 5: minD.lp
+------------------------
+
+command: clingo /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignSpiel/Benchmark/examples_m/x11_y6_n66_r2_s16_ps1_pr16_u16_o2_N001.lp /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignments/minD.lp -q1,0 --out-atomf=%s. --stats --time-limit=30 > /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignSpiel/Benchmark/3a_AssignModelsStats/M_x11_y6_n66_r2_s16_ps1_pr16_u16_o2_N001_encoding_minD.lp
+ 0.013s 
+(' 0.013s ', '0')
+model exists
+command: clingo /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignSpiel/Benchmark/3b_AssignModels/M_x11_y6_n66_r2_s16_ps1_pr16_u16_o2_N001_encoding_minD.lp /home/luiwerner/Mount/Asprilo/asprilo-encodings/m/encoding.ilp /home/luiwerner/Mount/Asprilo/asprilo-encodings/control/control-m.ilp /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignSpiel/Benchmark/mh.lp -c mh=6 --stats --time-limit=1800 > /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignSpiel/Benchmark/4_AssignHorizonStats/M_x11_y6_n66_r2_s16_ps1_pr16_u16_o2_N001_encoding_minD.lp
+('-', '1', '-')
+ , , , , , , , , minD.lp,  0.013s , 0, -, 1, -, -, -, -, -
+
+
+------------------------
+assign Nr. 6: minR.lp
+------------------------
+
+command: clingo /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignSpiel/Benchmark/examples_m/x11_y6_n66_r2_s16_ps1_pr16_u16_o2_N001.lp /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignments/minR.lp -q1,0 --out-atomf=%s. --stats --time-limit=30 > /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignSpiel/Benchmark/3a_AssignModelsStats/M_x11_y6_n66_r2_s16_ps1_pr16_u16_o2_N001_encoding_minR.lp
+ 0.012s 
+(' 0.012s ', '0')
+model exists
+command: clingo /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignSpiel/Benchmark/3b_AssignModels/M_x11_y6_n66_r2_s16_ps1_pr16_u16_o2_N001_encoding_minR.lp /home/luiwerner/Mount/Asprilo/asprilo-encodings/m/encoding.ilp /home/luiwerner/Mount/Asprilo/asprilo-encodings/control/control-m.ilp /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignSpiel/Benchmark/mh.lp -c mh=6 --stats --time-limit=1800 > /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignSpiel/Benchmark/4_AssignHorizonStats/M_x11_y6_n66_r2_s16_ps1_pr16_u16_o2_N001_encoding_minR.lp
+('-', '1', '-')
+ , , , , , , , , minR.lp,  0.012s , 0, -, 1, -, -, -, -, -
+
+
+------------------------
+assign Nr. 7: maxRS.lp
+------------------------
+
+command: clingo /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignSpiel/Benchmark/examples_m/x11_y6_n66_r2_s16_ps1_pr16_u16_o2_N001.lp /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignments/maxRS.lp -q1,0 --out-atomf=%s. --stats --time-limit=30 > /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignSpiel/Benchmark/3a_AssignModelsStats/M_x11_y6_n66_r2_s16_ps1_pr16_u16_o2_N001_encoding_maxRS.lp
+ 0.012s 
+(' 0.012s ', '0')
+model exists
+command: clingo /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignSpiel/Benchmark/3b_AssignModels/M_x11_y6_n66_r2_s16_ps1_pr16_u16_o2_N001_encoding_maxRS.lp /home/luiwerner/Mount/Asprilo/asprilo-encodings/m/encoding.ilp /home/luiwerner/Mount/Asprilo/asprilo-encodings/control/control-m.ilp /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignSpiel/Benchmark/mh.lp -c mh=6 --stats --time-limit=1800 > /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignSpiel/Benchmark/4_AssignHorizonStats/M_x11_y6_n66_r2_s16_ps1_pr16_u16_o2_N001_encoding_maxRS.lp
+('-', '1', '-')
+ , , , , , , , , maxRS.lp,  0.012s , 0, -, 1, -, -, -, -, -
+
+
+------------------------
+assign Nr. 8: minRS.lp
+------------------------
+
+command: clingo /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignSpiel/Benchmark/examples_m/x11_y6_n66_r2_s16_ps1_pr16_u16_o2_N001.lp /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignments/minRS.lp -q1,0 --out-atomf=%s. --stats --time-limit=30 > /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignSpiel/Benchmark/3a_AssignModelsStats/M_x11_y6_n66_r2_s16_ps1_pr16_u16_o2_N001_encoding_minRS.lp
+ 0.012s 
+(' 0.012s ', '0')
+model exists
+command: clingo /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignSpiel/Benchmark/3b_AssignModels/M_x11_y6_n66_r2_s16_ps1_pr16_u16_o2_N001_encoding_minRS.lp /home/luiwerner/Mount/Asprilo/asprilo-encodings/m/encoding.ilp /home/luiwerner/Mount/Asprilo/asprilo-encodings/control/control-m.ilp /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignSpiel/Benchmark/mh.lp -c mh=6 --stats --time-limit=1800 > /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignSpiel/Benchmark/4_AssignHorizonStats/M_x11_y6_n66_r2_s16_ps1_pr16_u16_o2_N001_encoding_minRS.lp
+('-', '1', '-')
+ , , , , , , , , minRS.lp,  0.012s , 0, -, 1, -, -, -, -, -
+
+
+------------------------
+assign Nr. 9: minS.lp
+------------------------
+
+command: clingo /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignSpiel/Benchmark/examples_m/x11_y6_n66_r2_s16_ps1_pr16_u16_o2_N001.lp /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignments/minS.lp -q1,0 --out-atomf=%s. --stats --time-limit=30 > /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignSpiel/Benchmark/3a_AssignModelsStats/M_x11_y6_n66_r2_s16_ps1_pr16_u16_o2_N001_encoding_minS.lp
+ 0.012s 
+(' 0.012s ', '0')
+model exists
+command: clingo /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignSpiel/Benchmark/3b_AssignModels/M_x11_y6_n66_r2_s16_ps1_pr16_u16_o2_N001_encoding_minS.lp /home/luiwerner/Mount/Asprilo/asprilo-encodings/m/encoding.ilp /home/luiwerner/Mount/Asprilo/asprilo-encodings/control/control-m.ilp /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignSpiel/Benchmark/mh.lp -c mh=6 --stats --time-limit=1800 > /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignSpiel/Benchmark/4_AssignHorizonStats/M_x11_y6_n66_r2_s16_ps1_pr16_u16_o2_N001_encoding_minS.lp
+('-', '1', '-')
+ , , , , , , , , minS.lp,  0.012s , 0, -, 1, -, -, -, -, -
+
+
+------------------------
+assign Nr. 10: maxRP.lp
+------------------------
+
+command: clingo /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignSpiel/Benchmark/examples_m/x11_y6_n66_r2_s16_ps1_pr16_u16_o2_N001.lp /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignments/maxRP.lp -q1,0 --out-atomf=%s. --stats --time-limit=30 > /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignSpiel/Benchmark/3a_AssignModelsStats/M_x11_y6_n66_r2_s16_ps1_pr16_u16_o2_N001_encoding_maxRP.lp
+ 0.012s 
+(' 0.012s ', '0')
+model exists
+command: clingo /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignSpiel/Benchmark/3b_AssignModels/M_x11_y6_n66_r2_s16_ps1_pr16_u16_o2_N001_encoding_maxRP.lp /home/luiwerner/Mount/Asprilo/asprilo-encodings/m/encoding.ilp /home/luiwerner/Mount/Asprilo/asprilo-encodings/control/control-m.ilp /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignSpiel/Benchmark/mh.lp -c mh=6 --stats --time-limit=1800 > /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignSpiel/Benchmark/4_AssignHorizonStats/M_x11_y6_n66_r2_s16_ps1_pr16_u16_o2_N001_encoding_maxRP.lp
+ 0.041s 
+(' 0.041s ', '0', '6')
+Horizont konnte berechnet werden und ist nicht 0. Horizont ist 6
+command: clingo /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignSpiel/Benchmark/3b_AssignModels/M_x11_y6_n66_r2_s16_ps1_pr16_u16_o2_N001_encoding_maxRP.lp /home/luiwerner/Mount/Asprilo/asprilo-encodings/m/encoding.lp /home/luiwerner/Mount/Asprilo/asprilo-encodings/control/control-m.lp -c horizon=6 --out-atomf=%s. --stats --time-limit=60 > /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignSpiel/Benchmark/5a_AssignPlansStats/M_x11_y6_n66_r2_s16_ps1_pr16_u16_o2_N001_encoding_maxRP.lp
+ 0.026s 
+(' 0.026s ', '0')
+ , , , , , , , , maxRP.lp,  0.012s , 0,  0.041s , 0, 6,  0.026s , 0, redundant, redundant
+
+
+------------------------
+assign Nr. 11: minRP.lp
+------------------------
+
+command: clingo /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignSpiel/Benchmark/examples_m/x11_y6_n66_r2_s16_ps1_pr16_u16_o2_N001.lp /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignments/minRP.lp -q1,0 --out-atomf=%s. --stats --time-limit=30 > /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignSpiel/Benchmark/3a_AssignModelsStats/M_x11_y6_n66_r2_s16_ps1_pr16_u16_o2_N001_encoding_minRP.lp
+ 0.011s 
+(' 0.011s ', '0')
+model exists
+command: clingo /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignSpiel/Benchmark/3b_AssignModels/M_x11_y6_n66_r2_s16_ps1_pr16_u16_o2_N001_encoding_minRP.lp /home/luiwerner/Mount/Asprilo/asprilo-encodings/m/encoding.ilp /home/luiwerner/Mount/Asprilo/asprilo-encodings/control/control-m.ilp /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignSpiel/Benchmark/mh.lp -c mh=6 --stats --time-limit=1800 > /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignSpiel/Benchmark/4_AssignHorizonStats/M_x11_y6_n66_r2_s16_ps1_pr16_u16_o2_N001_encoding_minRP.lp
+('-', '1', '-')
+ , , , , , , , , minRP.lp,  0.011s , 0, -, 1, -, -, -, -, -
+
+
+------------------------
+assign Nr. 12: minP.lp
+------------------------
+
+command: clingo /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignSpiel/Benchmark/examples_m/x11_y6_n66_r2_s16_ps1_pr16_u16_o2_N001.lp /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignments/minP.lp -q1,0 --out-atomf=%s. --stats --time-limit=30 > /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignSpiel/Benchmark/3a_AssignModelsStats/M_x11_y6_n66_r2_s16_ps1_pr16_u16_o2_N001_encoding_minP.lp
+('-', '2')
+no model
+ , , , , , , , , minP.lp, -, 2, -, -, -, -, -, -, -
+
+
+------------------------
+assign Nr. 13: maxRSP.lp
+------------------------
+
+command: clingo /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignSpiel/Benchmark/examples_m/x11_y6_n66_r2_s16_ps1_pr16_u16_o2_N001.lp /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignments/maxRSP.lp -q1,0 --out-atomf=%s. --stats --time-limit=30 > /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignSpiel/Benchmark/3a_AssignModelsStats/M_x11_y6_n66_r2_s16_ps1_pr16_u16_o2_N001_encoding_maxRSP.lp
+('-', '2')
+no model
+ , , , , , , , , maxRSP.lp, -, 2, -, -, -, -, -, -, -
+
+
+------------------------
+assign Nr. 14: maxSP.lp
+------------------------
+
+command: clingo /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignSpiel/Benchmark/examples_m/x11_y6_n66_r2_s16_ps1_pr16_u16_o2_N001.lp /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignments/maxSP.lp -q1,0 --out-atomf=%s. --stats --time-limit=30 > /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignSpiel/Benchmark/3a_AssignModelsStats/M_x11_y6_n66_r2_s16_ps1_pr16_u16_o2_N001_encoding_maxSP.lp
+('-', '2')
+no model
+ , , , , , , , , maxSP.lp, -, 2, -, -, -, -, -, -, -
+
+
+------------------------
+assign Nr. 15: minSP.lp
+------------------------
+
+command: clingo /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignSpiel/Benchmark/examples_m/x11_y6_n66_r2_s16_ps1_pr16_u16_o2_N001.lp /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignments/minSP.lp -q1,0 --out-atomf=%s. --stats --time-limit=30 > /home/luiwerner/Mount/Asprilo/asprilo-encodings/assignSpiel/Benchmark/3a_AssignModelsStats/M_x11_y6_n66_r2_s16_ps1_pr16_u16_o2_N001_encoding_minSP.lp
+('-', '2')
+no model
+ , , , , , , , , minSP.lp, -, 2, -, -, -, -, -, -, -
+
+finished
