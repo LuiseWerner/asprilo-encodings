@@ -1,0 +1,65 @@
+domain, encoding, instance, ilp-time, timeout, horizon, lp-time, timeout, assign, model-time, timeout, ilp-time, timeout, horizon, lp-time, timeout, lp-time, timeout
+A, A, x19_y9_n171_r6_s45_ps3_pr180_u540_o12_N010.lp, -, 1, -, -, -
+ , , , , , , , , maxS.lp,  0.043s , 0, -, 1, -, -, -, -, -
+ , , , , , , , , maxR.lp,  0.042s , 0, -, 1, -, -, -, -, -
+ , , , , , , , , maxP.lp,  0.041s , 0, -, 1, -, -, -, -, -
+ , , , , , , , , minRSP.lp, -, 1, -, -, -, -, -, -, -
+ , , , , , , , , minD.lp, -, 1, -, -, -, -, -, -, -
+ , , , , , , , , minR.lp,  0.048s , 0, -, 1, -, -, -, -, -
+ , , , , , , , , maxRS.lp, -, 1, -, -, -, -, -, -, -
+ , , , , , , , , minRS.lp, -, 1, -, -, -, -, -, -, -
+ , , , , , , , , minS.lp,  0.043s , 0, -, 1, -, -, -, -, -
+ , , , , , , , , maxRP.lp,  0.054s , 0, -, 1, -, -, -, -, -
+ , , , , , , , , minRP.lp,  0.050s , 0, -, 1, -, -, -, -, -
+ , , , , , , , , minP.lp,  0.053s , 0, -, 1, -, -, -, -, -
+ , , , , , , , , maxRSP.lp, -, 1, -, -, -, -, -, -, -
+ , , , , , , , , maxSP.lp,  0.051s , 0, -, 1, -, -, -, -, -
+ , , , , , , , , minSP.lp,  0.052s , 0, -, 1, -, -, -, -, -
+A, A, x11_y6_n66_r1_s16_ps1_pr32_u96_o2_N003.lp,  1.497s , 0, 21,  0.558s , 0
+ , , , , , , , , maxS.lp,  0.017s , 0,  0.764s , 0, 21,  0.391s , 0, redundant, redundant
+ , , , , , , , , maxR.lp,  0.013s , 0,  0.758s , 0, 21,  0.380s , 0, redundant, redundant
+ , , , , , , , , maxP.lp,  0.020s , 0,  0.762s , 0, 21,  0.383s , 0, redundant, redundant
+ , , , , , , , , minRSP.lp,  0.012s , 0,  0.760s , 0, 21,  0.388s , 0, redundant, redundant
+ , , , , , , , , minD.lp,  0.013s , 0,  0.757s , 0, 21,  0.383s , 0, redundant, redundant
+ , , , , , , , , minR.lp,  0.012s , 0,  0.758s , 0, 21,  0.382s , 0, redundant, redundant
+ , , , , , , , , maxRS.lp,  0.012s , 0,  0.760s , 0, 21,  0.382s , 0, redundant, redundant
+ , , , , , , , , minRS.lp,  0.012s , 0,  0.759s , 0, 21,  0.380s , 0, redundant, redundant
+ , , , , , , , , minS.lp,  0.012s , 0,  0.761s , 0, 21,  0.383s , 0, redundant, redundant
+ , , , , , , , , maxRP.lp,  0.013s , 0,  0.765s , 0, 21,  0.383s , 0, redundant, redundant
+ , , , , , , , , minRP.lp,  0.012s , 0,  0.755s , 0, 21,  0.386s , 0, redundant, redundant
+ , , , , , , , , minP.lp,  0.012s , 0,  0.765s , 0, 21,  0.381s , 0, redundant, redundant
+ , , , , , , , , maxRSP.lp,  0.012s , 0,  0.758s , 0, 21,  0.382s , 0, redundant, redundant
+ , , , , , , , , maxSP.lp,  0.012s , 0,  0.761s , 0, 21,  0.384s , 0, redundant, redundant
+ , , , , , , , , minSP.lp,  0.013s , 0,  0.758s , 0, 21,  0.383s , 0, redundant, redundant
+M, A, x11_y6_n66_r2_s16_ps1_pr16_u16_o2_N001.lp,  0.600s , 0, 15,  0.420s , 0
+ , , , , , , , , maxS.lp,  0.011s , 0,  0.802s , 0, 22,  0.654s , 0,  0.976s , 0
+ , , , , , , , , maxR.lp,  0.011s , 0,  0.397s , 0, 15,  0.322s , 0, redundant, redundant
+ , , , , , , , , maxP.lp,  0.011s , 0,  0.806s , 0, 22,  0.658s , 0, redundant, redundant
+ , , , , , , , , minRSP.lp,  0.011s , 0,  0.809s , 0, 22,  0.659s , 0, redundant, redundant
+ , , , , , , , , minD.lp,  0.011s , 0,  0.806s , 0, 22,  0.654s , 0, redundant, redundant
+ , , , , , , , , minR.lp,  0.011s , 0,  0.809s , 0, 22,  0.652s , 0, redundant, redundant
+ , , , , , , , , maxRS.lp,  0.011s , 0,  0.808s , 0, 22,  0.659s , 0, redundant, redundant
+ , , , , , , , , minRS.lp,  0.011s , 0,  0.815s , 0, 22,  0.655s , 0, redundant, redundant
+ , , , , , , , , minS.lp,  0.011s , 0,  0.805s , 0, 22,  0.657s , 0, redundant, redundant
+ , , , , , , , , maxRP.lp,  0.012s , 0,  0.397s , 0, 15,  0.325s , 0, redundant, redundant
+ , , , , , , , , minRP.lp,  0.011s , 0,  0.813s , 0, 22,  0.658s , 0, redundant, redundant
+ , , , , , , , , minP.lp,  0.011s , 0,  0.802s , 0, 22,  0.654s , 0, redundant, redundant
+ , , , , , , , , maxRSP.lp,  0.011s , 0,  0.808s , 0, 22,  0.653s , 0, redundant, redundant
+ , , , , , , , , maxSP.lp,  0.011s , 0,  0.806s , 0, 22,  0.657s , 0, redundant, redundant
+ , , , , , , , , minSP.lp,  0.011s , 0,  0.808s , 0, 22,  0.654s , 0, redundant, redundant
+M, M, x11_y6_n66_r2_s16_ps1_pr16_u16_o2_N001.lp,  0.065s , 0, 6,  0.038s , 0
+ , , , , , , , , maxS.lp,  0.011s , 0, -, 1, -, -, -, -, -
+ , , , , , , , , maxR.lp,  0.012s , 0,  0.041s , 0, 6,  0.033s , 0, redundant, redundant
+ , , , , , , , , maxP.lp,  0.011s , 0, -, 1, -, -, -, -, -
+ , , , , , , , , minRSP.lp,  0.013s , 0, -, 1, -, -, -, -, -
+ , , , , , , , , minD.lp,  0.013s , 0, -, 1, -, -, -, -, -
+ , , , , , , , , minR.lp,  0.012s , 0, -, 1, -, -, -, -, -
+ , , , , , , , , maxRS.lp,  0.012s , 0, -, 1, -, -, -, -, -
+ , , , , , , , , minRS.lp,  0.012s , 0, -, 1, -, -, -, -, -
+ , , , , , , , , minS.lp,  0.012s , 0, -, 1, -, -, -, -, -
+ , , , , , , , , maxRP.lp,  0.012s , 0,  0.041s , 0, 6,  0.026s , 0, redundant, redundant
+ , , , , , , , , minRP.lp,  0.011s , 0, -, 1, -, -, -, -, -
+ , , , , , , , , minP.lp, -, 2, -, -, -, -, -, -, -
+ , , , , , , , , maxRSP.lp, -, 2, -, -, -, -, -, -, -
+ , , , , , , , , maxSP.lp, -, 2, -, -, -, -, -, -, -
+ , , , , , , , , minSP.lp, -, 2, -, -, -, -, -, -, -
