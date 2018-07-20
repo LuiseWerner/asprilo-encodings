@@ -3,12 +3,24 @@
 
 import csv
 import os
+import subprocess
 from timeit import default_timer as timer
+
+# set timeouts
+timeout1 = '900' # '3600'
+timeout2 = '60' # '60'
+timeout3 = '30' # '30'
+timeout4 = '900' # '3600'
+timeout5 = '60' # '60'
+timeout6 = '60' # '60'
+timeouts = [timeout1, timeout2, timeout3, timeout4, timeout5, timeout6]
+for i in timeouts:
+    print(i)
 
 # prepare csv-file
 f = 'measurementsFile.csv'
 csv = open(f, 'w')
-columnTitleRow = 'domain, encoding, instance, ilp-time, timeout, horizon, lp-time, timeout, assign, model-time, timeout, ilp-time, timeout, horizon, lp-time, timeout, lp-time, timeout\n'
+columnTitleRow = 'domain, encoding, instance, ilp-time, timeout ' + timeout1 + ', horizon, lp-time, timeout ' + timeout2 + ', assign, model-time, timeout ' + timeout3 + ', ilp-time, timeout ' + timeout4 + ', horizon, lp-time, timeout ' + timeout5 + ', lp-time, timeout ' + timeout6 + '\n'
 csv.write(columnTitleRow)
 csv.close()
 
@@ -17,12 +29,12 @@ dirList = list(['1_MinHorizonStats', '2a_MinHorizonPlansStats', '2b_MinHorizonPl
 for dir in dirList:
     os.system('rm ' + dir + ' -r')
     os.system('mkdir ' + dir)
-
+    
 # Paths
 workingPath = '/home/luiwerner/Mount/Asprilo/asprilo-encodings'
 benchmarkPath = os.path.join(workingPath, 'assignSpiel/Benchmark')
-examples_a_Path = os.path.join(benchmarkPath, 'examples_a')
-examples_m_Path = os.path.join(benchmarkPath, 'examples_m')
+examples_a_Path = os.path.join(benchmarkPath, 'examplesA')
+examples_m_Path = os.path.join(benchmarkPath, 'examplesM')
 assignPath = os.path.join(workingPath, 'assignments')
 mhPath = os.path.join(benchmarkPath, 'mh.lp')
 
@@ -37,17 +49,6 @@ assignPlansDir = os.path.join(benchmarkPath, '5b_AssignPlans')
 assignHorizonPlansStatsDir = os.path.join(benchmarkPath, '6a_AssignHorizonPlansStats')
 assignHorizonPlansDir = os.path.join(benchmarkPath, '6b_AssignHorizonPlans')
 
-# set timeouts
-timeout1 = '1800' # '3600'
-timeout2 = '60' # '60'
-timeout3 = '30' # '30'
-timeout4 = '1800' # '3600'
-timeout5 = '60' # '60'
-timeout6 = '60' # '60'
-timeouts = [timeout1, timeout2, timeout3, timeout4, timeout5, timeout6]
-for i in timeouts:
-    print(i)
-
 def getHorizonAndTime(currentFileWithDir):
     horizonIn = open(currentFileWithDir, 'r')
     time = '-'
@@ -55,6 +56,7 @@ def getHorizonAndTime(currentFileWithDir):
     horizon = '-'
     for line in horizonIn:
         if(('TIME LIMIT' in line) or ('INTERRUPTED' in line)):
+            horizonIn.close()
             return '-', '1', '-'
     horizonIn.close()
     
@@ -79,6 +81,8 @@ def getPlanAndTime(currentFilesWithDir):
     safeNextLine = False
     for line in planIn:
         if(('TIME LIMIT' in line) or ('INTERRUPTED' in line)):
+            planIn.close()
+            planOut.close()
             return '-', '1'
     planIn.close()
     
@@ -150,10 +154,10 @@ for bigIteration in range(1,4):
         # min. horizon (using instance and encoding)
         currentDir = minHorizonStatsDir
         currentFileWithDir = os.path.join(currentDir, structuredFilename)
-#        command = 'clingo ' + exampleFile + ' ' + encoding_ilp_Path + ' --stats --time-limit=3600 > ' + currentFileWithDir
         command = 'clingo ' + exampleFile + ' ' + encoding_ilp_Path + ' --stats --time-limit=' + timeout1 + ' > ' + currentFileWithDir
         print('command: ' + command)
-        os.system(command)
+        #os.system(command)
+        subprocess.call(command, shell=True)
 
         time, timeout, horizon = getHorizonAndTime(currentFileWithDir)
         print(time, timeout, horizon)
@@ -165,10 +169,10 @@ for bigIteration in range(1,4):
             # plan (using min. horizon)
             currentDirs = [minHorizonPlansStatsDir, minHorizonPlansDir]
             currentFilesWithDir = [os.path.join(currentDirs[0], structuredFilename), os.path.join(currentDirs[1], structuredFilename)]
-#            command = 'clingo ' + exampleFile + ' ' + encoding_lp_Path + ' -c horizon=' + horizon + ' --out-atomf=%s. --stats --time-limit=60 > ' + currentFilesWithDir[0]
             command = 'clingo ' + exampleFile + ' ' + encoding_lp_Path + ' -c horizon=' + horizon + ' --out-atomf=%s. --stats --time-limit=' + timeout2 + ' > ' + currentFilesWithDir[0]
             print('command: ' + command)
-            os.system(command)
+            #os.system(command)
+            subprocess.call(command, shell=True)
             time, timeout = getPlanAndTime(currentFilesWithDir)
             print(time, timeout)
             row = row + ', ' + time + ', ' + timeout
@@ -196,10 +200,10 @@ for bigIteration in range(1,4):
             # assignModel
             currentDirs = [assignModelsStatsDir, assignModelsDir]
             currentFilesWithDir = [os.path.join(currentDirs[0], structuredFilename), os.path.join(currentDirs[1], structuredFilename)]
-#            command = 'clingo ' + exampleFile + ' ' + assignFile + ' -q1,0 --out-atomf=%s. --stats --time-limit=30 > ' + currentFilesWithDir[0]
             command = 'clingo ' + exampleFile + ' ' + assignFile + ' -q1,0 --out-atomf=%s. --stats --time-limit=' + timeout3 + ' > ' + currentFilesWithDir[0]
             print('command: ' + command)
-            os.system(command)
+            #os.system(command)
+            subprocess.call(command, shell=True)
 
             time, timeout = getPlanAndTime(currentFilesWithDir)
             print(time, timeout)
@@ -215,13 +219,12 @@ for bigIteration in range(1,4):
                 currentFileWithDir = os.path.join(currentDir, structuredFilename)
                 horizon = minHorizon
                 if((horizon != '-') and (horizon != '0')):
-#                    command = 'clingo ' + modelWithPath + ' ' + encoding_ilp_Path + ' ' + control_ilp_Path + ' ' + mhPath + ' -c mh=' + horizon + ' --stats --time-limit=3600 > ' + currentFileWithDir
                     command = 'clingo ' + modelWithPath + ' ' + encoding_ilp_Path + ' ' + control_ilp_Path + ' ' + mhPath + ' -c mh=' + horizon + ' --stats --time-limit=' + timeout4 + ' > ' + currentFileWithDir
                 else:
-#                    command = 'clingo ' + modelWithPath + ' ' + encoding_ilp_Path + ' ' + control_ilp_Path + ' --stats --time-limit=3600 > ' + currentFileWithDir
                     command = 'clingo ' + modelWithPath + ' ' + encoding_ilp_Path + ' ' + control_ilp_Path + ' --stats --time-limit=' + timeout4 + ' > ' + currentFileWithDir
                 print('command: ' + command)
-                os.system(command)
+                #os.system(command)
+                subprocess.call(command, shell=True)
 
                 time, timeout, horizon = getHorizonAndTime(currentFileWithDir)
                 print(time, timeout, horizon)
@@ -232,10 +235,10 @@ for bigIteration in range(1,4):
                     # plan (using horizon)
                     currentDirs = [assignPlansStatsDir, assignPlansDir]
                     currentFilesWithDir = [os.path.join(currentDirs[0], structuredFilename), os.path.join(currentDirs[1], structuredFilename)]
-#                    command = 'clingo ' + modelWithPath + ' ' + encoding_lp_Path + ' ' + control_lp_Path + ' -c horizon=' + horizon + ' --out-atomf=%s. --stats --time-limit=60 > ' + currentFilesWithDir[0]
                     command = 'clingo ' + modelWithPath + ' ' + encoding_lp_Path + ' ' + control_lp_Path + ' -c horizon=' + horizon + ' --out-atomf=%s. --stats --time-limit=' + timeout5 + ' > ' + currentFilesWithDir[0]
                     print('command: ' + command)
-                    os.system(command)
+                    #os.system(command)
+                    subprocess.call(command, shell=True)
                     time, timeout = getPlanAndTime(currentFilesWithDir)
                     print(time, timeout)
                     row = row + ', ' + time + ', ' + timeout
@@ -247,10 +250,10 @@ for bigIteration in range(1,4):
                         horizonSet.add(horizon)
                         currentDirs = [assignHorizonPlansStatsDir, assignHorizonPlansDir]
                         currentFilesWithDir = [os.path.join(currentDirs[0], structuredFilename), os.path.join(currentDirs[1], structuredFilename)]
-#                        command = 'clingo ' + exampleFile + ' ' + encoding_lp_Path + ' -c horizon=' + horizon + ' --out-atomf=%s. --stats --time-limit=60 > ' + currentFilesWithDir[0]
                         command = 'clingo ' + exampleFile + ' ' + encoding_lp_Path + ' -c horizon=' + horizon + ' --out-atomf=%s. --stats --time-limit=' + timeout6 + ' > ' + currentFilesWithDir[0]
                         print('command: ' + command)
-                        os.system(command)
+                        #os.system(command)
+                        subprocess.call(command, shell=True)
                         time, timeout = getPlanAndTime(currentFilesWithDir)
                         print(time, timeout)
                         row = row + ', ' + time + ', ' + timeout
