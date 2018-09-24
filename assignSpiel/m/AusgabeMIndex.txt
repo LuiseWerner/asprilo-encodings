@@ -1,0 +1,40 @@
+luiwerner@chevaux:~/Mount/Asprilo/asprilo-encodings/assignSpiel/m$ clingo MIndex.lp ../Instanzen/moo/structured/2x3x5/100sc/r10/x19_y9_n171_r10_s60_ps3_pr60_u60_o10_N002.lp 0 --stats
+clingo version 5.3.0
+Reading from MIndex.lp ...
+Solving...
+Answer: 1
+assign(robot(1),shelf(1)) assign(robot(2),shelf(59)) assign(robot(3),shelf(58)) assign(robot(4),shelf(56)) assign(robot(5),shelf(24)) assign(robot(6),shelf(26)) assign(robot(7),shelf(55)) assign(robot(8),shelf(27)) assign(robot(9),shelf(28)) assign(robot(10),shelf(29)) sumDist(55) isSmallerXS(shelf(1),shelf(24)) isSmallerXS(shelf(1),shelf(26)) isSmallerXS(shelf(1),shelf(27)) isSmallerXS(shelf(1),shelf(28)) isSmallerXS(shelf(1),shelf(29)) isSmallerXS(shelf(1),shelf(55)) isSmallerXS(shelf(1),shelf(56)) isSmallerXS(shelf(1),shelf(58)) isSmallerXS(shelf(1),shelf(59)) isSmallerXS(shelf(24),shelf(26)) isSmallerXS(shelf(24),shelf(27)) isSmallerXS(shelf(24),shelf(28)) isSmallerXS(shelf(24),shelf(29)) isSmallerXS(shelf(24),shelf(55)) isSmallerXS(shelf(26),shelf(27)) isSmallerXS(shelf(26),shelf(28)) isSmallerXS(shelf(26),shelf(29)) isSmallerXS(shelf(26),shelf(55)) isSmallerXS(shelf(27),shelf(28)) isSmallerXS(shelf(27),shelf(29)) isSmallerXS(shelf(28),shelf(29)) isSmallerXS(shelf(55),shelf(28)) isSmallerXS(shelf(55),shelf(29)) isSmallerXS(shelf(56),shelf(24)) isSmallerXS(shelf(56),shelf(26)) isSmallerXS(shelf(56),shelf(27)) isSmallerXS(shelf(56),shelf(28)) isSmallerXS(shelf(56),shelf(29)) isSmallerXS(shelf(56),shelf(55)) isSmallerXS(shelf(58),shelf(24)) isSmallerXS(shelf(58),shelf(26)) isSmallerXS(shelf(58),shelf(27)) isSmallerXS(shelf(58),shelf(28)) isSmallerXS(shelf(58),shelf(29)) isSmallerXS(shelf(58),shelf(55)) isSmallerXS(shelf(58),shelf(56)) isSmallerXS(shelf(59),shelf(24)) isSmallerXS(shelf(59),shelf(26)) isSmallerXS(shelf(59),shelf(27)) isSmallerXS(shelf(59),shelf(28)) isSmallerXS(shelf(59),shelf(29)) isSmallerXS(shelf(59),shelf(55)) isSmallerXS(shelf(59),shelf(56)) isSmallerXS(shelf(59),shelf(58)) isSmallerXR(robot(1),robot(2)) isSmallerXR(robot(1),robot(3)) isSmallerXR(robot(1),robot(4)) isSmallerXR(robot(1),robot(5)) isSmallerXR(robot(1),robot(6)) isSmallerXR(robot(1),robot(7)) isSmallerXR(robot(1),robot(8)) isSmallerXR(robot(1),robot(9)) isSmallerXR(robot(1),robot(10)) isSmallerXR(robot(2),robot(3)) isSmallerXR(robot(2),robot(4)) isSmallerXR(robot(2),robot(5)) isSmallerXR(robot(2),robot(6)) isSmallerXR(robot(2),robot(7)) isSmallerXR(robot(2),robot(8)) isSmallerXR(robot(2),robot(9)) isSmallerXR(robot(2),robot(10)) isSmallerXR(robot(3),robot(4)) isSmallerXR(robot(3),robot(5)) isSmallerXR(robot(3),robot(6)) isSmallerXR(robot(3),robot(7)) isSmallerXR(robot(3),robot(8)) isSmallerXR(robot(3),robot(9)) isSmallerXR(robot(3),robot(10)) isSmallerXR(robot(4),robot(5)) isSmallerXR(robot(4),robot(6)) isSmallerXR(robot(4),robot(7)) isSmallerXR(robot(4),robot(8)) isSmallerXR(robot(4),robot(9)) isSmallerXR(robot(4),robot(10)) isSmallerXR(robot(5),robot(6)) isSmallerXR(robot(5),robot(7)) isSmallerXR(robot(5),robot(8)) isSmallerXR(robot(5),robot(9)) isSmallerXR(robot(5),robot(10)) isSmallerXR(robot(6),robot(7)) isSmallerXR(robot(6),robot(8)) isSmallerXR(robot(6),robot(9)) isSmallerXR(robot(6),robot(10)) isSmallerXR(robot(7),robot(8)) isSmallerXR(robot(7),robot(9)) isSmallerXR(robot(7),robot(10)) isSmallerXR(robot(8),robot(9)) isSmallerXR(robot(8),robot(10)) isSmallerXR(robot(9),robot(10))
+Answer: 2
+assign(robot(1),shelf(1)) assign(robot(2),shelf(59)) assign(robot(3),shelf(58)) assign(robot(4),shelf(56)) assign(robot(5),shelf(24)) assign(robot(6),shelf(26)) assign(robot(7),shelf(27)) assign(robot(8),shelf(55)) assign(robot(9),shelf(28)) assign(robot(10),shelf(29)) sumDist(55) isSmallerXS(shelf(1),shelf(24)) isSmallerXS(shelf(1),shelf(26)) isSmallerXS(shelf(1),shelf(27)) isSmallerXS(shelf(1),shelf(28)) isSmallerXS(shelf(1),shelf(29)) isSmallerXS(shelf(1),shelf(55)) isSmallerXS(shelf(1),shelf(56)) isSmallerXS(shelf(1),shelf(58)) isSmallerXS(shelf(1),shelf(59)) isSmallerXS(shelf(24),shelf(26)) isSmallerXS(shelf(24),shelf(27)) isSmallerXS(shelf(24),shelf(28)) isSmallerXS(shelf(24),shelf(29)) isSmallerXS(shelf(24),shelf(55)) isSmallerXS(shelf(26),shelf(27)) isSmallerXS(shelf(26),shelf(28)) isSmallerXS(shelf(26),shelf(29)) isSmallerXS(shelf(26),shelf(55)) isSmallerXS(shelf(27),shelf(28)) isSmallerXS(shelf(27),shelf(29)) isSmallerXS(shelf(28),shelf(29)) isSmallerXS(shelf(55),shelf(28)) isSmallerXS(shelf(55),shelf(29)) isSmallerXS(shelf(56),shelf(24)) isSmallerXS(shelf(56),shelf(26)) isSmallerXS(shelf(56),shelf(27)) isSmallerXS(shelf(56),shelf(28)) isSmallerXS(shelf(56),shelf(29)) isSmallerXS(shelf(56),shelf(55)) isSmallerXS(shelf(58),shelf(24)) isSmallerXS(shelf(58),shelf(26)) isSmallerXS(shelf(58),shelf(27)) isSmallerXS(shelf(58),shelf(28)) isSmallerXS(shelf(58),shelf(29)) isSmallerXS(shelf(58),shelf(55)) isSmallerXS(shelf(58),shelf(56)) isSmallerXS(shelf(59),shelf(24)) isSmallerXS(shelf(59),shelf(26)) isSmallerXS(shelf(59),shelf(27)) isSmallerXS(shelf(59),shelf(28)) isSmallerXS(shelf(59),shelf(29)) isSmallerXS(shelf(59),shelf(55)) isSmallerXS(shelf(59),shelf(56)) isSmallerXS(shelf(59),shelf(58)) isSmallerXR(robot(1),robot(2)) isSmallerXR(robot(1),robot(3)) isSmallerXR(robot(1),robot(4)) isSmallerXR(robot(1),robot(5)) isSmallerXR(robot(1),robot(6)) isSmallerXR(robot(1),robot(7)) isSmallerXR(robot(1),robot(8)) isSmallerXR(robot(1),robot(9)) isSmallerXR(robot(1),robot(10)) isSmallerXR(robot(2),robot(3)) isSmallerXR(robot(2),robot(4)) isSmallerXR(robot(2),robot(5)) isSmallerXR(robot(2),robot(6)) isSmallerXR(robot(2),robot(7)) isSmallerXR(robot(2),robot(8)) isSmallerXR(robot(2),robot(9)) isSmallerXR(robot(2),robot(10)) isSmallerXR(robot(3),robot(4)) isSmallerXR(robot(3),robot(5)) isSmallerXR(robot(3),robot(6)) isSmallerXR(robot(3),robot(7)) isSmallerXR(robot(3),robot(8)) isSmallerXR(robot(3),robot(9)) isSmallerXR(robot(3),robot(10)) isSmallerXR(robot(4),robot(5)) isSmallerXR(robot(4),robot(6)) isSmallerXR(robot(4),robot(7)) isSmallerXR(robot(4),robot(8)) isSmallerXR(robot(4),robot(9)) isSmallerXR(robot(4),robot(10)) isSmallerXR(robot(5),robot(6)) isSmallerXR(robot(5),robot(7)) isSmallerXR(robot(5),robot(8)) isSmallerXR(robot(5),robot(9)) isSmallerXR(robot(5),robot(10)) isSmallerXR(robot(6),robot(7)) isSmallerXR(robot(6),robot(8)) isSmallerXR(robot(6),robot(9)) isSmallerXR(robot(6),robot(10)) isSmallerXR(robot(7),robot(8)) isSmallerXR(robot(7),robot(9)) isSmallerXR(robot(7),robot(10)) isSmallerXR(robot(8),robot(9)) isSmallerXR(robot(8),robot(10)) isSmallerXR(robot(9),robot(10))
+SATISFIABLE
+
+Models       : 2
+Calls        : 1
+Time         : 293.454s (Solving: 289.81s 1st Model: 128.87s Unsat: 121.23s)
+CPU Time     : 293.276s
+
+Choices      : 19240
+Conflicts    : 10885    (Analyzed: 10877)
+Restarts     : 62       (Average: 175.44 Last: 1520)
+Model-Level  : 4.5
+Problems     : 1        (Average Length: 0.00 Splits: 0)
+Lemmas       : 10877    (Deleted: 4068)
+  Binary     : 466      (Ratio:   4.28%)
+    Ternary    : 948      (Ratio:   8.72%)
+      Conflict   : 10877    (Average Length:  122.5 Ratio: 100.00%)
+        Loop       : 0        (Average Length:    0.0 Ratio:   0.00%)
+	  Other      : 0        (Average Length:    0.0 Ratio:   0.00%)
+	  Backjumps    : 10877    (Average:  1.74 Max: 119 Sum:  18909)
+	    Executed   : 10877    (Average:  1.74 Max: 119 Sum:  18909 Ratio: 100.00%)
+	      Bounded    : 0        (Average:  0.00 Max:   0 Sum:      0 Ratio:   0.00%)
+
+Rules        : 441283   (Original: 436635)
+  Choice     : 600
+  Atoms        : 24886
+  Bodies       : 280513   (Original: 278271)
+    Sum        : 3610
+      Count      : 1649     (Original: 1813)
+      Equivalences : 44743    (Atom=Atom: 10591 Body=Body: 5271 Other: 28881)
+      Tight        : Yes
+      Variables    : 191938   (Eliminated:    0 Frozen: 7483)
+      Constraints  : 980274   (Binary:  72.1% Ternary:  27.1% Other:   0.7%)
