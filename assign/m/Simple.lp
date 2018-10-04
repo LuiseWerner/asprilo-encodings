@@ -34,8 +34,7 @@
 %:- 0 < #sum{ 1,O : isOrder(O); -1,R,S : assign(R,S) }.	     	%<¬
 %:- 0 > #sum{ 1,O : isOrder(O); -1,R,S : assign(R,S) }.	     	%siehe oben, aber <,> statt !=
 
-
-%funktionierende zusammengesetzte Zeilen 2
+%funktionierende zusammengesetzte Zeilen 3
 %assigned(O) :- ordered(O,A), shelved(S,A), assign(_,S).	%<¬
 %:- ordered(O,A), not assigned(O).				%2 mit oben
 

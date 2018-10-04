@@ -1,9 +1,11 @@
-#assign
+# assign
 
-##About
+## About
+
 This is a collection of code dealing with the assignment of roboter-shelf-station for aspects of complexity.
 
-##Directories
+## Directories
+
 - **abc**: concerning assignments in domains A, B, C; only first drafts
 - **m**: concerning assignments in domain M
 - **Instances**: copied directory
