@@ -10,5 +10,6 @@ This is a collection of code dealing with the assignment of roboter-shelf-statio
 - **m**: concerning assignments in domain M
 - **Instances**: copied directory
 - **control-m**: enforcing assignments in domain m
-- **Benchmark**: collection of benchmark-programs
+- **mBenchmark**: collection of benchmark-programs in domains M (current)
+- **mixBenchmark**: collection of benchmark-programs in domains A,B,C,M (old)
 - **olderStuff**: other project drafts, first skills, extracting models from the whole output
