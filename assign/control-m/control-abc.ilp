@@ -1,0 +1,9 @@
+#program step(t).
+
+:-    move(R,_,t), not assign(R,_).
+
+%superfluous, because in m/action no pickup and putdown defined?
+%:-  pickup(R,S,t), not assign(R,S).
+%:- putdown(R,S,t), not assign(R,S).
+
+:- process(A,O,C,t), target(O,P), shelved(S,A), position(S,C,t), not assign(_,S).

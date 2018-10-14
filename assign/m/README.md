@@ -6,10 +6,10 @@ This is a collection of code to create assignments of robot to shelf in domain M
 
 ## File Dependencies
 
-- *basic file*: Simple.lp includes input.lp
-- *use basic file*: all others
-- *storage basic file*: Storage.lp
-- *use storage basic file*: Storage[somethingElse].lp
+- **basic file**: Simple.lp includes input.lp
+- **use basic file**: all others
+- **storage basic file**: Storage.lp
+- **use storage basic file**: Storage[somethingElse].lp
 
 ## Optimization dependencies
 
