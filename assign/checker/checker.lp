@@ -1,5 +1,3 @@
-:- { product(A) } > 1.
-:- { product(A) } < 1.
 :- isShelf(S), { shelved(S,A) } > 1.
 :- isShelf(S), { shelved(S,A) } < 1.
 :- isRobot(R), position(R,C,0), highway(C).
@@ -10,9 +8,12 @@
 
 %:- #count{ R : isRobot(R) } != #count{ S : isShelf(S) }.
 :- X = #count{ R : isRobot(R) }, Y = #count{ S : isShelf(S) }, X != Y.
+:- X = #count{ R : isRobot(R) }, Z = #count{ A : product(A) }, X != Z.
+
 
 %:- 0 < #count{ S : isShelf(S); -R : isRobot(R) }.
 %:- 0 < #count{ R : isRobot(R); -S : isShelf(S) }.
+
 
 
 
