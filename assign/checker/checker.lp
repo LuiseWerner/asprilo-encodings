@@ -5,15 +5,14 @@
 :- isStation(P), position(P,C), highway(C).
 :- { isStation(P) } > 1.
 :- { isStation(P) } < 1.
-
-%:- #count{ R : isRobot(R) } != #count{ S : isShelf(S) }.
 :- X = #count{ R : isRobot(R) }, Y = #count{ S : isShelf(S) }, X != Y.
 :- X = #count{ R : isRobot(R) }, Z = #count{ A : product(A) }, X != Z.
 
 
+
+%:- #count{ R : isRobot(R) } != #count{ S : isShelf(S) }.
 %:- 0 < #count{ S : isShelf(S); -R : isRobot(R) }.
 %:- 0 < #count{ R : isRobot(R); -S : isShelf(S) }.
-
 
 
 
