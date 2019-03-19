@@ -1,3 +1,16 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Grid Size X:                      7
+% Grid Size Y:                      11
+% Number of Nodes:                  77
+% Number of Highway Nodes:          44
+% Number of Robots:                 16
+% Number of Shelves:                16
+% Number of Picking Stations:       1
+% Number of Products:               16
+% Number of Product Units in Total: 16
+% Number of Orders:                 16
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 #program base.
 
 % init
@@ -122,7 +135,55 @@ init(object(node,74),value(at,(4,11))).
 init(object(node,75),value(at,(5,11))).
 init(object(node,76),value(at,(6,11))).
 init(object(node,77),value(at,(7,11))).
+init(object(order,1),value(line,(6,1))).
+init(object(order,1),value(pickingStation,1)).
+init(object(order,2),value(line,(2,1))).
+init(object(order,2),value(pickingStation,1)).
+init(object(order,3),value(line,(16,1))).
+init(object(order,3),value(pickingStation,1)).
+init(object(order,4),value(line,(13,1))).
+init(object(order,4),value(pickingStation,1)).
+init(object(order,5),value(line,(1,1))).
+init(object(order,5),value(pickingStation,1)).
+init(object(order,6),value(line,(11,1))).
+init(object(order,6),value(pickingStation,1)).
+init(object(order,7),value(line,(5,1))).
+init(object(order,7),value(pickingStation,1)).
+init(object(order,8),value(line,(15,1))).
+init(object(order,8),value(pickingStation,1)).
+init(object(order,9),value(line,(10,1))).
+init(object(order,9),value(pickingStation,1)).
+init(object(order,10),value(line,(8,1))).
+init(object(order,10),value(pickingStation,1)).
+init(object(order,11),value(line,(4,1))).
+init(object(order,11),value(pickingStation,1)).
+init(object(order,12),value(line,(7,1))).
+init(object(order,12),value(pickingStation,1)).
+init(object(order,13),value(line,(12,1))).
+init(object(order,13),value(pickingStation,1)).
+init(object(order,14),value(line,(14,1))).
+init(object(order,14),value(pickingStation,1)).
+init(object(order,15),value(line,(3,1))).
+init(object(order,15),value(pickingStation,1)).
+init(object(order,16),value(line,(9,1))).
+init(object(order,16),value(pickingStation,1)).
 init(object(pickingStation,1),value(at,(4,1))).
+init(object(product,1),value(on,(15,1))).
+init(object(product,2),value(on,(14,1))).
+init(object(product,3),value(on,(13,1))).
+init(object(product,4),value(on,(12,1))).
+init(object(product,5),value(on,(11,1))).
+init(object(product,6),value(on,(10,1))).
+init(object(product,7),value(on,(9,1))).
+init(object(product,8),value(on,(8,1))).
+init(object(product,9),value(on,(7,1))).
+init(object(product,10),value(on,(6,1))).
+init(object(product,11),value(on,(5,1))).
+init(object(product,12),value(on,(4,1))).
+init(object(product,13),value(on,(3,1))).
+init(object(product,14),value(on,(2,1))).
+init(object(product,15),value(on,(1,1))).
+init(object(product,16),value(on,(16,1))).
 init(object(robot,1),value(at,(1,9))).
 init(object(robot,2),value(at,(2,9))).
 init(object(robot,3),value(at,(1,10))).
