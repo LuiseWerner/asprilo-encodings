@@ -7,21 +7,3 @@
 :- { isStation(P) } < 1.
 :- X = #count{ R : isRobot(R) }, Y = #count{ S : isShelf(S) }, X != Y.
 :- X = #count{ R : isRobot(R) }, Z = #count{ A : product(A) }, X != Z.
-
-
-
-%:- #count{ R : isRobot(R) } != #count{ S : isShelf(S) }.
-%:- 0 < #count{ S : isShelf(S); -R : isRobot(R) }.
-%:- 0 < #count{ R : isRobot(R); -S : isShelf(S) }.
-
-
-
-%- not possible:
-%a :- #sum{V,ID,s : skill(ID,V)} > #sum{V,ID,l : level(ID,V)}.
-%- not good:
-%a :- X = #sum{V,ID,s : skill(ID,V)},
-%	 Y = #sum{V,ID,l : level(ID,V)}, X > Y.
-%- better:
-%a :- 0 < #sum{V,ID,s : skill(ID,V); -V,ID,l : level(ID,V)}.
-
-
