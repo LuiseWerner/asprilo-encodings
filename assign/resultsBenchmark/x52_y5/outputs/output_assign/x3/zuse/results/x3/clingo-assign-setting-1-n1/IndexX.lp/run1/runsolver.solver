@@ -1,0 +1,36 @@
+clingo version 5.3.0
+Reading from ..._n260_r50_s50_ps1_pr50_u50_o50_N001.lp ...
+Solving...
+*** Info : (clingo): INTERRUPTED by signal!
+UNKNOWN
+
+INTERRUPTED  : 1
+Models       : 0+
+Calls        : 1
+Time         : 59.960s (Solving: 39.46s 1st Model: 0.00s Unsat: 0.00s)
+CPU Time     : 59.944s
+
+Choices      : 9328    
+Conflicts    : 2980     (Analyzed: 2980)
+Restarts     : 14       (Average: 212.86 Last: 2262)
+Problems     : 1        (Average Length: 0.00 Splits: 0)
+Lemmas       : 2980     (Deleted: 962)
+  Binary     : 17       (Ratio:   0.57%)
+  Ternary    : 75       (Ratio:   2.52%)
+  Conflict   : 2980     (Average Length: 1688.6 Ratio: 100.00%) 
+  Loop       : 0        (Average Length:    0.0 Ratio:   0.00%) 
+  Other      : 0        (Average Length:    0.0 Ratio:   0.00%) 
+Backjumps    : 2980     (Average:  2.99 Max: 2143 Sum:   8919)
+  Executed   : 2980     (Average:  2.99 Max: 2143 Sum:   8919 Ratio: 100.00%)
+  Bounded    : 0        (Average:  0.00 Max:   0 Sum:      0 Ratio:   0.00%)
+
+Rules        : 7729454  (Original: 7724490)
+  Choice     : 2500    
+Atoms        : 16640   
+Bodies       : 4718881  (Original: 4716513)
+  Count      : 2338     (Original: 2566)
+Equivalences : 24200    (Atom=Atom: 4784 Body=Body: 2352 Other: 17064)
+Tight        : Yes
+Variables    : 3133812  (Eliminated:    0 Frozen: 7158)
+Constraints  : 17099396 (Binary:  72.4% Ternary:  27.5% Other:   0.0%)
+

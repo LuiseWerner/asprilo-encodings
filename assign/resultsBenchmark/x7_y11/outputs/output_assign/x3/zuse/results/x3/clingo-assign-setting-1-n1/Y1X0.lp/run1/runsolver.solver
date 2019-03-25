@@ -1,0 +1,42 @@
+clingo version 5.3.0
+Reading from ...1_n77_r16_s16_ps1_pr16_u16_o16_N001.lp ...
+Solving...
+*** Info : (clingo): INTERRUPTED by signal!
+Answer: 13
+assign(robot(11),shelf(1)). assign(robot(12),shelf(2)). assign(robot(13),shelf(3)). assign(robot(15),shelf(4)). assign(robot(10),shelf(5)). assign(robot(5),shelf(6)). assign(robot(16),shelf(7)). assign(robot(9),shelf(8)). assign(robot(3),shelf(9)). assign(robot(4),shelf(10)). assign(robot(6),shelf(11)). assign(robot(8),shelf(12)). assign(robot(1),shelf(13)). assign(robot(2),shelf(14)). assign(robot(14),shelf(15)). assign(robot(7),shelf(16)).
+SATISFIABLE
+
+INTERRUPTED  : 1
+Models       : 13+
+  Optimum    : unknown
+Optimization : 85 11
+Calls        : 1
+Time         : 59.978s (Solving: 59.95s 1st Model: 0.00s Unsat: 0.00s)
+CPU Time     : 59.976s
+
+Choices      : 5604179 
+Conflicts    : 5363226  (Analyzed: 5363225)
+Restarts     : 9209     (Average: 582.39 Last: 5362416)
+Model-Level  : 39.1    
+Problems     : 1        (Average Length: 0.00 Splits: 0)
+Lemmas       : 5363225  (Deleted: 5333481)
+  Binary     : 0        (Ratio:   0.00%)
+  Ternary    : 0        (Ratio:   0.00%)
+  Conflict   : 5363225  (Average Length:   23.9 Ratio: 100.00%) 
+  Loop       : 0        (Average Length:    0.0 Ratio:   0.00%) 
+  Other      : 0        (Average Length:    0.0 Ratio:   0.00%) 
+Backjumps    : 5363225  (Average:  1.02 Max:   7 Sum: 5482106)
+  Executed   : 5363225  (Average:  1.02 Max:   7 Sum: 5482106 Ratio: 100.00%)
+  Bounded    : 0        (Average:  0.00 Max:   0 Sum:      0 Ratio:   0.00%)
+
+Rules        : 1640    
+  Choice     : 256     
+  Minimize   : 2       
+Atoms        : 1350    
+Bodies       : 289     
+  Count      : 32      
+Equivalences : 1280     (Atom=Atom: 512 Body=Body: 0 Other: 768)
+Tight        : Yes
+Variables    : 272      (Eliminated:    0 Frozen:  256)
+Constraints  : 48       (Binary:   0.0% Ternary:   0.0% Other: 100.0%)
+

@@ -1,0 +1,37 @@
+clingo version 5.3.0
+Reading from ...1_n77_r16_s16_ps1_pr16_u16_o16_N001.lp ...
+Solving...
+Answer: 1
+assign(robot(2),shelf(1)). assign(robot(11),shelf(2)). assign(robot(16),shelf(3)). assign(robot(14),shelf(4)). assign(robot(13),shelf(5)). assign(robot(1),shelf(6)). assign(robot(5),shelf(7)). assign(robot(10),shelf(8)). assign(robot(9),shelf(9)). assign(robot(3),shelf(10)). assign(robot(6),shelf(11)). assign(robot(8),shelf(12)). assign(robot(7),shelf(13)). assign(robot(15),shelf(14)). assign(robot(4),shelf(15)). assign(robot(12),shelf(16)).
+SATISFIABLE
+
+Models       : 1+
+Calls        : 1
+Time         : 0.017s (Solving: 0.00s 1st Model: 0.00s Unsat: 0.00s)
+CPU Time     : 0.016s
+
+Choices      : 262     
+Conflicts    : 60       (Analyzed: 60)
+Restarts     : 1        (Average: 60.00 Last: 0)
+Model-Level  : 63.0    
+Problems     : 1        (Average Length: 0.00 Splits: 0)
+Lemmas       : 60       (Deleted: 0)
+  Binary     : 0        (Ratio:   0.00%)
+  Ternary    : 0        (Ratio:   0.00%)
+  Conflict   : 60       (Average Length:   51.9 Ratio: 100.00%) 
+  Loop       : 0        (Average Length:    0.0 Ratio:   0.00%) 
+  Other      : 0        (Average Length:    0.0 Ratio:   0.00%) 
+Backjumps    : 60       (Average:  1.23 Max:   4 Sum:     74)
+  Executed   : 60       (Average:  1.23 Max:   4 Sum:     74 Ratio: 100.00%)
+  Bounded    : 0        (Average:  0.00 Max:   0 Sum:      0 Ratio:   0.00%)
+
+Rules        : 1126    
+  Choice     : 256     
+Atoms        : 838     
+Bodies       : 289     
+  Count      : 32      
+Equivalences : 256      (Atom=Atom: 0 Body=Body: 0 Other: 256)
+Tight        : Yes
+Variables    : 272      (Eliminated:    0 Frozen:  256)
+Constraints  : 48       (Binary:   0.0% Ternary:   0.0% Other: 100.0%)
+

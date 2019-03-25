@@ -1,0 +1,85 @@
+runsolver Copyright (C) 2010-2013 Olivier ROUSSEL
+
+This is runsolver version 3.3.7beta (svn: 2553)
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+command line: ../../../../../../../../programs/runsolver-3.3.7beta -M 20000 -w runsolver.watcher -o runsolver.solver -W 3600 ../../../../../../../../programs/clingo-ilpAssignModels ../../../../../../../../benchmarks/assign/assigned/IndexY.lp --stats 1 --out-atomf=%s. 
+
+pid=45066
+running on 2 cores: 8,10
+
+Enforcing wall clock limit (soft limit, will send SIGTERM then SIGKILL): 3600 seconds
+Enforcing VSIZE limit (soft limit, will send SIGTERM then SIGKILL): 20480000 KiB
+Enforcing VSIZE limit (hard limit, stack expansion will fail with SIGSEGV, brk() and mmap() will return ENOMEM): 20531200 KiB
+Current StackSize limit: 8192 KiB
+
+
+[startup+0 s]
+/proc/loadavg: 0.23 1.46 2.30 15/635 45068
+/proc/meminfo: memFree=64841616/65748840 swapFree=31904/43064
+[pid=45068] ppid=45066 vsize=12740 memory=3112 CPUtime=0 cores=8,10,32,34
+/proc/45068/stat : 45068 (clingo-ilpAssig) S 45066 45068 44927 0 -1 4194304 172 0 0 0 0 0 0 0 20 0 1 0 96138818 13045760 778 18446744073709551615 4194304 5242124 140723635348096 0 0 0 65536 4 65538 0 0 0 17 8 0 0 0 0 0 7341384 7388228 22749184 140723635355850 140723635356003 140723635356003 140723635359680 0
+/proc/45068/statm: 3185 778 726 256 0 95 0
+
+[startup+0.100092 s]
+/proc/loadavg: 0.23 1.46 2.30 15/635 45068
+/proc/meminfo: memFree=64841616/65748840 swapFree=31904/43064
+[pid=45068] ppid=45066 vsize=12740 memory=3112 CPUtime=0 cores=8,10,32,34
+/proc/45068/stat : 45068 (clingo-ilpAssig) S 45066 45068 44927 0 -1 4194304 172 0 0 0 0 0 0 0 20 0 1 0 96138818 13045760 778 18446744073709551615 4194304 5242124 140723635348096 0 0 0 65536 4 65538 0 0 0 17 8 0 0 0 0 0 7341384 7388228 22749184 140723635355850 140723635356003 140723635356003 140723635359680 0
+/proc/45068/statm: 3185 778 726 256 0 95 0
+Current children cumulated CPU time (s) 0
+Current children cumulated vsize (KiB) 12740
+Current children cumulated memory (KiB) 3112
+
+[startup+0.200456 s]
+/proc/loadavg: 0.23 1.46 2.30 15/635 45068
+/proc/meminfo: memFree=64841616/65748840 swapFree=31904/43064
+[pid=45068] ppid=45066 vsize=12740 memory=3112 CPUtime=0 cores=8,10,32,34
+/proc/45068/stat : 45068 (clingo-ilpAssig) S 45066 45068 44927 0 -1 4194304 172 0 0 0 0 0 0 0 20 0 1 0 96138818 13045760 778 18446744073709551615 4194304 5242124 140723635348096 0 0 0 65536 4 65538 0 0 0 17 8 0 0 0 0 0 7341384 7388228 22749184 140723635355850 140723635356003 140723635356003 140723635359680 0
+/proc/45068/statm: 3185 778 726 256 0 95 0
+Current children cumulated CPU time (s) 0
+Current children cumulated vsize (KiB) 12740
+Current children cumulated memory (KiB) 3112
+
+Solver just ended.
+??? exit watcher main loop
+??? sigkill at end of watcher main loop
+??? kill 45068 sig 9
+??? end of watcher thread
+Dumping a history of the last processes samples
+
+Child status: 10
+Real time (s): 0.2194
+CPU time (s): 0.184
+CPU user time (s): 0.136
+CPU system time (s): 0.048
+CPU usage (%): 83.8651
+Max. virtual memory (cumulated for all children) (KiB): 12740
+Max. memory (cumulated for all children) (KiB): 3112
+
+getrusage(RUSAGE_CHILDREN,...) data:
+user time used= 0.136
+system time used= 0.048
+maximum resident set size= 13280
+integral shared memory size= 0
+integral unshared data size= 0
+integral unshared stack size= 0
+page reclaims= 2958
+page faults= 59
+swaps= 0
+block input operations= 22775
+block output operations= 29
+messages sent= 0
+messages received= 0
+signals received= 0
+voluntary context switches= 250
+involuntary context switches= 1507
+
+??? end of timestamper thread
+runsolver used 0.016 second user time and 0.036 second system time
+
+The end
