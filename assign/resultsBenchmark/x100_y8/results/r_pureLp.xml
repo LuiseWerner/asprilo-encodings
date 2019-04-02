@@ -1,0 +1,38 @@
+<result>
+	<machine name="zuse" cpu="24x8xE5520@2.27GHz" memory="24GB"/>
+	<config name="seq-generic" template="templates/seq-generic.sh"/>
+	<system name="clingo" version="pureLp" measures="clingo" config="seq-generic">
+		<setting name="setting-1-n1" cmdline="'--stats 1 --out-atomf=%s.'" tag="basic" procs="1" ppn="8" pbstemplate="templates/single.pbs"/>
+	</system>
+	<pbsjob name="seq-generic" timeout="300" runs="1" script_mode="timeout" walltime="3600" cpt="4" partition="short"/>
+	<benchmark name="x3">
+		<class name="." id="0">
+			<instance name="x100_y8.lp" id="0"/>
+		</class>
+	</benchmark>
+	<project name="x3" job="seq-generic">
+		<runspec machine="zuse" system="clingo" version="pureLp" benchmark="x3" setting="setting-1-n1">
+			<class id="0">
+				<instance id="0">
+					<run number="1">
+						<measure name="choices" type="float" val="30772.0"/>
+						<measure name="conflicts" type="float" val="1409.0"/>
+						<measure name="cons" type="float" val="314963.0"/>
+						<measure name="csolve" type="float" val="0.26"/>
+						<measure name="ctime" type="float" val="2.287"/>
+						<measure name="error" type="float" val="0"/>
+						<measure name="mem" type="float" val="140160.0"/>
+						<measure name="memout" type="float" val="0"/>
+						<measure name="models" type="float" val="1.0"/>
+						<measure name="optimal" type="float" val="0.0"/>
+						<measure name="restarts" type="float" val="9.0"/>
+						<measure name="status" type="string" val="SATISFIABLE"/>
+						<measure name="time" type="float" val="2.44451"/>
+						<measure name="timeout" type="float" val="0"/>
+						<measure name="vars" type="float" val="84654.0"/>
+					</run>
+				</instance>
+			</class>
+		</runspec>
+	</project>
+</result>
