@@ -1,0 +1,37 @@
+clingo version 5.3.0
+Reading from ...nchmarks/assign/currentInst/x22_y28.lp ...
+Solving...
+*** Info : (clingo): INTERRUPTED by signal!
+UNKNOWN
+
+INTERRUPTED  : 1
+Models       : 0+
+Calls        : 1
+Time         : 59.959s (Solving: 57.72s 1st Model: 0.00s Unsat: 0.00s)
+CPU Time     : 59.952s
+
+Choices      : 8963641 
+Conflicts    : 211086   (Analyzed: 211086)
+Restarts     : 557      (Average: 378.97 Last: 211086)
+Problems     : 1        (Average Length: 0.00 Splits: 0)
+Lemmas       : 211086   (Deleted: 181867)
+  Binary     : 0        (Ratio:   0.00%)
+  Ternary    : 0        (Ratio:   0.00%)
+  Conflict   : 211086   (Average Length: 1352.0 Ratio: 100.00%) 
+  Loop       : 0        (Average Length:    0.0 Ratio:   0.00%) 
+  Other      : 0        (Average Length:    0.0 Ratio:   0.00%) 
+Backjumps    : 211086   (Average:  2.64 Max: 14948 Sum: 557578)
+  Executed   : 211086   (Average:  2.64 Max: 14948 Sum: 557578 Ratio: 100.00%)
+  Bounded    : 0        (Average:  0.00 Max:   0 Sum:      0 Ratio:   0.00%)
+
+Rules        : 412772   (Original: 409440)
+  Choice     : 89670   
+  Minimize   : 1       
+Atoms        : 55792   
+Bodies       : 312488   (Original: 310836)
+  Count      : 826      (Original: 854)
+Equivalences : 48671    (Atom=Atom: 616 Body=Body: 413 Other: 47642)
+Tight        : Yes
+Variables    : 46634    (Eliminated:    0 Frozen: 45780)
+Constraints  : 268982   (Binary:  99.6% Ternary:   0.1% Other:   0.3%)
+
