@@ -1,0 +1,3 @@
+#!/bin/bash
+
+clingo --mode=clingo ~/Asprilo/benchmark-tool/benchmarks/assign/currentInst/* ~/Asprilo/benchmark-tool/benchmarks/assign/input.lp $@
