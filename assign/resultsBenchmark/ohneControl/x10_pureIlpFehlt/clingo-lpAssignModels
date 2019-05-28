@@ -1,3 +1,0 @@
-#!/bin/bash
-
-clingo --mode=clingo ~/Asprilo/benchmark-tool/benchmarks/assign/testInst/x10_y15_n150_r36_s36_ps1_pr36_u36_o36_N001.lp ~/Asprilo/benchmark-tool/benchmarks/assign/m/encoding.lp -c horizon=10 $@

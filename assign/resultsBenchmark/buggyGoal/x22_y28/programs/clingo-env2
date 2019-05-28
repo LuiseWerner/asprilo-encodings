@@ -1,3 +1,0 @@
-#!/bin/bash
-
-clingo --mode=clingo ~/Asprilo/benchmark-tool/benchmarks/clingo/sudoku.lp $@
