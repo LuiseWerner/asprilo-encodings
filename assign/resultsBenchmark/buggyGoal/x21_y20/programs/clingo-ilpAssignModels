@@ -1,3 +1,0 @@
-#!/bin/bash
-
-clingo --mode=clingo ~/Asprilo/benchmark-tool/benchmarks/assign/testInst/x21_y20_n420_r120_s120_ps1_pr120_u120_o120_N001.lp ~/Asprilo/benchmark-tool/benchmarks/assign/m/encoding.ilp ~/Asprilo/benchmark-tool/benchmarks/assign/control-m/control.ilp $@
