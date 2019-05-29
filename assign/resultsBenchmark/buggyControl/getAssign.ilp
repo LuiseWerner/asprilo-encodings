@@ -1,5 +1,0 @@
-#program step(t).
-
-assign(R,S) :- position(R,C,7), position(S,C,0), isShelf(S), isRobot(R), processed(A,R,7).
-#show assign/2.
-%#show processed/3.
