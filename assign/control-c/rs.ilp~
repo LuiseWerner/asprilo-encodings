@@ -1,0 +1,13 @@
+#program check(t).
+
+%:- move(R,_,t), not assign(R,S), isRobot(R), isShelf(S).
+
+%:- processed(A,R,t), shelved(S,A), not assign(R,S), query(t).
+
+
+#program step(t).
+:- not assign(R,S), isRobot(R), isShelf(S), pickup(R,S,t).
+
+#show assign/2.
+#show pickup/3.
+#show yey/3.
