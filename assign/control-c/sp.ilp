@@ -7,3 +7,5 @@
 
 #program step(t).
 :- not assign(S,P), isShelf(S), isStation(P), position(S,C,t), position(P,C).
+
+#show assign/2.

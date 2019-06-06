@@ -1,0 +1,5 @@
+bestAsg(shelf(2),station(5))
+bestAsg(shelf(1),station(3))
+bestAsg(shelf(2),station(4))
+bestAsg(shelf(1),station(2))
+bestAsg(shelf(3),station(1))
