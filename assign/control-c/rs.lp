@@ -1,0 +1,1 @@
+:- not assign(R,S), isRobot(R), isShelf(S), pickup(R,S,_).

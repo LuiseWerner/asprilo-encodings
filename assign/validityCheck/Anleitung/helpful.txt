@@ -1,0 +1,1 @@
+grep SAT results.txt | wc
