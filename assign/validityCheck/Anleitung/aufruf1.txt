@@ -1,0 +1,1 @@
+clingo x5_y5_n25_r3_s1_ps1_pr3_u3_o0_N001.lp asg/spBasicAsg.lp --out-atomf=%s. 0 > validityCheck/x5_allAsgs.lp

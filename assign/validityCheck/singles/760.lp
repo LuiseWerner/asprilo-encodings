@@ -1,0 +1,1 @@
+assign(shelf(1),station(1)). assign(shelf(1),station(3)). assign(shelf(1),station(4)). assign(shelf(1),station(5)). assign(shelf(2),station(1)). assign(shelf(2),station(2)). assign(shelf(2),station(3)). assign(shelf(2),station(4)). assign(shelf(3),station(1)). assign(shelf(3),station(3)). assign(shelf(3),station(4)). assign(shelf(3),station(5)).
