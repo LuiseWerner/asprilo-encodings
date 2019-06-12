@@ -1,0 +1,59 @@
+clingo version 5.3.0
+Reading from x5_y5_n25_r3_s1_ps1_pr3_u3_o0_N001.lp ...
+Solving...
+Answer: 1
+distance(shelf(2),station(4),3).
+distance(shelf(3),station(1),5).
+assign(shelf(2),station(2)).
+assign(shelf(2),station(3)).
+assign(shelf(2),station(4)).
+assign(shelf(2),station(5)).
+assign(shelf(3),station(1)).
+distance(shelf(2),station(2),3).
+distance(shelf(2),station(3),2).
+distance(shelf(2),station(5),4).
+sum(shelf(1),0).
+sum(shelf(2),9).
+sum(shelf(3),5).
+maxSum(9).
+Optimization: 9
+Answer: 2
+distance(shelf(2),station(4),3).
+distance(shelf(3),station(1),5).
+assign(shelf(1),station(3)).
+assign(shelf(2),station(2)).
+assign(shelf(2),station(4)).
+assign(shelf(2),station(5)).
+assign(shelf(3),station(1)).
+distance(shelf(1),station(3),3).
+distance(shelf(2),station(2),3).
+distance(shelf(2),station(5),4).
+sum(shelf(1),3).
+sum(shelf(2),7).
+sum(shelf(3),5).
+maxSum(7).
+Optimization: 7
+Answer: 3
+distance(shelf(2),station(4),3).
+distance(shelf(3),station(1),5).
+assign(shelf(1),station(5)).
+assign(shelf(2),station(2)).
+assign(shelf(2),station(3)).
+assign(shelf(2),station(4)).
+assign(shelf(3),station(1)).
+distance(shelf(1),station(5),5).
+distance(shelf(2),station(2),3).
+distance(shelf(2),station(3),2).
+sum(shelf(1),5).
+sum(shelf(2),5).
+sum(shelf(3),5).
+maxSum(5).
+Optimization: 5
+OPTIMUM FOUND
+
+Models       : 3
+  Optimum    : yes
+Optimization : 5
+Calls        : 1
+Time         : 0.012s (Solving: 0.00s 1st Model: 0.00s Unsat: 0.00s)
+CPU Time     : 0.004s
