@@ -1,0 +1,11 @@
+#program step(t).
+
+%:- not assign(_,S,P), 		  isShelf(S), isStation(P), position(S,C,t), position(P,C).
+
+:-    move(R,_,t), not assign(R,_,_).
+:-  pickup(R,S,t), not assign(R,S,_).
+:- putdown(R,S,t), not assign(R,S,_).
+
+:- process(A,O,C,t), target(O,P), shelved(S,A), position(S,C,t), not assign(_,S,P).
+
+#show assign/3.

@@ -5,4 +5,4 @@
 :- ordered(O,A), #count{ S : assign(R,S), shelved(S,A) } < 1.
 :- isShelf(S), #count{ R : assign(R,S) } > 1.
 
-#show assign/2.
+%#show assign/2.
