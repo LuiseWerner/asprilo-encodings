@@ -1,8 +1,8 @@
 #program check(t).
 
-%:- move(R,_,t), not assign(R,S), isRobot(R), isShelf(S).
-
 %:- processed(A,R,t), shelved(S,A), not assign(R,S), query(t).
+
+%:- process(A,O,C,t), target(O,P), shelved(S,A), position(S,C,t), not assign(S,P).
 
 
 #program step(t).
