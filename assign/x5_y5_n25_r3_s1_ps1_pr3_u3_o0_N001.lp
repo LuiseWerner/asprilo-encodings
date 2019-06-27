@@ -58,9 +58,9 @@ init(object(product,2),value(on,(2,1))).
 init(object(product,3),value(on,(2,1))).
 init(object(shelf,3), value(at,(4,3))).
 init(object(product,4),value(on,(3,1))).
-init(object(robot,1), value(at,(1,5))).
-init(object(robot,2), value(at,(2,5))).
-init(object(robot,3), value(at,(3,5))).
+init(object(robot,8), value(at,(1,5))).
+init(object(robot,5), value(at,(2,5))).
+init(object(robot,6), value(at,(3,5))).
 init(object(order,1),value(pickingStation,1)).init(object(order,1),value(line,(4,1))).
 init(object(order,2),value(pickingStation,2)).init(object(order,2),value(line,(1,1))).
 init(object(order,3),value(pickingStation,3)).init(object(order,3),value(line,(2,1))).

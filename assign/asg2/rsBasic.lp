@@ -1,8 +1,8 @@
 #include "../input.lp".
 
-{ assign(R,S) } :- isRobot(R), isShelf(S).
+{ assignRS(R,S) } :- isRobot(R), isShelf(S).
 
-:- ordered(O,A), #count{ S : assign(R,S), shelved(S,A) } < 1.
-:- isShelf(S), #count{ R : assign(R,S) } > 1.
+:- ordered(O,A), #count{ S : assignRS(R,S), shelved(S,A) } < 1.
+:- isShelf(S), #count{ R : assignRS(R,S) } > 1.
 
-%#show assign/2.
+#show assignRS/2.
