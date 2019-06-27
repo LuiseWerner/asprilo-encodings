@@ -1,1 +1,4 @@
 clingo x5_y5_n25_r3_s1_ps1_pr3_u3_o0_N001.lp asg/x5_rs.lp ../input.lp ../abc/encoding-c.ilp control-c/rs.ilp asg/x5_sp.lp control-c/spRelax.ilp --out-ifs="\n" | grep "corr\|add\|wrong\|assign(sh\|process"
+../clingo1facts Instances/testing/x10_y10_n100_r5_s10_ps3_pr3_u30_o3_N001.lp ../abc/encoding-c.ilp > tmp2.lp
+../clingo1facts Instances/testing/x10_y10_n100_r5_s10_ps3_pr3_u30_o3_N001.lp tmp.lp control-c/rs.ilp control-c/sp.ilp ../abc/encoding-c.ilp > tmp1.lp
+../clingo1facts Instances/testing/x10_y10_n100_r5_s10_ps3_pr3_u30_o3_N001.lp asg2/rspFewRobots.lp -Wnone > tmp.lp

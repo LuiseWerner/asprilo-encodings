@@ -1,9 +1,1 @@
-clingo version 5.3.0
-Reading from x5_y5_n25_r3_s1_ps1_pr3_u3_o6_N001.lp ...
-Solving...
-UNSATISFIABLE
-
-Models       : 0
-Calls        : 1
-Time         : 0.014s (Solving: 0.00s 1st Model: 0.00s Unsat: 0.00s)
-CPU Time     : 0.008s
+assignRS(robot(1),shelf(8)). assignRS(robot(2),shelf(1)). assignRS(robot(2),shelf(2)). assignSP(shelf(1),station(1)). assignSP(shelf(2),station(2)). assignSP(shelf(8),station(3)).

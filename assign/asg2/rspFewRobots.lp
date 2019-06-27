@@ -24,15 +24,15 @@ maxSum(U) :- chain2(U), not chain2(U+1).
 
 #minimize{ U@0 : maxSum(U) }.
 
-#show chain1/3.
-#show minRS/2.
-#show maxDistPP/2.
-#show minRS/2.
-#show sumSP/3.
-#show sum/3.
-#show maxSum/1.
-#show distanceRS/3.
-#show distanceSP/3.
-#show distancePP/3.
-#show minRS2/2.
-#show test/1.
+%#show chain1/3.
+%#show minRS/2.
+%#show maxDistPP/2.
+%#show minRS/2.
+%#show sumSP/3.
+%#show sum/3.
+%#show maxSum/1.
+%#show distanceRS/3.
+%#show distanceSP/3.
+%#show distancePP/3.
+%#show minRS2/2.
+%#show test/1.
