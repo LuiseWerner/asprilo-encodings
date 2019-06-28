@@ -6,7 +6,7 @@
 % es darf nicht sein, dass kein Regal,	   das das an der Station georderte Produkt enthält,   dieser Station zugewiesen ist
 :- target(O,P), #count{ S : assignSP(S,P), shelved(S,A), ordered(O,A) } < 1.
 
-% es darf nicht sein, dass mehrere Regale, die das an der Station georderte Produkt enthalten, dieser Station zugewiesen ist
+% es darf nicht sein, dass mehrere Regale, die das an der Station georderte Produkt enthalten, dieser Station zugewiesen sind
 :- target(O,P), #count{ S : assignSP(S,P), shelved(S,A), ordered(O,A) } > 1.
 
 
