@@ -1,26 +1,33 @@
 #include "./rspBasic.lp".
 
-assignRS(robot(1),shelf(1)).
-assignSP(shelf(1),station(1)).
-assignSP(shelf(1),station(2)).
-assignSP(shelf(1),station(3)).
-
+%assignRS(robot(1),shelf(1)).
+%assignSP(shelf(1),station(1)).
+%assignSP(shelf(1),station(2)).
+%assignSP(shelf(1),station(3)).
 %#minimize{ 1@1,R : assignRS(R,S) }.
 
-% minimize maximal approximated distance of each robot
+% This code
+% - computes the distances between assigned elements,
+% - finds out for each robot the minimal distance between the robot and its assigned shelves,
+% - computes the maximal distance between stations assigned to the same shelf,
+% - computes the sum of
+%    - the minimal distance between a robot and its assigned shelves,
+%    - the sum of distances between the shelf its assigned stations,
+%    - and the maximal distance between stations assigned to the shelf
+% - and minimizes the maximal sum.
+
 distanceRS(R,S,|X-X'|+|Y-Y'|) :- position(R,(X,Y),0), position(S,(X',Y'),0), isRobot(R), isShelf(S), assignRS(R,S).
 distanceSP(S,P,|X-X'|+|Y-Y'|) :- position(S,(X,Y),0), position(P,(X',Y')), isShelf(S), isStation(P), assignSP(S,P).
 distancePP(P,P',|X-X'|+|Y-Y'|) :- position(P,(X,Y)), position(P',(X',Y')), isStation(P), isStation(P'), assignSP(S,P), assignSP(S,P'), isShelf(S), P>P'.
 distancePP(P',P,D) :- distancePP(P,P',D).
 
+{ minRS(R,D) : assignRS(R,S) } :- isRobot(R), D = #min{ D' : distanceRS(R,S,D'), assignRS(R,S) }.
+:- isRobot(R), minRS(R,D), D=#sup.
+:- assignRS(R,_), not minRS(R,_).
+
 distPPPerS(S,D') :- isShelf(S), assignSP(S,P), assignSP(S,P'), distancePP(P,P',D').
 maxDistPP(S,D') :- isShelf(S), D' = #max{ D : distPPPerS(S,D) }, #count{ P : assignSP(S,P) } > 1.
 maxDistPP(S,0) :- isShelf(S), assignSP(S,P), #count{ (S,P') : assignSP(S,P'), P!=P' } < 1.
-
-%working
-{ minRS(R,D) : assignRS(R,S) } :- isRobot(R), D = #min{ D' : distanceRS(R,S,D'), assignRS(R,S) }.
-%:- isRobot(R), minRS(R,D), D=#sup.
-:- assignRS(R,_), not minRS(R,_).
 
 sumSP(R,D'+U',U') :- minRS(R,D'), U' = #sum{ D,S,P : distanceSP(S,P,D), assignRS(R,S) }.
 %sumSP(R,D'+2*U',U') :- minRS(R,D'), U' = #sum{ D,S,P : distanceSP(S,P,D), assignRS(R,S) }.
