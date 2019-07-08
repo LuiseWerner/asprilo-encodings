@@ -1,7 +1,19 @@
 #include "./rspOptBasic.lp".
 %#include "./rspBasic.lp".
 
-% minimize maximal approximated distance of each robot
+% This code
+% - computes the distances between assigned elements,
+% - finds out for each robot the minimal distance between the robot and its assigned shelves,
+% - finds out for each robot-shelf combination the minimal distance between the shelf and its assigned stations,
+% - computes the maximal distance between stations assigned to the same shelf,
+% - computes the sum of
+%    - the minimal distance between a robot and its assigned shelves,
+%    - the minimal distance between a robot and its assigned shelves,
+%    - the sum of minimal distances between all shelves and their assigned stations,
+%    - the sum of minimal distances between all shelves and their assigned stations,
+%    - and the maximal distance between stations assigned to the same shelf
+% - and minimizes the maximal one of these sums.
+
 distanceRS(R,S,|X-X'|+|Y-Y'|) :- position(R,(X,Y),0), position(S,(X',Y'),0), isRobot(R), isShelf(S), assignRS(R,S).
 distanceSP(S,P,|X-X'|+|Y-Y'|) :- position(S,(X,Y),0), position(P,(X',Y')), isShelf(S), isStation(P), assignSP(S,P).
 distancePP(P,P',|X-X'|+|Y-Y'|) :- position(P,(X,Y)), position(P',(X',Y')), isStation(P), isStation(P'), assignSP(S,P), assignSP(S,P'), isShelf(S), P>P'.
@@ -19,7 +31,6 @@ maxDistPP(S,0) :- isShelf(S), assignSP(S,P), #count{ (S,P') : assignSP(S,P'), P!
 :- isShelf(S), minSP(R,S,D), D=#sup.
 :- assignSP(S,_), not minSP(_,S,_).
 
-% no minRS, minSP necessary because minimized sum implicates this?
 sumSP(R,D'+U,U) :- minRS(R,D'), U = #sum{ D,S : minSP(R,S,D), D != #sup }.
 sum(R,U+U',U') :- sumSP(R,U,U''), U' = #sum{ D,S : maxDistPP(S,D), assignRS(R,S) }.
 
