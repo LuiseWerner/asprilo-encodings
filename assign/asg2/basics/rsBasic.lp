@@ -1,4 +1,4 @@
-#include "../input.lp".
+#include "../../../input.lp".
 
 { assignRS(R,S) } :- isRobot(R), isShelf(S).
 

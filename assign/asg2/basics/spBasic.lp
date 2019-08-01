@@ -1,4 +1,4 @@
-#include "../input.lp".
+#include "../../../input.lp".
 
 { assignSP(S,P) } :- isShelf(S), isStation(P).
 
