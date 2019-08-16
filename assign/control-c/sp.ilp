@@ -1,12 +1,14 @@
-#program check(t).
+%#program check(t).
 
 %:- processed(A,R,t), shelved(S,A), not assign(R,S), query(t).
-
-:- process(A,O,C,t), target(O,P), shelved(S,A), position(S,C,t), not assignSP(S,P).
-
+%:- process(A,O,C,t), target(O,P), shelved(S,A), position(S,C,t), not assignSP(S,P).
+%:- process(A,O,C,t), target(O,P), shelved(S,A), position(S,C,t), not assignSP(S,P), query(t).
+%:- assignSP(S,P), isShelf(S), isStation(P), not process(A,O,C,_), shelved(S,A), ordered(O,A), target(O,P), position(P,C), position(S,C,t), query(t).
+%:- processed(A,C,t), shelved(S,A), position(S,C,t), not assignSP(S,_), query(t).
 
 %#program step(t).
 % robot must not enter not assigned station
 %:- not assignSP(S,P), isShelf(S), isStation(P), position(S,C,t), position(P,C).
 
-#show assignSP/2.
+
+% nothing works but changing process-atoms in goal --> not encoding-c.ilp but action, output and changed goal
