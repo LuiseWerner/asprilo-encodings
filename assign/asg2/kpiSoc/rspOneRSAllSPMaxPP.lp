@@ -23,8 +23,8 @@ chain3(S,D-1) :- chain3(S,D), D > 1.
 maxDistPP(S,D) :- chain3(S,D), not chain3(S,D+1).
 maxDistPP(S,0) :- assignSP(S,_), #count{ P,S' : assignSP(S',P) } < 2.
 
-% for each assigned robot iterate over its assigned shelves and sum the maximal distance between assigned stations
-sum(R,D+D') :- oneRSP(R,_,_,D), D' = #sum{ D'',S : maxDistPP(S,D''), assignRS(R,S) }.
+% for each assigned robot iterate over its assigned shelves, sum the maximal distance between assigned stations and add one (for leaving station)
+sum(R,D+D'+1) :- oneRSP(R,_,_,D), D' = #sum{ D'',S : maxDistPP(S,D''), assignRS(R,S) }.
 
 
 % EITHER: sum of costs
