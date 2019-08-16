@@ -8,6 +8,10 @@
 * **rspBasic**: constraints for interaction of RS- and SP-assignments
 * **rspOptBasic**: general optimizations
 
-## (only) sp
-
-## rsp
+## encodings
+* **once**: for each shelf distance to one station
+* **double**: for each shelf (distance to one station)*2
+* **allButOneDouble**: for each shelf ((distance to one station)*2) - (one SP-distance per robot)
+* **mppOnce**: once with pickup and putdown included in sum
+* **mppDouble**: double with pickup and putdown included in sum
+* **mppAllButOneDouble**: allButOneDouble with pickup and putdown included in sum

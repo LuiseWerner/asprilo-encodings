@@ -12,3 +12,4 @@
 
 
 % nothing works but changing process-atoms in goal --> not encoding-c.ilp but action, output and changed goal
+please look in control-c/sp.ilp file
