@@ -20,16 +20,16 @@ distancePP(P,P',|X-X'|+|Y-Y'|) :- position(P,(X,Y)), position(P',(X',Y')), isSta
 distancePP(P',P,D) :- distancePP(P,P',D).
 
 % for each assigned robot compute one distance to a shelf, using distance-atoms
-%1 { oneRS(R,D) : distanceRS(R,S,D) } 1 :- isRobot(R), #count{ S,R : assignRS(R,S), isRobot(R) } > 0.
-1 { oneRS(R,D) : distanceRS(R,S,D) } 1 :- assignRS(R,_).
+%1 { movesRS(R,D) : distanceRS(R,S,D) } 1 :- isRobot(R), #count{ S,R : assignRS(R,S), isRobot(R) } > 0.
+1 { movesRS(R,D) : distanceRS(R,S,D) } 1 :- assignRS(R,_).
 
 % for each assigned shelf compute one distance to a station, using distance-atoms
-1 { oneSP(S,D) : distanceSP(S,P,D) } 1 :- assignSP(S,_).
+1 { movesSP(S,D) : distanceSP(S,P,D) } 1 :- assignSP(S,_).
 
 % for each assigned robot iterate over assigned shelves and take the distance to one station,
 % sum these distances, take them twice, subtract one of them (once no way back) and add the RS-distance 
-1 { oneRSP(R,D,D',D'',D+2*D'-D'') : oneSP(S',D''), assignRS(R,S') } 1 :-
-    oneRS(R,D), D' = #sum{ D''',S : oneSP(S,D'''), assignRS(R,S) }.
+1 { movesRSP(R,D,D',D'',D+2*D'-D'') : movesSP(S',D''), assignRS(R,S') } 1 :-
+    movesRS(R,D), D' = #sum{ D''',S : movesSP(S,D'''), assignRS(R,S) }.
 
 % for each assigned shelf compute the maximal distance between assigned stations
 chain3(S,D) :- assignSP(S,P), assignSP(S,P'), P!=P', distancePP(P,P',D).
@@ -38,7 +38,10 @@ maxDistPP(S,D) :- chain3(S,D), not chain3(S,D+1).
 maxDistPP(S,0) :- assignSP(S,_), #count{ P,S' : assignSP(S',P) } < 2.
 
 % for each assigned robot iterate over its assigned shelves, sum the maximal distance between assigned stations and add one (for leaving station)
-sum(R,D+D'+1) :- oneRSP(R,_,_,_,D), D' = #sum{ D'',S : maxDistPP(S,D''), assignRS(R,S) }.
+moves(R,D+D'+1) :- movesRSP(R,_,_,_,D), D' = #sum{ D'',S : maxDistPP(S,D''), assignRS(R,S) }.
+
+% for each robot sum the number of assigned shelves and count it twice (pickup, putdown) and add it to sum
+sum(R,D+2*D') :- moves(R,D), D' = #count{ S : assignRS(R,S) }.
 
 
 % EITHER: sum of costs
@@ -59,8 +62,9 @@ maxSum(R,D) :- chain2(R,D), not chain2(R,D+1).
 #show distanceRS/3.
 #show distanceSP/3.
 #show distancePP/3.
-#show oneRS/2.
-#show oneSP/2.
-#show oneRSP/5.
+#show movesRS/2.
+#show movesSP/2.
+#show movesRSP/5.
+#show moves/2.
 #show maxSum/2.
 #show sum/2.
