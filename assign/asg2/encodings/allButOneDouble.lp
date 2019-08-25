@@ -29,15 +29,15 @@ sum(R,D+D'+1) :- movesRSP(R,_,_,_,D), D' = #sum{ D'',S : maxDistPP(S,D''), assig
 
 % EITHER: sum of costs
 %---------------
-%#minimize{ D@10,R : sum(R,D) }.
+#minimize{ D@10,R : sum(R,D) }.
 %---------------
 
 % OR: horizon
 %---------------
-chain2(R,D) :- sum(R,D).
-chain2(R,D-1) :- chain2(R,D), D > 1.
-maxSum(R,D) :- chain2(R,D), not chain2(R,D+1).
-#minimize{ D@10 : maxSum(R,D) }.
+%chain2(R,D) :- sum(R,D).
+%chain2(R,D-1) :- chain2(R,D), D > 1.
+%maxSum(R,D) :- chain2(R,D), not chain2(R,D+1).
+%#minimize{ D@10 : maxSum(R,D) }.
 %---------------
 
 

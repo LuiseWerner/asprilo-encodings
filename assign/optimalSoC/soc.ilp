@@ -10,11 +10,11 @@
 	   1@3,R,t :  pickup(R,_,t) ;
  	   1@3,R,t : putdown(R,_,t) }.
 
-actions(S,t) :- S = #sum{ 1,R,t : move(R,_,t);
-		       	       1,R,t : pickup(R,_,t);
-			       1,R,t : putdown(R,_,t) }.
+%actions(S,t) :- S = #sum{ 1,R,t : move(R,_,t);
+%		       	       1,R,t : pickup(R,_,t);
+%			       1,R,t : putdown(R,_,t) }.
 
-#show actions/2.
-#show move/3.
+%#show actions/2.
+%#show move/3.
 %#show pickup/3.
 %#show putdown/3.
