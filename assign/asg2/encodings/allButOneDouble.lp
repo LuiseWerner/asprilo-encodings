@@ -1,4 +1,3 @@
-%#include "../basics/rspOptBasic.lp".
 #include "../basics/rspBasic.lp".
 
 distanceRS(R,S,|X-X'|+|Y-Y'|) :- position(R,(X,Y),0), position(S,(X',Y'),0), isRobot(R), isShelf(S), assignRS(R,S).
@@ -29,7 +28,7 @@ sum(R,D+D'+1) :- movesRSP(R,_,_,_,D), D' = #sum{ D'',S : maxDistPP(S,D''), assig
 
 % EITHER: sum of costs
 %---------------
-#minimize{ D@10,R : sum(R,D) }.
+#minimize{ D@4,R : sum(R,D) }.
 %---------------
 
 % OR: horizon
@@ -37,16 +36,5 @@ sum(R,D+D'+1) :- movesRSP(R,_,_,_,D), D' = #sum{ D'',S : maxDistPP(S,D''), assig
 %chain2(R,D) :- sum(R,D).
 %chain2(R,D-1) :- chain2(R,D), D > 1.
 %maxSum(R,D) :- chain2(R,D), not chain2(R,D+1).
-%#minimize{ D@10 : maxSum(R,D) }.
+%#minimize{ D@4 : maxSum(R,D) }.
 %---------------
-
-
-#show maxDistPP/2.
-#show distanceRS/3.
-#show distanceSP/3.
-#show distancePP/3.
-#show movesRS/2.
-#show movesSP/2.
-#show movesRSP/5.
-#show maxSum/2.
-#show sum/2.
