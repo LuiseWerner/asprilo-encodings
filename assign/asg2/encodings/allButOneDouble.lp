@@ -1,4 +1,5 @@
-#include "../basics/rspBasic.lp".
+%#include "../basics/rspBasic.lp".
+#include "../basics/rspDet.lp".
 
 distanceRS(R,S,|X-X'|+|Y-Y'|) :- position(R,(X,Y),0), position(S,(X',Y'),0), isRobot(R), isShelf(S), assignRS(R,S).
 distanceSP(S,P,|X-X'|+|Y-Y'|) :- position(S,(X,Y),0), position(P,(X',Y')), isShelf(S), isStation(P), assignSP(S,P).
