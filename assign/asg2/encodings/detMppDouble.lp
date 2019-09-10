@@ -6,13 +6,17 @@ distancePP(P,P',|X-X'|+|Y-Y'|) :- position(P,(X,Y)), position(P',(X',Y')), isSta
 distancePP(P',P,D) :- distancePP(P,P',D).
 
 % for each assigned robot compute one distance to a shelf, using distance-atoms
-1 { movesRS(R,D) : distanceRS(R,S,D) } 1 :- assignRS(R,_).
+chain4(R,D) :- assignRS(R,_), distanceRS(R,S,D).
+chain4(R,D) :- chain4(R,D), D' < D, assignRS(R,_), distanceRS(R,S,D').
+movesRS(R,D) :- chain4(R,D), not chain4(R,D-1).
 
 % for each assigned shelf compute one distance to a station, using distance-atoms
-1 { movesSP(S,D) : distanceSP(S,P,D) } 1 :- assignSP(S,_).
+chain5(S,D) :- assignSP(S,_), distanceSP(S,P,D).
+chain5(S,D) :- chain5(S,D), D' < D, assignSP(S,_), distanceSP(S,P,D').
+movesSP(S,D) :- chain5(S,D), not chain5(S,D-1).
 
 % for each assigned robot iterate over assigned shelves and take the distance to one station,
-% sum these distances, take them twice and add the RS-distance 
+% sum these distances, take them twice and add the RS-distance
 movesRSP(R,D,D',D+2*D') :- movesRS(R,D), D' = #sum{ D''',S : movesSP(S,D'''), assignRS(R,S) }.
 
 % for each assigned shelf compute the maximal distance between assigned stations
